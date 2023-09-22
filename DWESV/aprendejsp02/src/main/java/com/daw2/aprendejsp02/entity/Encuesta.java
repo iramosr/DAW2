@@ -1,18 +1,20 @@
 package com.daw2.aprendejsp02.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
+@Table(name = "encuestas")
 public class Encuesta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
+    @Column(unique = true,length = 12)
     private String nif;
+    @Column(nullable = false,length = 20)
     private String nombre;
+    @Column(nullable = false,length = 20)
     private String apellido1;
+    @Column(length = 20)
     private String apellido2;
 
     public Long getId() {

@@ -3,6 +3,7 @@ package com.daw2.aprendejsp02.servelet;
 import com.daw2.aprendejsp02.dao.EncuestasDao;
 import com.daw2.aprendejsp02.dao.impl.EncuestasDaoImpl;
 import com.daw2.aprendejsp02.entity.Encuesta;
+import com.daw2.aprendejsp02.service.EncuestasService;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -29,34 +30,22 @@ public class NuevaEncuestaServelet extends HttpServlet {
         //System.out.println("GET");
         encuestas = encuestasDao.findAll();
         request.setAttribute("encuestas",encuestas);
-        request.getRequestDispatcher("/formulario.jsp").forward(request,response);
+        request.getRequestDispatcher("/nueva.jsp").forward(request,response);
 
     }
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         //System.out.println("POST");
-
-       //  Map<String, String[]> formParams = request.getParameterMap();
-        String nif = request.getParameter("nif").trim();
-        String nombre = request.getParameter("nombre").trim();
-        String apellido1 = request.getParameter("apellido1").trim();
-        String apellido2 = request.getParameter("apellido2").trim();
-        Encuesta encuesta = new Encuesta();
-        encuesta.setNif(nif);
-        encuesta.setNombre(nombre);
-        encuesta.setApellido1(apellido1);
-        encuesta.setApellido2(apellido2);
-        encuestas.add(encuesta);
+        Encuesta encuesta = EncuestasService.formToEntity(request);
         //encuestasDao.add(encuesta);
         if (encuestasDao.add(encuesta)!=null){
             request.setAttribute("mensaje","Encuesta guardada");
             encuestas=encuestasDao.findAll();
-
         }else{
             request.setAttribute("mensaje", "Encuesta no guardada");
         }
         request.setAttribute("encuestas",encuestas);
 
-        request.getRequestDispatcher("/formulario.jsp").forward(request,response);
+        request.getRequestDispatcher("/nueva.jsp").forward(request,response);
     }
 
     public void destroy() {
