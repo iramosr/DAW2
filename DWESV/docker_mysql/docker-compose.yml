@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8
+    container_name: mysql-dwesv
+    environment:
+      MYSQL_ROOT_PASSWORD: castelar
+      MYSQL_DATABASE: dwesv
+      MYSQL_USER: dwesv
+      MYSQL_PASSWORD: castelar
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+    ports:
+      - "33060:3306"
