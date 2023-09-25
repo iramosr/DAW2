@@ -1,0 +1,16 @@
+.inicio div{
+    display: flex;
+    text-align: center;
+}
+.inicio section{
+    text-align: center;
+    width: 25%;
+    height: 450px;
+    margin: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+h1{
+    margin-top: 2%;
+    text-align: center;
+}

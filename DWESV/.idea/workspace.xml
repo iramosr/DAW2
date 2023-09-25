@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f060dffa-f9db-4b8a-aa5c-b43a22fde244" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker_mysql/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AprendeJSP0.2/src/main/java/com/daw2/aprendejsp02/entity/Encuesta.java" beforeDir="false" afterPath="$PROJECT_DIR$/AprendeJSP0.2/src/main/java/com/daw2/aprendejsp02/entity/Encuesta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AprendeJSP0.2/src/main/java/com/daw2/aprendejsp02/servelet/NuevaEncuestaServelet.java" beforeDir="false" afterPath="$PROJECT_DIR$/AprendeJSP0.2/src/main/java/com/daw2/aprendejsp02/servelet/NuevaEncuestaServelet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AprendeJSP0.2/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AprendeJSP0.2/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AprendeJSP0.2/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AprendeJSP0.2/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AprendeJSP0.2/src/main/webapp/formulario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/AprendeJSP0.2/src/main/webapp/formulario.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AprendeJSP0.2/src/main/webapp/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AprendeJSP0.2/src/main/webapp/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AprendeJSP0.2/target/AprendeJSP02-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AprendeJSP0.2/target/AprendeJSP02-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/AprendeJSP0.2/target/AprendeJSP02-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AprendeJSP0.2/target/AprendeJSP02-1.0-SNAPSHOT/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AprendeJSP0.2/target/AprendeJSP02-1.0-SNAPSHOT/META-INF/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AprendeJSP0.2/target/AprendeJSP02-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AprendeJSP0.2/target/AprendeJSP02-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AprendeJSP0.2/target/AprendeJSP02-1.0-SNAPSHOT/WEB-INF/classes/com/daw2/aprendejsp02/entity/Encuesta.class" beforeDir="false" afterPath="$PROJECT_DIR$/AprendeJSP0.2/target/AprendeJSP02-1.0-SNAPSHOT/WEB-INF/classes/com/daw2/aprendejsp02/entity/Encuesta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AprendeJSP0.2/target/AprendeJSP02-1.0-SNAPSHOT/WEB-INF/classes/com/daw2/aprendejsp02/servelet/NuevaEncuestaServelet.class" beforeDir="false" afterPath="$PROJECT_DIR$/AprendeJSP0.2/target/AprendeJSP02-1.0-SNAPSHOT/WEB-INF/classes/com/daw2/aprendejsp02/servelet/NuevaEncuestaServelet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AprendeJSP0.2/target/AprendeJSP02-1.0-SNAPSHOT/formulario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/AprendeJSP0.2/target/AprendeJSP02-1.0-SNAPSHOT/formulario.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AprendeJSP0.2/target/AprendeJSP02-1.0-SNAPSHOT/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AprendeJSP0.2/target/AprendeJSP02-1.0-SNAPSHOT/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AprendeJSP0.2/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AprendeJSP0.2/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AprendeJSP0.2/target/classes/com/daw2/aprendejsp02/entity/Encuesta.class" beforeDir="false" afterPath="$PROJECT_DIR$/AprendeJSP0.2/target/classes/com/daw2/aprendejsp02/entity/Encuesta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AprendeJSP0.2/target/classes/com/daw2/aprendejsp02/servelet/NuevaEncuestaServelet.class" beforeDir="false" afterPath="$PROJECT_DIR$/AprendeJSP0.2/target/classes/com/daw2/aprendejsp02/servelet/NuevaEncuestaServelet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AprendeJSP0.2/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/AprendeJSP0.2/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AprendeJSP0.2/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/AprendeJSP0.2/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DIINW/HTMLS/EjercicioEmpresa/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/../DIINW/HTMLS/EjercicioEmpresa/css/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DIINW/HTMLS/EjercicioEmpresa/html/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DIINW/HTMLS/EjercicioEmpresa/html/inicio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DIINW/HTMLS/EjercicioEmpresa/html/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DIINW/HTMLS/EjercicioEmpresa/html/menu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +28,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/daw2/Desktop/DAW2/DAW2/DWESV/AprendeJSP0.2",
+    "last_opened_file_path": "C:/Users/daw2/Desktop/DAW2/DAW2/DWESV",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -60,6 +42,7 @@
       <updated>1695315123410</updated>
       <workItem from="1695315124360" duration="250000" />
       <workItem from="1695393527700" duration="11000" />
+      <workItem from="1695648898805" duration="28000" />
     </task>
     <servers />
   </component>
