@@ -7,7 +7,9 @@ import jakarta.persistence.*;
 public class Encuesta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
+    private Long id;
+    @Column(unique = true)
+    private String email;
     @Column(unique = true,length = 12)
     private String nif;
     @Column(nullable = false,length = 20)
@@ -18,11 +20,11 @@ public class Encuesta {
     private String apellido2;
 
     public Long getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Long id) {
-        Id = id;
+        id = id;
     }
 
     public String getNif() {
@@ -31,6 +33,14 @@ public class Encuesta {
 
     public void setNif(String nif) {
         this.nif = nif;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getNombre() {

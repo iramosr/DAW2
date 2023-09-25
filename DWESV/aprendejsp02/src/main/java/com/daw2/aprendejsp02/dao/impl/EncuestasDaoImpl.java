@@ -2,10 +2,7 @@ package com.daw2.aprendejsp02.dao.impl;
 
 import com.daw2.aprendejsp02.dao.EncuestasDao;
 import com.daw2.aprendejsp02.entity.Encuesta;
-import jakarta.persistence.Entity;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.Persistence;
+import jakarta.persistence.*;
 
 import java.util.List;
 
@@ -64,7 +61,20 @@ try {
 
     @Override
     public Boolean delete(long id) {
-        return null;
+        boolean error=false;
+        EntityManager em = emf.createEntityManager();
+        try {
+            Encuesta encuesta = em.find(Encuesta.class, id);
+            em.getTransaction().begin();
+            em.remove(encuesta);
+            em.getTransaction().commit();
+        }catch (Exception e){
+            error = true;
+            em.getTransaction().rollback();
+        } finally {
+            em.close();
+        }
+        return !error;
     }
 
     @Override
@@ -72,9 +82,15 @@ try {
         return null;
     }
 
+
     @Override
     public Encuesta get(long id) {
-        return null;
+        EntityManager em = emf.createEntityManager();
+        Query query = em.createQuery("SELECT e FROM Encuesta e WHERE e.id=:id",Encuesta.class);
+        query.setParameter("id", id);
+        Encuesta encuesta = (Encuesta) query.getSingleResult();
+        em.close();
+        return encuesta;
     }
 
     @Override

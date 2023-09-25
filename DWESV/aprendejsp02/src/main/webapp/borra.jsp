@@ -12,11 +12,10 @@
 <jsp:include page="layouts/main-menu.jsp"/>
 
     <div class="container">
-        <h1>Nueva Encuesta</h1>
-        <form method="post" action="encuestas/nueva">
-        <jsp:include page="formulario.jsp"/>
+        <h1>Borra Encuesta</h1>
+        <form method="post" action="encuestas/borrar">
+            <jsp:include page="formulario.jsp"/>
         </form>
-
         <jsp:include page="tabla.jsp"/>
     </div>
 
