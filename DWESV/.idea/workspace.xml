@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f060dffa-f9db-4b8a-aa5c-b43a22fde244" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../DIINW/HTMLS/EjercicioEmpresa/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/../DIINW/HTMLS/EjercicioEmpresa/css/menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DIINW/HTMLS/EjercicioEmpresa/html/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DIINW/HTMLS/EjercicioEmpresa/html/inicio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DIINW/HTMLS/EjercicioEmpresa/html/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DIINW/HTMLS/EjercicioEmpresa/html/menu.html" afterDir="false" />
-    </list>
+    <list default="true" id="f060dffa-f9db-4b8a-aa5c-b43a22fde244" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +24,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/daw2/Desktop/DAW2/DAW2/DWESV",
+    "last_opened_file_path": "C:/Users/daw2/Desktop/DAW2/DAW2/DWESV/ejerciciojsp1",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -43,6 +39,7 @@
       <workItem from="1695315124360" duration="250000" />
       <workItem from="1695393527700" duration="11000" />
       <workItem from="1695648898805" duration="28000" />
+      <workItem from="1695649030232" duration="12000" />
     </task>
     <servers />
   </component>

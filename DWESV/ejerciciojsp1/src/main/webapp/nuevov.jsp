@@ -13,9 +13,9 @@
 
     <div class="container">
         <h1>Nuevo Cliente</h1>
-        <jsp:include page="formularioViajes.jsp"/>
+        <jsp:include page="formulario_viajes.jsp"/>
 
-        <jsp:include page="tablaViajes.jsp"/>
+        <jsp:include page="tabla_viajes.jsp"/>
     </div>
 
 <jsp:include page="layouts/footer.jsp"/>

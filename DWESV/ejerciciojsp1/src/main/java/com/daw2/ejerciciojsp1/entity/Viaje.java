@@ -9,18 +9,18 @@ import java.util.Date;
 @Entity
 @Table(name = "viajes")
 public class Viaje {
-    @jakarta.persistence.Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
     @Column(unique = true,length = 12)
     private String codigo;
     @Column(nullable = false,length = 50)
     private String descripcion;
-    @Column(nullable = false,length = 20)
-    private double precio;
-    @Column(nullable = false,length = 20)
+    @Column(nullable = false)
+    private Double precio;
+    @Column(nullable = false)
     private Date salida;
-    @Column(nullable = false, length = 20)
+    @Column(nullable = false)
     private Date llegada;
 
     public Long getId() {
@@ -60,14 +60,14 @@ public class Viaje {
     }
 
     public void setSalida(String salida) throws Exception {
-        this.salida = new SimpleDateFormat("dd MM yyyy HH:mm:ss").parse(salida);
+        this.salida = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").parse(salida);
     }
 
     public Date getLlegada() {
         return llegada;
     }
 
-    public void setLlegada(String llegada) throws ParseException {
-        this.llegada = new SimpleDateFormat("dd MM yyyy HH:mm:ss").parse(llegada);
+    public void setLlegada(String llegada) throws Exception {
+        this.llegada = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").parse(llegada);
     }
 }
