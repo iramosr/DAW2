@@ -6,12 +6,17 @@ import jakarta.servlet.http.HttpServletRequest;
 public class ViajesService {
     public static Viaje formToEntity(HttpServletRequest request) throws Exception {
         //  Map<String, String[]> formParams = request.getParameterMap();
+        Long id = null;
+        try {
+            id = Long.parseLong(request.getParameter("id").trim());
+        }catch (Exception ex){}
         String codigo = request.getParameter("codigo").trim();
         String descripcion = request.getParameter("descripcion").trim();
         String precio = request.getParameter("precio").trim();
         String salida = request.getParameter("salida").trim();
         String llegada = request.getParameter("llegada").trim();
         Viaje viaje = new Viaje();
+        viaje.setId(id);
         viaje.setCodigo(codigo);
         viaje.setDescripcion(descripcion);
         viaje.setPrecio(precio);
