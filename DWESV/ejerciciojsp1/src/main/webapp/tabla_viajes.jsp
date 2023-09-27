@@ -23,15 +23,15 @@
         <td class="bg-dark text-white"><%= viaje.getSalida()%></td>
         <td class="bg-dark text-white"><%= viaje.getLlegada()%></td>
         <td class="bg-dark text-white">
-            <a href="encuestas/borrar?id=<%=viaje.getId()%>"
+            <a href="viajes/borrar?id=<%=viaje.getId()%>"
                class="rounded bg-danger text-white px-1 me-1 small link-underline link-underline-opacity-0">
                 BORRAR
             </a>
-            <a href="encuestas/ver?id=<%=viaje.getId()%>"
+            <a href="viajes/ver?id=<%=viaje.getId()%>"
                class="rounded bg-info text-white px-1 small me-1 link-underline link-underline-opacity-0">
                 VER
             </a>
-            <a href="encuestas/actualizar?id=<%=viaje.getId()%>"
+            <a href="viajes/actualizar?id=<%=viaje.getId()%>"
                class="rounded bg-warning text-white px-1 small link-underline link-underline-opacity-0">
                 ACTUALIZAR
             </a>

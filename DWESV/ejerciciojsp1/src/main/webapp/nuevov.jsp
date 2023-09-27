@@ -13,7 +13,9 @@
 
     <div class="container">
         <h1>Nuevo Cliente</h1>
-        <jsp:include page="formulario_viajes.jsp"/>
+        <form method="post" action="viajes/nuevo">
+            <jsp:include page="formulario_viajes.jsp"/>
+        </form>
 
         <jsp:include page="tabla_viajes.jsp"/>
     </div>

@@ -2,10 +2,7 @@ package com.daw2.ejerciciojsp1.dao.impl;
 
 import com.daw2.ejerciciojsp1.dao.ClientesDao;
 import com.daw2.ejerciciojsp1.entity.Cliente;
-import jakarta.persistence.Entity;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.Persistence;
+import jakarta.persistence.*;
 
 import java.util.List;
 
@@ -87,7 +84,12 @@ public class ClientesDaoImpl implements ClientesDao {
 
     @Override
     public Cliente get(long id) {
-        return null;
+        EntityManager em = emf.createEntityManager();
+        Query query = em.createQuery("SELECT c FROM Cliente c WHERE c.id=:id",Cliente.class);
+        query.setParameter("id", id);
+        Cliente cliente = (Cliente) query.getSingleResult();
+        em.close();
+        return cliente;
     }
 
     @Override

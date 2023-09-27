@@ -35,7 +35,7 @@ public class BorraClienteServlet extends HttpServlet {
         request.setAttribute("cliente", cliente);
         clientes = clientesDao.findAll();
         request.setAttribute("clientes",clientes);
-        request.getRequestDispatcher("/borrac.jsp").forward(request,response);
+        request.getRequestDispatcher("/borra_clientes.jsp").forward(request,response);
 
     }
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
@@ -51,7 +51,7 @@ public class BorraClienteServlet extends HttpServlet {
         }
         request.setAttribute("clientes",clientes);
 
-        request.getRequestDispatcher("/borrac.jsp").forward(request,response);
+        request.getRequestDispatcher("/borra_clientes.jsp").forward(request,response);
     }
 
     public void destroy() {

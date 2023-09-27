@@ -23,15 +23,15 @@
         <td class="bg-dark text-white"><%= cliente.getApellido1()%></td>
         <td class="bg-dark text-white"><%= cliente.getApellido2()%></td>
         <td class="bg-dark text-white">
-            <a href="encuestas/borrar?id=<%=cliente.getId()%>"
+            <a href="clientes/borrar?id=<%=cliente.getId()%>"
                class="rounded bg-danger text-white px-1 me-1 small link-underline link-underline-opacity-0">
                 BORRAR
             </a>
-            <a href="encuestas/ver?id=<%=cliente.getId()%>"
+            <a href="clientes/ver?id=<%=cliente.getId()%>"
                class="rounded bg-info text-white px-1 small me-1 link-underline link-underline-opacity-0">
                 VER
             </a>
-            <a href="encuestas/actualizar?id=<%=cliente.getId()%>"
+            <a href="clientes/actualizar?id=<%=cliente.getId()%>"
                class="rounded bg-warning text-white px-1 small link-underline link-underline-opacity-0">
                 ACTUALIZAR
             </a>

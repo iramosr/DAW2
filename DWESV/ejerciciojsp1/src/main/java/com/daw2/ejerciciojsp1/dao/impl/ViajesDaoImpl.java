@@ -5,6 +5,7 @@ import com.daw2.ejerciciojsp1.entity.Viaje;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
+import jakarta.persistence.Query;
 
 import java.util.List;
 
@@ -85,8 +86,13 @@ public class ViajesDaoImpl implements ViajesDao {
     }
 
     @Override
-    public Viaje get(long id) {
-        return null;
+    public Viaje get(long id){
+        EntityManager em = emf.createEntityManager();
+        Query query = em.createQuery("SELECT v FROM Viaje v WHERE v.id=:id",Viaje.class);
+        query.setParameter("id", id);
+        Viaje viaje = (Viaje) query.getSingleResult();
+        em.close();
+        return viaje;
     }
 
     @Override

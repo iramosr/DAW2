@@ -1,5 +1,18 @@
+<%@ page import="com.daw2.ejerciciojsp1.entity.Viaje" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
+<%
+    Viaje viaje = (Viaje) request.getAttribute("viaje");
+    if (viaje == null){
+        viaje = new Viaje();
+    }
+    String id = viaje.getId()!=null?String.valueOf(viaje.getId()):"";
+    String codigo = viaje.getCodigo()!=null?viaje.getCodigo():"";
+    String descripcion = viaje.getDescripcion()!=null?viaje.getDescripcion():"";
+    String precio = viaje.getPrecio()!=null?String.valueOf(viaje.getPrecio()):"";
+    String salida = viaje.getSalida()!=null?viaje.getSalida():"";
+    String llegada = viaje.getLlegada()!=null?viaje.getLlegada():"";
+%>
 <form action="viajes/nuevo" method="post">
     <div class="card m-2">
         <div class="card-header text-center fw-bold">
