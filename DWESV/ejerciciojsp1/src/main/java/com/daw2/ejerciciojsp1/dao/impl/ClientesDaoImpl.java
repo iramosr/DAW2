@@ -55,7 +55,7 @@ public class ClientesDaoImpl implements ClientesDao {
     }
 
     @Override
-    public Boolean uptade(Cliente entity) {
+    public Boolean update(Cliente entity) {
         return null;
     }
 

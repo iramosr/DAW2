@@ -58,7 +58,7 @@ public class ViajesDaoImpl implements ViajesDao {
     }
 
     @Override
-    public Boolean uptade(Viaje entity) {
+    public Boolean update(Viaje entity) {
         return null;
     }
 

@@ -3,7 +3,6 @@ package com.daw2.ejerciciojsp1.servlet;
 import com.daw2.ejerciciojsp1.dao.ViajesDao;
 import com.daw2.ejerciciojsp1.dao.impl.ViajesDaoImpl;
 import com.daw2.ejerciciojsp1.entity.Viaje;
-import com.daw2.ejerciciojsp1.service.ViajesService;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -13,8 +12,8 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "borraViajeServelet", value = "/viajes/borrar")
-public class BorraViajeServlet extends HttpServlet {
+@WebServlet(name = "verViajeServelet", value = "/viajes/ver")
+public class VerViajeServlet extends HttpServlet {
     private ViajesDao viajesDao;
     private List<Viaje> viajes;
 
@@ -28,31 +27,23 @@ public class BorraViajeServlet extends HttpServlet {
 
         Viaje viaje = null;
         try{
-            long idBorra = Long.parseLong(id);
-            viaje = viajesDao.get(idBorra);
+            long idver = Long.parseLong(id);
+            viaje = viajesDao.get(idver);
         } catch (Exception ex){}
 
         request.setAttribute("viaje", viaje);
         viajes = viajesDao.findAll();
         request.setAttribute("viajes",viajes);
-        request.getRequestDispatcher("/borra_viajes.jsp").forward(request,response);
+        request.getRequestDispatcher("/ver_viajes.jsp").forward(request,response);
 
     }
-    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
-        Viaje viaje = ViajesService.formToEntity(request);
+        viajes=viajesDao.findAll();
 
-
-        Long id = viaje.getId();
-        if (viajesDao.delete(id)){
-            request.setAttribute("mensaje","Viaje borrado");
-            viajes=viajesDao.findAll();
-        }else{
-            request.setAttribute("mensaje", "Cliente no borrado");
-        }
         request.setAttribute("viajes",viajes);
 
-        request.getRequestDispatcher("/borra_viajes.jsp").forward(request,response);
+        request.getRequestDispatcher("/ver_viajes.jsp").forward(request,response);
     }
 
     public void destroy() {

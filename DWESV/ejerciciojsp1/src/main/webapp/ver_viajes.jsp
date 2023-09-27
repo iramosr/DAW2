@@ -12,16 +12,13 @@
 <jsp:include page="layouts/main-menu.jsp"/>
 
 <div class="container">
-    <h1>Borra Cliente</h1>
-    <form method="post" action="clientes/borrar">
+    <h1>Ver Viaje</h1>
+    <form method="post" action="viajes/ver">
         <div class="card m-2">
-            <jsp:include page="formulario_clientes.jsp"/>
-            <div class="card-footer">
-                <input class="btn btn-dark float-end" name="btBorrar" type="submit" value="Borrar"/>
-            </div>
+            <jsp:include page="formulario_viajes.jsp"/>
         </div>
     </form>
-    <jsp:include page="tabla_clientes.jsp"/>
+    <jsp:include page="tabla_viajes.jsp"/>
 </div>
 
 <jsp:include page="layouts/footer.jsp"/>

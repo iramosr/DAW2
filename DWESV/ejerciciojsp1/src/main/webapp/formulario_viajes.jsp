@@ -47,8 +47,4 @@
             </div>
         </div>
     </div>
-
-    <div class="card-footer">
-        <input class="btn btn-dark float-end" name="btGuardar" type="submit" value="Guardar"/>
-    </div>
 </div>

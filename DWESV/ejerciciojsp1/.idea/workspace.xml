@@ -10,18 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="Add borrar">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191/storage_v2/_src_/schema/dwesv.FdC4BQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191/storage_v2/_src_/schema/dwesv.FdC4BQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/ver_viajes.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/entity/Viaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/entity/Viaje.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/service/ViajesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/service/ViajesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/dao/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/dao/GenericDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/dao/impl/ClientesDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/dao/impl/ClientesDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/dao/impl/ViajesDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/dao/impl/ViajesDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/BorraViajeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/BorraViajeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/borra_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/borra_clientes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/borra_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/borra_viajes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formulario_clientes.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formulario_viajes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tabla_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tabla_clientes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tabla_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tabla_viajes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/nuevoc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/nuevoc.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/nuevov.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/nuevov.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +60,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/ismae/OneDrive/Escritorio/trabajos/DAW2/DWESV/ejerciciojsp1",
+    "last_opened_file_path": "C:/Users/ismae/OneDrive/Escritorio/trabajos/DAW2/DWESV/ejerciciojsp1/src/main/webapp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -218,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695828547553</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add borrar">
+      <option name="closed" value="true" />
+      <created>1695856304569</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695856304569</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

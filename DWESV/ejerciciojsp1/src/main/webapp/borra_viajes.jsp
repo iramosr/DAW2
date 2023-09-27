@@ -14,7 +14,12 @@
 <div class="container">
     <h1>Borra Viaje</h1>
     <form method="post" action="viajes/borrar">
-        <jsp:include page="formulario_viajes.jsp"/>
+        <div class="card m-2">
+            <jsp:include page="formulario_viajes.jsp"/>
+            <div class="card-footer">
+                <input class="btn btn-dark float-end" name="btBorrar" type="submit" value="Borrar"/>
+            </div>
+        </div>
     </form>
     <jsp:include page="tabla_viajes.jsp"/>
 </div>
