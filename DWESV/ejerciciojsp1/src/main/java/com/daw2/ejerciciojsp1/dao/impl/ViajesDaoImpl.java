@@ -63,7 +63,20 @@ public class ViajesDaoImpl implements ViajesDao {
 
     @Override
     public Boolean delete(long id) {
-        return null;
+        boolean error=false;
+        EntityManager em = emf.createEntityManager();
+        try {
+            Viaje viaje = em.find(Viaje.class, id);
+            em.getTransaction().begin();
+            em.remove(viaje);
+            em.getTransaction().commit();
+        }catch (Exception e){
+            error = true;
+            em.getTransaction().rollback();
+        } finally {
+            em.close();
+        }
+        return !error;
     }
 
     @Override

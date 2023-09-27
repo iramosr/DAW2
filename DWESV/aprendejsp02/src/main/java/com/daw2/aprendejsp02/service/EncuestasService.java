@@ -11,11 +11,13 @@ public class EncuestasService {
              id = Long.parseLong(request.getParameter("id").trim());
         }catch (Exception ex){}
         String nif = request.getParameter("nif").trim();
+        String email = request.getParameter("email").trim();
         String nombre = request.getParameter("nombre").trim();
         String apellido1 = request.getParameter("apellido1").trim();
         String apellido2 = request.getParameter("apellido2").trim();
         Encuesta encuesta = new Encuesta();
         encuesta.setId(id);
+        encuesta.setEmail(email);
         encuesta.setNif(nif);
         encuesta.setNombre(nombre);
         encuesta.setApellido1(apellido1);

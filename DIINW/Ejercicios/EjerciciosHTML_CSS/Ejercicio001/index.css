@@ -1,0 +1,45 @@
+nav {
+    border: 2px solid white;
+    background: lightblue;
+    float: left;
+    width: calc(20% - 6px);
+    min-height: 400px;
+    writing-mode:vertical-lr;
+}
+nav h1{
+    margin-left: 40%;
+    text-align: center;
+    align-self: center;
+    transform: rotate(180deg);
+}
+
+main {
+    border: 5px solid white;
+    background: lightgreen;
+    float: left;
+    width: calc(60% - 6px);
+    min-height: 400px;
+    text-align: center;
+}
+main h1{
+    margin-top: 20%;
+    text-align: center;
+    align-items: center;
+}
+
+aside {
+    border: 2px solid white;
+    background: lightcoral;
+    float: left;
+    width: calc(20% - 6px);
+    height: 400px;
+    line-height: 288px;
+    writing-mode: vertical-rl;
+}
+
+aside h1{
+    margin-left: 40%;
+    text-align: center;
+    align-self: center;
+    transform: rotate();
+}

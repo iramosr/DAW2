@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class Cliente{
     @jakarta.persistence.Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
+    private Long id;
     @Column(unique = true,length = 12)
     private String nif;
     @Column(nullable = false,length = 20)
@@ -20,11 +20,11 @@ public class Cliente{
     private String email;
 
     public Long getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Long id) {
-        Id = id;
+        this.id = id;
     }
 
     public String getNif() {

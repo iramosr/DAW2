@@ -1,0 +1,39 @@
+header{
+    border: 1px solid black;
+    background-color: cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    border: 1px solid black;
+    background: lightgoldenrodyellow;
+    float: left;
+    width: calc(40% - 2px);
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    border: 1px solid black;
+    background: lightgreen;
+    float: left;
+    width: calc(60% - 2px);
+    min-height: 400px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    border: 1px solid black;
+    background-color:cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

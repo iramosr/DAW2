@@ -64,7 +64,20 @@ public class ClientesDaoImpl implements ClientesDao {
 
     @Override
     public Boolean delete(long id) {
-        return null;
+        boolean error=false;
+        EntityManager em = emf.createEntityManager();
+        try {
+            Cliente cliente = em.find(Cliente.class, id);
+            em.getTransaction().begin();
+            em.remove(cliente);
+            em.getTransaction().commit();
+        }catch (Exception e){
+            error = true;
+            em.getTransaction().rollback();
+        } finally {
+            em.close();
+        }
+        return !error;
     }
 
     @Override

@@ -43,7 +43,7 @@ public class BorraEncuestaServelet extends HttpServlet {
 
         Encuesta encuesta = EncuestasService.formToEntity(request);
 
-        long id = encuesta.getId();
+        Long id = encuesta.getId();
         if (encuestasDao.delete(id)){
             request.setAttribute("mensaje","Encuesta borrada");
             encuestas=encuestasDao.findAll();
