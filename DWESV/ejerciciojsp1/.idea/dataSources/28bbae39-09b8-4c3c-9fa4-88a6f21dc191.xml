@@ -926,8 +926,8 @@ dwesv|schema||dwesv||UPDATE|G</Grants>
     </collation>
     <schema id="288" parent="1" name="dwesv">
       <Current>1</Current>
-      <IntrospectionTimestamp>2023-09-25.17:47:34</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-09-25.15:47:34</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2023-09-28.01:01:18</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-09-27.23:01:18</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="289" parent="1" name="information_schema">
@@ -941,103 +941,161 @@ dwesv|schema||dwesv||UPDATE|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="293" parent="288" name="viajes">
+    <table id="293" parent="288" name="encuestas">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <column id="294" parent="292" name="ID">
-      <AutoIncrement>4</AutoIncrement>
-      <DasType>bigint|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="295" parent="292" name="APELLIDO1">
-      <DasType>varchar(20)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="296" parent="292" name="APELLIDO2">
-      <DasType>varchar(20)|0s</DasType>
-      <Position>3</Position>
-    </column>
-    <column id="297" parent="292" name="EMAIL">
-      <DasType>varchar(50)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-    </column>
-    <column id="298" parent="292" name="NIF">
-      <DasType>varchar(12)|0s</DasType>
-      <Position>5</Position>
-    </column>
-    <column id="299" parent="292" name="NOMBRE">
-      <DasType>varchar(20)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>6</Position>
-    </column>
-    <index id="300" parent="292" name="PRIMARY">
-      <ColNames>ID</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <index id="301" parent="292" name="NIF">
-      <ColNames>NIF</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="302" parent="292" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <key id="303" parent="292" name="NIF">
-      <UnderlyingIndexName>NIF</UnderlyingIndexName>
-    </key>
-    <column id="304" parent="293" name="ID">
+    <table id="294" parent="288" name="viajes">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <column id="295" parent="292" name="ID">
       <AutoIncrement>3</AutoIncrement>
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="305" parent="293" name="CODIGO">
-      <DasType>varchar(12)|0s</DasType>
+    <column id="296" parent="292" name="APELLIDO1">
+      <DasType>varchar(20)|0s</DasType>
+      <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="306" parent="293" name="DESCRIPCION">
-      <DasType>varchar(50)|0s</DasType>
-      <NotNull>1</NotNull>
+    <column id="297" parent="292" name="APELLIDO2">
+      <DasType>varchar(20)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="307" parent="293" name="LLEGADA">
-      <DasType>datetime|0s</DasType>
+    <column id="298" parent="292" name="EMAIL">
+      <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="308" parent="293" name="PRECIO">
-      <DasType>double|0s</DasType>
-      <NotNull>1</NotNull>
+    <column id="299" parent="292" name="NIF">
+      <DasType>varchar(12)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="309" parent="293" name="SALIDA">
-      <DasType>datetime|0s</DasType>
+    <column id="300" parent="292" name="NOMBRE">
+      <DasType>varchar(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <index id="310" parent="293" name="PRIMARY">
+    <index id="301" parent="292" name="PRIMARY">
       <ColNames>ID</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="311" parent="293" name="CODIGO">
-      <ColNames>CODIGO</ColNames>
+    <index id="302" parent="292" name="NIF">
+      <ColNames>NIF</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="312" parent="293" name="PRIMARY">
+    <key id="303" parent="292" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="313" parent="293" name="CODIGO">
+    <key id="304" parent="292" name="NIF">
+      <UnderlyingIndexName>NIF</UnderlyingIndexName>
+    </key>
+    <column id="305" parent="293" name="ID">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>bigint|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="306" parent="293" name="APELLIDO1">
+      <DasType>varchar(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="307" parent="293" name="APELLIDO2">
+      <DasType>varchar(20)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="308" parent="293" name="EMAIL">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="309" parent="293" name="NIF">
+      <DasType>varchar(12)|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="310" parent="293" name="NOMBRE">
+      <DasType>varchar(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <index id="311" parent="293" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="312" parent="293" name="EMAIL">
+      <ColNames>EMAIL</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="313" parent="293" name="NIF">
+      <ColNames>NIF</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="314" parent="293" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="315" parent="293" name="EMAIL">
+      <UnderlyingIndexName>EMAIL</UnderlyingIndexName>
+    </key>
+    <key id="316" parent="293" name="NIF">
+      <UnderlyingIndexName>NIF</UnderlyingIndexName>
+    </key>
+    <column id="317" parent="294" name="ID">
+      <AutoIncrement>5</AutoIncrement>
+      <DasType>bigint|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="318" parent="294" name="CODIGO">
+      <DasType>varchar(12)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="319" parent="294" name="DESCRIPCION">
+      <DasType>varchar(50)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="320" parent="294" name="LLEGADA">
+      <DasType>datetime|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="321" parent="294" name="PRECIO">
+      <DasType>double|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="322" parent="294" name="SALIDA">
+      <DasType>datetime|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <index id="323" parent="294" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="324" parent="294" name="CODIGO">
+      <ColNames>CODIGO</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="325" parent="294" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="326" parent="294" name="CODIGO">
       <UnderlyingIndexName>CODIGO</UnderlyingIndexName>
     </key>
   </database-model>

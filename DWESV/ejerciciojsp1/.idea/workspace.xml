@@ -11,15 +11,15 @@
   <component name="ChangeListManager">
     <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="Add borrar">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191/storage_v2/_src_/schema/dwesv.FdC4BQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191/storage_v2/_src_/schema/dwesv.FdC4BQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/dao/impl/ClientesDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/dao/impl/ClientesDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/dao/impl/ViajesDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/dao/impl/ViajesDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/BorraClienteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/BorraClienteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formulario_clientes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/entity/Viaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/entity/Viaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/service/ViajesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/service/ViajesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/BorraViajeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/BorraViajeServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formulario_viajes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/nuevoc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/nuevoc.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/nuevov.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/nuevov.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/head.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/tabla_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tabla_clientes.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/tabla_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tabla_viajes.jsp" afterDir="false" />
     </list>
@@ -31,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -60,7 +60,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/daw2/Desktop/DAW2/DAW2/DWESV/aprendejsp02",
+    "last_opened_file_path": "C:/Users/ismae/OneDrive/Escritorio/trabajos/DAW2/DWESV/ejerciciojsp1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -241,16 +241,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/NuevoClienteServlet.java</url>
           <line>41</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/webapp/tabla_clientes.jsp</url>
-          <line>25</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/webapp/tabla_clientes.jsp</url>
-          <line>24</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

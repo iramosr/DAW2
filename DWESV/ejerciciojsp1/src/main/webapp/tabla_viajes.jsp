@@ -1,17 +1,16 @@
 <%@ page import="com.daw2.ejerciciojsp1.entity.Viaje" %>
 <%@ page import="java.util.List" %>
-<%@ page import="java.util.ArrayList" %>
 <%
-    List <Viaje> viajes = (List) request.getAttribute("viajes");
+    List<Viaje> viajes = (List) request.getAttribute("viajes");
 %>
 
 <table class="table table-info table-striped table-hover">
     <thead>
     <td class="bg-dark text-white">Codigo</td>
-    <td class="bg-dark text-white">Descripción</td>
+    <td class="bg-dark text-white">Descripcion</td>
     <td class="bg-dark text-white">Precio</td>
     <td class="bg-dark text-white">Salida</td>
-    <td class="bg-dark text-white">llegada</td>
+    <td class="bg-dark text-white">Llegada</td>
     <td class="bg-dark text-white"></td>
     </thead>
     <tbody>

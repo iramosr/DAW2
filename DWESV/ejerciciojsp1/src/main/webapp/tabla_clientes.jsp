@@ -2,7 +2,7 @@
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
 <%
-    List <Cliente> clientes = (List) request.getAttribute("clientes");
+    List<Cliente> clientes = (List) request.getAttribute("clientes");
 %>
 
 <table class="table table-info table-striped table-hover">

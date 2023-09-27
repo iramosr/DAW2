@@ -35,17 +35,13 @@ public class BorraViajeServlet extends HttpServlet {
         request.setAttribute("viaje", viaje);
         viajes = viajesDao.findAll();
         request.setAttribute("viajes",viajes);
-        request.getRequestDispatcher("/borrav.jsp").forward(request,response);
+        request.getRequestDispatcher("/borra_viajes.jsp").forward(request,response);
 
     }
-    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        Viaje viaje = new Viaje();
-        try {
-            viaje = ViajesService.formToEntity(request);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+        Viaje viaje = ViajesService.formToEntity(request);
+
 
         Long id = viaje.getId();
         if (viajesDao.delete(id)){
@@ -56,7 +52,7 @@ public class BorraViajeServlet extends HttpServlet {
         }
         request.setAttribute("vaijes",viajes);
 
-        request.getRequestDispatcher("/borrav.jsp").forward(request,response);
+        request.getRequestDispatcher("/borra_viajes.jsp").forward(request,response);
     }
 
     public void destroy() {

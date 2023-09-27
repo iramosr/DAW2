@@ -1,9 +1,6 @@
 package com.daw2.ejerciciojsp1.entity;
 
 import jakarta.persistence.*;
-
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @Entity
@@ -47,7 +44,7 @@ public class Viaje {
         this.descripcion = descripcion;
     }
 
-    public double getPrecio() {
+    public Double getPrecio() {
         return precio;
     }
 
@@ -59,15 +56,15 @@ public class Viaje {
         return salida;
     }
 
-    public void setSalida(String salida) throws Exception {
-        this.salida = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").parse(salida);
+    public void setSalida(Date salida) throws Exception {
+        this.salida = salida;
     }
 
     public Date getLlegada() {
         return llegada;
     }
 
-    public void setLlegada(String llegada) throws Exception {
-        this.llegada = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").parse(llegada);
+    public void setLlegada(Date llegada) throws Exception {
+        this.llegada = llegada;
     }
 }
