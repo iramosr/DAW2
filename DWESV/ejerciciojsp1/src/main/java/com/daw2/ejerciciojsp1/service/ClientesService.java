@@ -4,7 +4,7 @@ import com.daw2.ejerciciojsp1.entity.Cliente;
 import jakarta.servlet.http.HttpServletRequest;
 
 public class ClientesService {
-    public static Cliente formToEntity(HttpServletRequest request) throws Exception {
+    public static Cliente formToEntity(HttpServletRequest request){
         //  Map<String, String[]> formParams = request.getParameterMap();
         Long id = null;
         try {
