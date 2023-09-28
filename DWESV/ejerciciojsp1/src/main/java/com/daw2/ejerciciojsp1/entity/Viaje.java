@@ -56,15 +56,11 @@ public class Viaje {
         return salida;
     }
 
-    public void setSalida(Date salida) throws Exception {
-        this.salida = salida;
-    }
+    public void setSalida(Date salida) {this.salida = salida;}
 
     public Date getLlegada() {
         return llegada;
     }
 
-    public void setLlegada(Date llegada) throws Exception {
-        this.llegada = llegada;
-    }
+    public void setLlegada(Date llegada) {this.llegada = llegada;}
 }
