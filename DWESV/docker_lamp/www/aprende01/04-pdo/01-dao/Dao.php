@@ -27,6 +27,7 @@ abstract class Dao extends Database
             $id = $this->pdo->lastInsertId();
             $this->pdo->commit();
         } catch (PDOException $e) {
+var_dump($e);
             $id = null;
             $this->pdo->rollback();
         }
