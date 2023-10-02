@@ -27,7 +27,7 @@ public class NuevoViajeServlet extends HttpServlet {
         //System.out.println("GET");
         viajes = viajesDao.findAll();
         request.setAttribute("viajes",viajes);
-        request.getRequestDispatcher("/nuevov.jsp").forward(request,response);
+        request.getRequestDispatcher("/nuevo_viaje.jsp").forward(request,response);
 
     }
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
@@ -47,7 +47,7 @@ public class NuevoViajeServlet extends HttpServlet {
         }
         request.setAttribute("viajes",viajes);
 
-        request.getRequestDispatcher("/nuevov.jsp").forward(request,response);
+        request.getRequestDispatcher("/nuevo_viaje.jsp").forward(request,response);
     }
 
     public void destroy() {

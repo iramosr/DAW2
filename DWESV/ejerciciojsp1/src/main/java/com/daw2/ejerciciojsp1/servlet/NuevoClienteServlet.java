@@ -27,7 +27,7 @@ public class NuevoClienteServlet extends HttpServlet {
         //System.out.println("GET");
         clientes = clientesDao.findAll();
         request.setAttribute("clientes",clientes);
-        request.getRequestDispatcher("/nuevoc.jsp").forward(request,response);
+        request.getRequestDispatcher("/nuevo_cliente.jsp").forward(request,response);
 
     }
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
@@ -47,7 +47,7 @@ public class NuevoClienteServlet extends HttpServlet {
         }
         request.setAttribute("clientes",clientes);
 
-        request.getRequestDispatcher("/nuevoc.jsp").forward(request,response);
+        request.getRequestDispatcher("/nuevo_cliente.jsp").forward(request,response);
     }
 
     public void destroy() {

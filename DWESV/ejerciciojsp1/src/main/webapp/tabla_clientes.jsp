@@ -1,6 +1,5 @@
 <%@ page import="com.daw2.ejerciciojsp1.entity.Cliente" %>
 <%@ page import="java.util.List" %>
-<%@ page import="java.util.ArrayList" %>
 <%
     List<Cliente> clientes = (List) request.getAttribute("clientes");
 %>

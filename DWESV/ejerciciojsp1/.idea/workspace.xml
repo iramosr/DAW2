@@ -10,11 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="Add borrar">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/entity/Viaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/entity/Viaje.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/service/ViajesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/service/ViajesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/NuevoClienteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/NuevoClienteServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/NuevoViajeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/NuevoViajeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/nuevoc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/nuevo_cliente.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/nuevov.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/nuevo_viaje.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/tabla_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tabla_clientes.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,6 +199,7 @@
       <workItem from="1695911043731" duration="254000" />
       <workItem from="1695912250359" duration="46000" />
       <workItem from="1695912776513" duration="165000" />
+      <workItem from="1696260204676" duration="757000" />
     </task>
     <task id="LOCAL-00001" summary="Fix ejercicio">
       <option name="closed" value="true" />
