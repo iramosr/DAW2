@@ -14,7 +14,11 @@
     <div class="container">
         <h1>Borra Encuesta</h1>
         <form method="post" action="encuestas/borrar">
-            <jsp:include page="formulario.jsp"/>
+            <jsp:include page="formulario.jsp">
+                <jsp:param name="titleSubmit" value="Borrar"/>
+                <jsp:param name="readonly" value="readonly"/>
+
+            </jsp:include>
         </form>
         <jsp:include page="tabla.jsp"/>
     </div>

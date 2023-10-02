@@ -10,7 +10,7 @@
                     <a class="nav-link active" aria-current="page" href="">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="encuestas/nueva">Encuestas</a>
+                    <a class="nav-link" href="encuestas/listado">Encuestas</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Pricing</a>

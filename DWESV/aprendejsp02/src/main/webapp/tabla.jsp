@@ -1,9 +1,9 @@
 <%@ page import="com.daw2.aprendejsp02.entity.Encuesta" %>
 <%@ page import="java.util.List" %>
-<%@ page import="java.util.ArrayList" %>
 <%
     List <Encuesta> encuestas = (List) request.getAttribute("encuestas");
 %>
+
 
 <table class="table table-info table-striped table-hover">
     <thead>
