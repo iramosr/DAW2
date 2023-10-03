@@ -1,0 +1,62 @@
+h1{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+}
+h2{
+    padding: 1%;
+    float: left;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+}
+
+div#datos{
+    float: left;
+    width: 40%;
+}
+
+ul#datos{
+    margin-left: 10%;
+    padding: 1%;
+    width: 35%;
+    text-align: left;
+    align-items: center;
+}
+
+
+div#descextr{
+   float: right;
+   width: 55%; 
+    height: 100%;
+    margin-right: 5%;
+}
+
+#desc{
+    margin-top: 7%;
+    padding-top: 2%;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    align-items: center;
+}
+
+div#extras{
+    margin-top: 8%;
+    padding-top: 3%;
+    text-align: left;
+}
+
+ul#extras{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    align-items: center;
+}
