@@ -1,0 +1,39 @@
+.main {
+    width: max-content;
+    padding: 0%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    background-color: white;
+}
+
+div{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(71, 71, 71);
+    color: white;
+}
+
+.uno {
+    grid-area: 1 / 1 / 2 / 5;
+}
+
+.dos {
+    grid-area: 2 / 1 /4 / 3;
+}
+
+.tres {
+    grid-area: 2 / 3 / 3 / 5;
+}
+
+.cuatro {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.cinco {
+    grid-area: 3 / 4 / 4 / 5;
+}

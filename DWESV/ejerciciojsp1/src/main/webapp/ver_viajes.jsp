@@ -13,10 +13,11 @@
 
 <div class="container">
     <h1>Ver Viaje</h1>
-    <form method="post" action="viajes/ver">
-        <div class="card m-2">
-            <jsp:include page="formulario_viajes.jsp"/>
-        </div>
+    <form method="#" action="viajes/listado">
+        <jsp:include page="formulario_viajes.jsp">
+            <jsp:param name="titleSubmit" value="Volver"/>
+            <jsp:param name="readonly" value="readonly"/>
+        </jsp:include>
     </form>
     <jsp:include page="tabla_viajes.jsp"/>
 </div>

@@ -1,9 +1,8 @@
-package com.daw2.aprendejsp02.servelet;
+package com.daw2.aprendejsp02.servlet;
 
 import com.daw2.aprendejsp02.dao.EncuestasDao;
 import com.daw2.aprendejsp02.dao.impl.EncuestasDaoImpl;
 import com.daw2.aprendejsp02.entity.Encuesta;
-import com.daw2.aprendejsp02.service.EncuestasService;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;

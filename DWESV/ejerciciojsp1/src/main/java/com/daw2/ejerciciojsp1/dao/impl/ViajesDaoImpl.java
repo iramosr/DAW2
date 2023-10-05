@@ -59,7 +59,21 @@ public class ViajesDaoImpl implements ViajesDao {
 
     @Override
     public Boolean update(Viaje entity) {
-        return null;
+        boolean error = false;
+        EntityManager em = emf.createEntityManager();
+        try {
+            em.getTransaction().begin();
+            em.merge(entity);
+            em.flush();
+            em.getTransaction().commit();
+        }catch (Exception e){
+            error = true;
+            em.getTransaction().rollback();
+        }finally {
+            em.close();
+        }
+
+        return !error;
     }
 
     @Override

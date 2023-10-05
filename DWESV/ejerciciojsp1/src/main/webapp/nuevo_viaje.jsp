@@ -14,12 +14,10 @@
 <div class="container">
     <h1>Nuevo Cliente</h1>
     <form method="post" action="viajes/nuevo">
-        <div class="card m-2">
-            <jsp:include page="formulario_viajes.jsp"/>
-            <div class="card-footer">
-                <input class="btn btn-dark float-end" name="btGuardar" type="submit" value="Guardar"/>
-            </div>
-        </div>
+        <jsp:include page="formulario_viajes.jsp">
+            <jsp:param name="titleSubmit" value="Guardar"/>
+            <jsp:param name="readonly" value=""/>
+        </jsp:include>
     </form>
 
     <jsp:include page="tabla_viajes.jsp"/>

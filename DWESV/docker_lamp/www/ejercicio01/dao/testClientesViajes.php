@@ -1,0 +1,51 @@
+<?php
+require_once "ClientesDao.php";
+require_once "ViajesDao.php";
+require_once "ClientesViajesDao.php";
+
+$daoclientes = new ClientesDao;
+$daoviajes = new ViajesDao;
+$daoclientesviajes = new ClientesViajesDao;
+$cliente = [
+    "nif"=>rand(10000,99999)."A",
+    "nombre"=>"Pepito",
+    "apellido1"=>'Pérez',
+    "apellido2"=>'Gómez',
+    "email"=>'pepito01@gmail.com'.rand(0,100)
+];
+$idcliente = $daoclientes->add($cliente);
+if (!is_null($idcliente))
+    echo "Cliente añadido. ID=".$idcliente."<br>";
+else
+    echo "Cliente no añadido";
+
+$viaje = [
+    "codigo"=>"Vl".rand(10000,99999),
+    "descripcion"=>"Viaje a Madrid",
+    "precio"=>300.0,
+    "salida"=>'2023-12-01 10:30:23',
+    "llegada"=>'2023-12-02 12:00:00'
+];
+$idviaje = $daoviajes->add($viaje);
+if (!is_null($idviaje))
+    echo "Viaje añadido. ID=".$idviaje."<br>";
+else
+    echo "Viaje no añadido";
+
+$clienteviaje = [
+    "id_cliente"=>$idcliente,
+    "id_viaje"=>$idviaje,
+    "pagado"=>300.0,
+    "salida"=>'2023-12-01 10:30:23',
+    "llegada"=>'2023-12-02 12:00:00'
+];
+$idclienteviaje = $daoclientesviajes->add($clienteviaje);
+if (!is_null($idclienteviaje))
+    echo "Cliente-viaje añadido. ID=".$idclienteviaje."<br>";
+else
+    echo "Cliente-viaje no añadido";
+
+$result = $daoclientesviajes->listAll();
+echo "<pre>";
+var_dump($result);
+echo "</pre>";

@@ -1,0 +1,42 @@
+body{
+    text-align: center;
+}
+
+header{
+    border: solid 3px black;
+    background-color: lightblue;
+    color: white;
+    font-size: 30px;
+    margin: 1%;
+}
+
+nav{
+    border: solid 3px black;
+    background-color: lightblue;
+    margin: 1%;
+    height: 50px;
+}
+
+main{
+    border: solid 3px blue;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    background: linear-gradient(90deg, white, blue);
+    margin: 1%;
+    padding: 2%;
+    align-items: center;
+}
+
+article{
+    border: solid 5px black;
+    background: linear-gradient(white, orange);
+    padding: 1%;
+}
+
+footer{
+    border: solid 3px black;
+    background-color: greenyellow;
+    margin: 1%;
+    font-size: 30px;
+}

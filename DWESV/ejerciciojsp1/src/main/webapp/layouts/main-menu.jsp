@@ -10,10 +10,10 @@
                     <a class="nav-link active" aria-current="page" href="">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="clientes/nuevo">Clientes</a>
+                    <a class="nav-link" href="clientes/listado">Clientes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="viajes/nuevo">Viajes</a>
+                    <a class="nav-link" href="viajes/listado">Viajes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" aria-disabled="true">Disabled</a>

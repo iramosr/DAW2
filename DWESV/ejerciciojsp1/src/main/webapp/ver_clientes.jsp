@@ -13,10 +13,11 @@
 
 <div class="container">
     <h1>Ver Cliente</h1>
-    <form method="post" action="clientes/ver">
-        <div class="card m-2">
-            <jsp:include page="formulario_clientes.jsp"/>
-        </div>
+    <form method="#" action="clientes/listado">
+        <jsp:include page="formulario_clientes.jsp">
+            <jsp:param name="titleSubmit" value="Volver"/>
+            <jsp:param name="readonly" value="readonly"/>
+        </jsp:include>
     </form>
     <jsp:include page="tabla_clientes.jsp"/>
 </div>
