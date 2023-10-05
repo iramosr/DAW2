@@ -7,7 +7,7 @@ public interface GenericDao <T,PK extends Serializable >{
     PK add (T entity);
  Boolean add(List<T>list);
 
- Boolean uptade(T entity);
+ Boolean update(T entity);
 
  Boolean delete(long id);
 

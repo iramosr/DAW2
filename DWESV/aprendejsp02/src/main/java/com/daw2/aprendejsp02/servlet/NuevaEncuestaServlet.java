@@ -1,4 +1,4 @@
-package com.daw2.aprendejsp02.servelet;
+package com.daw2.aprendejsp02.servlet;
 
 import com.daw2.aprendejsp02.dao.EncuestasDao;
 import com.daw2.aprendejsp02.dao.impl.EncuestasDaoImpl;
@@ -13,8 +13,8 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "actualizaEncuestaServelet", value = "/encuestas/actualizar")
-public class ActualizaEncuestaServelet extends HttpServlet {
+@WebServlet(name = "nuevaencuestaServelet", value = "/encuestas/nueva")
+public class NuevaEncuestaServlet extends HttpServlet {
     private EncuestasDao encuestasDao;
     private List<Encuesta> encuestas;
 
@@ -24,36 +24,25 @@ public class ActualizaEncuestaServelet extends HttpServlet {
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        String id = request.getParameter("id").trim();
-
-        //Encuesta encuesta = encuestasDao.get(Long.parseLong(id));
-        Encuesta encuesta = null;
-        try {
-            long idBorra = Long.parseLong(id);
-            encuesta = encuestasDao.get(idBorra);
-        } catch (Exception ex) {
-        }
-
-        request.setAttribute("encuesta", encuesta);
+        //System.out.println("GET");
         encuestas = encuestasDao.findAll();
-        request.setAttribute("encuestas", encuestas);
-        request.getRequestDispatcher("/actualiza.jsp").forward(request, response);
+        request.setAttribute("encuestas",encuestas);
+        request.getRequestDispatcher("/nueva.jsp").forward(request,response);
 
     }
-
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-
+        //System.out.println("POST");
         Encuesta encuesta = EncuestasService.formToEntity(request);
-
-        if (encuestasDao.uptade(encuesta)) {
-            request.setAttribute("mensaje", "Encuesta guardada");
-            encuestas = encuestasDao.findAll();
-        } else {
+        //encuestasDao.add(encuesta);
+        if (encuestasDao.add(encuesta)!=null){
+            request.setAttribute("mensaje","Encuesta guardada");
+            encuestas=encuestasDao.findAll();
+        }else{
             request.setAttribute("mensaje", "Encuesta no guardada");
         }
-        request.setAttribute("encuestas", encuestas);
+        request.setAttribute("encuestas",encuestas);
 
-        request.getRequestDispatcher("/actualiza.jsp").forward(request, response);
+        request.getRequestDispatcher("/nueva.jsp").forward(request,response);
     }
 
     public void destroy() {

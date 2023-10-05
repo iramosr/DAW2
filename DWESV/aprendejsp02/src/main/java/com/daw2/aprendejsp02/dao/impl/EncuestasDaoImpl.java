@@ -55,7 +55,7 @@ try {
     }
 
     @Override
-    public Boolean uptade(Encuesta entity) {
+    public Boolean update(Encuesta entity) {
         boolean error = false;
         EntityManager em = emf.createEntityManager();
         try {

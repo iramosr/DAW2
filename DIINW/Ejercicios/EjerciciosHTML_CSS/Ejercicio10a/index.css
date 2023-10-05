@@ -1,0 +1,74 @@
+.main {
+    padding: 0%;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 12px;
+    row-gap: 12px;
+}
+
+div{
+    padding-left: 50px;
+    padding-top: 50px;
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.uno {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.dos {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.tres {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.cuatro {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.cinco {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.seis {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.siete {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.ocho {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.nueve {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.diez {
+    grid-area: 1 / 4 / 3 / 5;
+}
+
+.once {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+.doce {
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+.claro{
+    background-color: lightgrey;
+}
+
+.oscuro{
+    background-color: rgb(71, 71, 71);
+    color: white;
+}

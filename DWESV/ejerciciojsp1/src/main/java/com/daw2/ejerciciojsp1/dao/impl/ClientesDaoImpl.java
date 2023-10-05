@@ -56,7 +56,21 @@ public class ClientesDaoImpl implements ClientesDao {
 
     @Override
     public Boolean update(Cliente entity) {
-        return null;
+        boolean error = false;
+        EntityManager em = emf.createEntityManager();
+        try {
+            em.getTransaction().begin();
+            em.merge(entity);
+            em.flush();
+            em.getTransaction().commit();
+        }catch (Exception e){
+            error = true;
+            em.getTransaction().rollback();
+        }finally {
+            em.close();
+        }
+
+        return !error;
     }
 
     @Override
