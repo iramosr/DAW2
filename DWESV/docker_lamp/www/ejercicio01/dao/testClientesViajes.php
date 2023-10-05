@@ -11,7 +11,8 @@ $cliente = [
     "nombre"=>"Pepito",
     "apellido1"=>'Pérez',
     "apellido2"=>'Gómez',
-    "email"=>'pepito01@gmail.com'.rand(0,100)
+    "email"=>'pepito01@gmail.com'.rand(0,100),
+    "foto"=>'fotos/foto'.rand(10000,99999).'.jpg'
 ];
 $idcliente = $daoclientes->add($cliente);
 if (!is_null($idcliente))
@@ -24,7 +25,8 @@ $viaje = [
     "descripcion"=>"Viaje a Madrid",
     "precio"=>300.0,
     "salida"=>'2023-12-01 10:30:23',
-    "llegada"=>'2023-12-02 12:00:00'
+    "llegada"=>'2023-12-02 12:00:00',
+    "foto"=>'fotos/foto'.rand(10000,99999).'.jpg'
 ];
 $idviaje = $daoviajes->add($viaje);
 if (!is_null($idviaje))
@@ -33,8 +35,8 @@ else
     echo "Viaje no añadido";
 
 $clienteviaje = [
-    "id_cliente"=>$idcliente,
-    "id_viaje"=>$idviaje,
+    "cliente_id"=>2,
+    "viaje_id"=>3,
     "pagado"=>300.0,
     "salida"=>'2023-12-01 10:30:23',
     "llegada"=>'2023-12-02 12:00:00'
@@ -47,5 +49,10 @@ else
 
 $result = $daoclientesviajes->listAll();
 echo "<pre>";
-var_dump($result);
+//var_dump($result);
+echo "</pre>";
+
+$clientesviaje = $daoclientesviajes->getClientesByViajeId(3);
+echo "<pre>";
+var_dump($clientesviaje);
 echo "</pre>";

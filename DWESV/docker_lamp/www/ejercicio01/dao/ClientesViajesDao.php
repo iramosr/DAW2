@@ -27,7 +27,6 @@ class ClientesViajesDao extends Dao
         $clienteid = $data['cliente_id'] ?? null;
         $viajeid = $data['viaje_id'] ?? null;
         $pagado = $data['pagado'] ?? null;
-        $nombre = $data['nombre'] ?? null;
 
         $query->bindParam(':cliente_id', $clienteid);
         $query->bindParam(':viaje_id', $viajeid);
@@ -42,5 +41,17 @@ class ClientesViajesDao extends Dao
         // TODO: Implement update() method.
     }
 
-    //
+    //Metodo que devuelva todos los clientes de un viaje
+    public function getClientesByViajeId(int $id){
+        $sql = 'SELECT * FROM `clientes` INNER JOIN '.$this->tableName().' ON `'.$this->tableName().'`.cliente_id = `clientes`.id WHERE `'.$this->tableName().'`.viaje_id=:id';
+        echo $sql;
+        $query = $this->pdo->prepare($sql);
+        $query->bindParam(':id', $id);
+        $query->execute();
+        $clientes = $query->fetchAll(PDO::FETCH_ASSOC);
+        if($clientes == null){
+            return "No existen clientes para el viaje con el id $id";
+        }
+        return $clientes;
+    }
 }

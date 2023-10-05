@@ -16,7 +16,7 @@ if (!is_null($id))
 else
     echo "Viaje no añadido";
 
-$result = $dao->getByCodigo("Vl64394");
+$result = $dao->getByCodigo("Vl86338");
 echo "<pre>";
 var_dump($result);
 echo "</pre>";

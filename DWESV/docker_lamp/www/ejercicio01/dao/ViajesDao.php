@@ -53,6 +53,9 @@ class ViajesDao extends Dao
         $query->bindParam(':codigo', $codigo);
         $query->execute();
         $viaje = $query->fetchAll(PDO::FETCH_ASSOC);
+        if($viaje == null){
+            return "No existe el viaje con el código $codigo";
+        }
         return $viaje;
     }
 }

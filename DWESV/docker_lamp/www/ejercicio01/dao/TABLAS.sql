@@ -1,6 +1,7 @@
+DROP TABLE IF EXISTS clientes_viajes;
 DROP TABLE IF EXISTS clientes;
 DROP TABLE IF EXISTS viajes;
-DROP TABLE IF EXISTS clientes_viajes;
+
 CREATE TABLE clientes( id INTEGER AUTO_INCREMENT,
                        nif VARCHAR(9) NOT NULL,
                        nombre VARCHAR(20) NOT NULL,
