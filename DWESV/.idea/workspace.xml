@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f060dffa-f9db-4b8a-aa5c-b43a22fde244" name="Changes" comment="" />
+    <list default="true" id="f060dffa-f9db-4b8a-aa5c-b43a22fde244" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/aprendejsp02.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejerciciojsp1/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciojsp1/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejerciciojsp1/.idea/shelf/Uncommitted_changes_before_Update_at_28_09_2023_15_37__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciojsp1/.idea/shelf/Uncommitted_changes_before_Update_at_28_09_2023_15_37__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejerciciojsp1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciojsp1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viaje.txt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -24,7 +33,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/daw2/Desktop/DAW2/DAW2/DWESV/ejerciciojsp1",
+    "last_opened_file_path": "C:/Users/ismae/OneDrive/Escritorio/trabajos/DAW2/DWESV",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -40,6 +49,7 @@
       <workItem from="1695393527700" duration="11000" />
       <workItem from="1695648898805" duration="28000" />
       <workItem from="1695649030232" duration="12000" />
+      <workItem from="1696504566255" duration="9000" />
     </task>
     <servers />
   </component>
