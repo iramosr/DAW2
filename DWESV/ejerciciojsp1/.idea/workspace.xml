@@ -9,26 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="add ejercicios interfaces">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/ActualizaViajeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/actualiza_clientes.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/actualiza_viajes.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/listado_clientes.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/listado_viajes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aprendejsp02/src/main/java/com/daw2/aprendejsp02/servlet/ActualizaEncuestaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../aprendejsp02/src/main/java/com/daw2/aprendejsp02/servlet/ActualizaEncuestaServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aprendejsp02/src/main/webapp/formulario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../aprendejsp02/src/main/webapp/formulario.jsp" afterDir="false" />
+    <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="finish jsp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/ActualizaClienteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/ActualizaClienteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/borra_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/borra_clientes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/borra_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/borra_viajes.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formulario_clientes.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formulario_viajes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/main-menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/main-menu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/nuevo_cliente.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/nuevo_cliente.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/nuevo_viaje.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/nuevo_viaje.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ver_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ver_clientes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ver_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ver_viajes.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/daw2/Desktop/DAW2/DAW2/DWESV/ejerciciojsp1/src/main/webapp",
+    "last_opened_file_path": "C:/Users/daw2/Desktop/DAW2/DAW2/DWESV/ejerciciojsp1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -219,7 +203,9 @@
       <workItem from="1695912776513" duration="165000" />
       <workItem from="1696260204676" duration="852000" />
       <workItem from="1696503228025" duration="959000" />
-      <workItem from="1696519913159" duration="2540000" />
+      <workItem from="1696519913159" duration="2582000" />
+      <workItem from="1696524660199" duration="323000" />
+      <workItem from="1696525077877" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="Fix ejercicio">
       <option name="closed" value="true" />
@@ -253,7 +239,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696520931380</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="finish jsp">
+      <option name="closed" value="true" />
+      <created>1696522477267</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696522477267</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +258,8 @@
     <MESSAGE value="Add borrar" />
     <MESSAGE value="rename nuevo_cliente.jsp nuevo_viaje.jsp" />
     <MESSAGE value="add ejercicios interfaces" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ejercicios interfaces" />
+    <MESSAGE value="finish jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish jsp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -4,6 +4,7 @@
 
 <%
     Viaje viaje = (Viaje) request.getAttribute("viaje");
+    String readonly = request.getParameter("readonly");
     if (viaje == null) {
         viaje = new Viaje();
     }
@@ -27,12 +28,12 @@
             <div class="row mb-3">
                 <div class="col-12 col-md-6 form-floating">
                     <input type="codigo" class="form-control" id="codigo" name="codigo"
-                           placeholder="Introduce el codigo" value="<%=codigo%>">
+                           placeholder="Introduce el codigo" value="<%=codigo%>"<%=readonly%>>
                     <label for="codigo">Código</label>
                 </div>
                 <div class="col-12 col-md-6 form-floating">
                     <input type="descripcion" class="form-control" id="descripcion" name="descripcion"
-                           placeholder="Introduce la descripción" value="<%=descripcion%>">
+                           placeholder="Introduce la descripción" value="<%=descripcion%>"<%=readonly%>>
                     <label for="descripcion">Descripción</label>
                 </div>
             </div>
@@ -40,17 +41,17 @@
             <div class="row mb-3">
                 <div class="col-12 col-md-4 form-floating">
                     <input type="precio" class="form-control" id="precio" name="precio"
-                           placeholder="Introduce el precio" value="<%=precio%>">
+                           placeholder="Introduce el precio" value="<%=precio%>"<%=readonly%>>
                     <label for="precio">Precio</label>
                 </div>
                 <div class="col-12 col-md-4 form-floating">
                     <input type="salida" class="form-control" id="salida" name="salida"
-                           placeholder="Introduce la salida" value="<%=salida%>">
+                           placeholder="Introduce la salida" value="<%=salida%>"<%=readonly%>>
                     <label for="salida">Salida</label>
                 </div>
                 <div class="col-12 col-md-4 form-floating">
                     <input type="llegada" class="form-control" id="llegada" name="llegada"
-                           placeholder="Introduce la llegada" value="<%=llegada%>">
+                           placeholder="Introduce la llegada" value="<%=llegada%>"<%=readonly%>>
                     <label for="llegada">Llegada</label>
                 </div>
             </div>
