@@ -12,14 +12,9 @@
 <jsp:include page="layouts/main-menu.jsp"/>
 
 <div class="container">
-    <h1>Ver Viaje</h1>
-    <form method="#" action="viajes/listado">
-        <jsp:include page="formulario_viajes.jsp">
-            <jsp:param name="titleSubmit" value="Volver"/>
-            <jsp:param name="readonly" value="readonly"/>
-        </jsp:include>
-    </form>
-    <jsp:include page="tabla_viajes.jsp"/>
+    <a class="btn btn-dark" href="clientes/nuevo">Nuevo Cliente</a>
+    <h1>Listado de clientes</h1>
+    <jsp:include page="tabla_clientes.jsp"/>
 </div>
 
 <jsp:include page="layouts/footer.jsp"/>

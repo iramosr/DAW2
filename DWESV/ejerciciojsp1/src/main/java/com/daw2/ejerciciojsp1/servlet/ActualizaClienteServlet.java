@@ -13,7 +13,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "actualizaClienteServelet", value = "/clientes/actualizar")
+@WebServlet(name = "actualizaClienteServlet", value = "/clientes/actualizar")
 public class ActualizaClienteServlet extends HttpServlet {
     private ClientesDao clientesDao;
     private List<Cliente> clientes;
