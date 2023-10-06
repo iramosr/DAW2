@@ -44,7 +44,7 @@ class ClientesViajesDao extends Dao
     //Metodo que devuelva todos los clientes de un viaje
     public function getClientesByViajeId(int $id){
         $sql = 'SELECT * FROM `clientes` INNER JOIN '.$this->tableName().' ON `'.$this->tableName().'`.cliente_id = `clientes`.id WHERE `'.$this->tableName().'`.viaje_id=:id';
-        echo $sql;
+
         $query = $this->pdo->prepare($sql);
         $query->bindParam(':id', $id);
         $query->execute();

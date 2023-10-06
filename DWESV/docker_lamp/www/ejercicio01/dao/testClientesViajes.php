@@ -5,7 +5,7 @@ require_once "ClientesViajesDao.php";
 
 $daoclientes = new ClientesDao;
 $daoviajes = new ViajesDao;
-$daoclientesviajes = new ClientesViajesDao;
+$daoclientesviajes = new ClientesViajesDao();
 $cliente = [
     "nif"=>rand(10000,99999)."A",
     "nombre"=>"Pepito",
@@ -35,7 +35,7 @@ else
     echo "Viaje no añadido";
 
 $clienteviaje = [
-    "cliente_id"=>2,
+    "cliente_id"=>3,
     "viaje_id"=>3,
     "pagado"=>300.0,
     "salida"=>'2023-12-01 10:30:23',
