@@ -18,6 +18,7 @@ class EncuestasController extends Controller
         $this->view->render('encuestas/index');
     }
 
+    //carga formulario (en el formulario action encuestas/save)
     public function add(){
         echo "<h2>Método add</h2>";
         $this->view->render('encuestas/add');
@@ -26,5 +27,10 @@ class EncuestasController extends Controller
     public function show($values){
         echo "<h2>Método show</h2>";
         $this->view->render('encuestas/show');
+    }
+
+    public function save(){
+        echo "<h2>Método save</h2>";
+        $this->view->render('encuestas/save');
     }
 }
