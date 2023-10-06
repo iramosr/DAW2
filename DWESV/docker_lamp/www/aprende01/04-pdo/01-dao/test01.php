@@ -5,7 +5,13 @@ $dao = new EncuestasDao;
 $encuesta = [
     "nombre"=>"Pepito01",
     "apellidos"=>'Pérez López01',
-    "email"=>'pepito01@gmail.com'
+    "email"=>'pepito02@gmail.com',
+    "fechaNacimiento"=>'2001-01-01',
+    "sexo"=>'H',
+    "aficiones"=>'INF',
+    "estudios"=>'grad',
+    "observaciones"=>'Observaciones01',
+    "foto"=>'/aprende01/imagenes/imagen01.jpg'
 ];
 $id = $dao->add($encuesta);
 if (!is_null($id))

@@ -35,7 +35,7 @@ else
     echo "Viaje no añadido";
 
 $clienteviaje = [
-    "cliente_id"=>3,
+    "cliente_id"=>2,
     "viaje_id"=>3,
     "pagado"=>300.0,
     "salida"=>'2023-12-01 10:30:23',

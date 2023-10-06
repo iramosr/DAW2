@@ -1,0 +1,21 @@
+assets
+    css
+    images
+    js
+config
+controllers
+dao
+helpers
+libs
+models
+services
+upload
+views
+    errors
+    layouts
+    public
+    admin
+    encuestas
+
+.htaccess
+index.php
