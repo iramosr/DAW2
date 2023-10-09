@@ -1,4 +1,4 @@
-package com.daw2.demo;
+package com.daw2.AprendeJSP03json;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;

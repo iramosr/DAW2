@@ -3,12 +3,12 @@ package com.daw2.aprendejsp02.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "encuestas")
+@Table(name = "encuestas2")
 public class Encuesta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(unique = true)
+    @Column(unique = true, nullable = false)
     private String email;
     @Column(unique = true,length = 12)
     private String nif;
@@ -65,5 +65,17 @@ public class Encuesta {
 
     public void setApellido2(String apellido2) {
         this.apellido2 = apellido2;
+    }
+
+    @Override
+    public String toString() {
+        return "Encuesta{" +
+                "id=" + id +
+                ", email='" + email + '\'' +
+                ", nif='" + nif + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", apellido1='" + apellido1 + '\'' +
+                ", apellido2='" + apellido2 + '\'' +
+                '}';
     }
 }
