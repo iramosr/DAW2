@@ -1,4 +1,4 @@
-package com.daw2.aprendejsp03json;
+package com.daw2.demo;
 
 import jakarta.ws.rs.ApplicationPath;
 import jakarta.ws.rs.core.Application;
