@@ -1,0 +1,26 @@
+img{
+    height: 300px;
+}
+@media (min-width: 1250px) {
+    body {
+        background-color: lightblue;
+    }
+}
+@media (max-width: 1250px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        background-color: lightgoldenrodyellow;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        background-color: lightcoral;
+    }
+
+}
