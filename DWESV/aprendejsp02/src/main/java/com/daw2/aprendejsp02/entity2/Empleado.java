@@ -48,4 +48,14 @@ public class Empleado {
     public void setActividades(List<Actividad> actividades) {
         this.actividades = actividades;
     }
+
+    @Override
+    public String toString() {
+        return "Empleado{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", actividades=" + actividades +
+                '}';
+    }
 }

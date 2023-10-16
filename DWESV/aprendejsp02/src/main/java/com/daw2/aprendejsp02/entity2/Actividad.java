@@ -88,4 +88,19 @@ public class Actividad {
     public void setEmpleado(Empleado empleado) {
         this.empleado = empleado;
     }
+
+
+    @Override
+    public String toString() {
+        return "Actividad{" +
+                "id=" + id +
+                ", referencia='" + referencia + '\'' +
+                ", descripcion='" + descripcion + '\'' +
+                ", precio=" + precio +
+                ", numeroParticipantes=" + numeroParticipantes +
+                ", salida=" + salida +
+                ", llegada=" + llegada +
+                ", empleado=" + empleado +
+                '}';
+    }
 }
