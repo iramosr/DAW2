@@ -15,10 +15,18 @@ public class Test22 {
 
             for (Actividad actividad : actividades) {
                 System.out.println(actividad);
+                System.out.println("Actividad: ");
+                System.out.println("\tReferencia: " + actividad.getReferencia());
+                System.out.println("\tDescripción: " + actividad.getDescripcion());
+                System.out.println("\tPrecio: " + actividad.getPrecio());
+                if (actividad.getEmpleado() != null) {
+                    System.out.println("\tEmpleado: "
+                        +actividad.getEmpleado().getNombre() + " "
+                        +actividad.getEmpleado().getApellidos() + " ");
+                }
             }
             em.close();
         } catch (Exception ex) {
-
         }
     }
 

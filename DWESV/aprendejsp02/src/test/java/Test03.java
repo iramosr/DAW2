@@ -8,12 +8,12 @@ import jakarta.persistence.Persistence;
 public class Test03 {
     public static void main(String[] args) {
         Empleado empleado = new Empleado();
-        empleado.setNombre("Luisito");
+        empleado.setNombre("Luisito1");
         empleado.setApellidos("Pérez");
 
         Actividad actividad = new Actividad();
-        actividad.setReferencia("123");
-        actividad.setDescripcion("Viaje a Lisboa");
+        actividad.setReferencia("1234");
+        actividad.setDescripcion("Viaje a Madrid");
         actividad.setEmpleado(empleado);
 
 

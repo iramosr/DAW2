@@ -9,16 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="add readonly">
-      <change afterPath="$PROJECT_DIR$/../aprendejsp02/src/test/java/Test22.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/listado.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AprendeJSP03-json/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AprendeJSP03-json/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../aprendejsp02/src/main/java/com/daw2/aprendejsp02/entity2/Actividad.java" beforeDir="false" afterPath="$PROJECT_DIR$/../aprendejsp02/src/main/java/com/daw2/aprendejsp02/entity2/Actividad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/listado_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listado_viajes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/nuevo_viaje.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/nuevo_viaje.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="add readonly" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -214,7 +205,7 @@
       <workItem from="1696524660199" duration="323000" />
       <workItem from="1696525077877" duration="168000" />
       <workItem from="1696863855263" duration="783000" />
-      <workItem from="1697470286705" duration="1620000" />
+      <workItem from="1697470286705" duration="1730000" />
     </task>
     <task id="LOCAL-00001" summary="Fix ejercicio">
       <option name="closed" value="true" />
