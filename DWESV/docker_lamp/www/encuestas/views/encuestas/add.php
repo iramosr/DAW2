@@ -1,4 +1,81 @@
 <h1>ADD</h1>
-<!--aqui poner form    pner en action si no funciona la ruta ddsd el proyecto la ruta entera http:/blablabla->
-
 <?php
+require "Encuesta.php";
+    $encuesta = new Encuesta();
+    $errors=[];
+?>
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="save.php" method="post" enctype="multipart/form-data">
+        <label>
+            Nombre:
+            <input type="text" id="nombre" name="nombre" value="<?=$encuesta->nombre?>">
+        </label>
+        <?= messageErrorItem('nombre', $errors)?>
+        <br>
+        <label>
+            Apellidos:
+            <input type="text" id="apellidos" name="apellidos" value="<?=$encuesta->apellidos?>">
+        </label>
+        <?= messageErrorItem('apellidos', $errors)?>
+        <br>
+        <label>
+            Email:
+            <input type="email" id="email" name="email" value="<?=$encuesta->email?>">
+        </label>
+        <?= messageErrorItem('email', $errors)?>
+        <br>
+        <label>
+            Fecha nacimiento:
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" value="<?=$encuesta->fechaNacimiento?>">
+        </label>
+        <br>
+        <label>
+            Sexo:
+            <input type="radio" name="sexo" value="H">Hombre
+            <input type="radio" name="sexo" value="M">Mujer
+            <input type="radio" name="sexo" value="O">Otro
+            <input type="radio" name="sexo" value="X">Prefiero no decirlo
+        </label>
+        <br>
+        <label>
+            Aficiones:
+            <input type="checkbox" name="aficiones[]" value="INF">Informatica
+            <input type="checkbox" name="aficiones[]" value="LEC">Lectura
+            <input type="checkbox" name="aficiones[]" value="DEP">Deporte
+        </label>
+        <br>
+        <label>
+            Nivel de estudios:
+            <select name="estudios">
+                <option value="">Sin especificar</option>
+                <option value="sec">Secundaria</option>
+                <option value="bach">Bachillerato</option>
+                <option value="tgm">Técnico Grado Medio</option>
+                <option value="tgs">Técnico Grado Superior</option>
+                <option value="grad">Graduado</option>
+            </select>
+        </label>
+        <br>
+        <label>
+            Observaciones:
+            <textarea id="observaciones" name="observaciones"><?=$encuesta->observaciones?></textarea>
+        </label>
+        <br>
+        <label>
+            Imagen:
+            <input type="file" id="imagen" name="imagen">
+        </label>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
