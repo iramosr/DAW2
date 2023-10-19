@@ -4,8 +4,7 @@ namespace libs;
 
 use PDO;
 use PDOException;
-
-require_once __DIR__ . "../../config/config.php";
+require_once (__DIR__ . '/../config/config.php');
 
 class Database
 {
@@ -38,8 +37,8 @@ class Database
             $connection = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=" . DB_CHARSET;
 
             $options = [
-                PDO::ATTR_ERRMODE           => PDO::ERRMODE_EXCEPTION,
-                PDO::ATTR_EMULATE_PREPARES  => false,
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                PDO::ATTR_EMULATE_PREPARES => false,
             ];
             $this->pdo = new PDO($connection, DB_USER, DB_PASSWORD, $options);
         } catch (PDOException $e) {
@@ -49,7 +48,8 @@ class Database
         return $this->pdo;
     }
 
-    public function pdo() {
+    public function pdo()
+    {
         if ($this->_pdo == null) {
             $this->_pdo = $this->connect();
         }

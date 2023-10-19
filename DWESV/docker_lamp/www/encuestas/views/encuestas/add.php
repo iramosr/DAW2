@@ -1,61 +1,85 @@
-<h1>ADD</h1>
-<?php
-require "Encuesta.php";
-    $encuesta = new Encuesta();
-    $errors=[];
-?>
 <!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Formulario</title>
-</head>
+<?php
+use controllers\EncuestasController;
+
+require_once "../layouts/head.php";
+require_once "../layouts/main-menu.php";
+require_once "../../controllers/EncuestasController.php";
+
+$encuestasController = new EncuestasController;
+?>
 <body>
+<div class="container mt-5">
+    <h1>Añadir persona</h1>
     <form action="save.php" method="post" enctype="multipart/form-data">
-        <label>
-            Nombre:
-            <input type="text" id="nombre" name="nombre" value="<?=$encuesta->nombre?>">
-        </label>
-        <?= messageErrorItem('nombre', $errors)?>
-        <br>
-        <label>
-            Apellidos:
-            <input type="text" id="apellidos" name="apellidos" value="<?=$encuesta->apellidos?>">
-        </label>
-        <?= messageErrorItem('apellidos', $errors)?>
-        <br>
-        <label>
-            Email:
-            <input type="email" id="email" name="email" value="<?=$encuesta->email?>">
-        </label>
-        <?= messageErrorItem('email', $errors)?>
-        <br>
-        <label>
-            Fecha nacimiento:
-            <input type="date" id="fechaNacimiento" name="fechaNacimiento" value="<?=$encuesta->fechaNacimiento?>">
-        </label>
-        <br>
-        <label>
-            Sexo:
-            <input type="radio" name="sexo" value="H">Hombre
-            <input type="radio" name="sexo" value="M">Mujer
-            <input type="radio" name="sexo" value="O">Otro
-            <input type="radio" name="sexo" value="X">Prefiero no decirlo
-        </label>
-        <br>
-        <label>
-            Aficiones:
-            <input type="checkbox" name="aficiones[]" value="INF">Informatica
-            <input type="checkbox" name="aficiones[]" value="LEC">Lectura
-            <input type="checkbox" name="aficiones[]" value="DEP">Deporte
-        </label>
-        <br>
-        <label>
-            Nivel de estudios:
-            <select name="estudios">
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre">
+        </div>
+        <div class="mb-3">
+            <label for="apellidos" class="form-label">Apellidos:</label>
+            <input type="text" class="form-control" id="apellidos" name="apellidos">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <div class="mb-3">
+            <label for="fechaNacimiento" class="form-label">Fecha nacimiento:</label>
+            <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Sexo:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexo" id="sexoH" value="H">
+                <label class="form-check-label" for="sexoH">
+                    Hombre
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexo" id="sexoM" value="M">
+                <label class="form-check-label" for="sexoM">
+                    Mujer
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexo" id="sexoO" value="O">
+                <label class="form-check-label" for="sexoO">
+                    Otro
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexo" id="sexoX" value="X">
+                <label class="form-check-label" for="sexoX">
+                    Prefiero no decirlo
+                </label>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label>Aficiones:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="aficiones[]" id="inf" value="INF">
+                <label class="form-check-label" for="inf">
+                    Informática
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="aficiones[]" id="lec" value="LEC">
+                <label class="form-check-label" for="lec">
+                    Lectura
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="aficiones[]" id="dep" value="DEP">
+                <label class="form-check-label" for="dep">
+                    Deporte
+                </label>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="estudios" class="form-label">Nivel de estudios:</label>
+            <select class="form-select" id="estudios" name="estudios">
                 <option value="">Sin especificar</option>
                 <option value="sec">Secundaria</option>
                 <option value="bach">Bachillerato</option>
@@ -63,19 +87,17 @@ require "Encuesta.php";
                 <option value="tgs">Técnico Grado Superior</option>
                 <option value="grad">Graduado</option>
             </select>
-        </label>
-        <br>
-        <label>
-            Observaciones:
-            <textarea id="observaciones" name="observaciones"><?=$encuesta->observaciones?></textarea>
-        </label>
-        <br>
-        <label>
-            Imagen:
-            <input type="file" id="imagen" name="imagen">
-        </label>
-        <br>
-        <button type="submit">Enviar</button>
+        </div>
+        <div class="mb-3">
+            <label for="observaciones" class="form-label">Observaciones:</label>
+            <textarea class="form-control" id="observaciones" name="observaciones"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="imagen" class="form-label">Imagen:</label>
+            <input class="form-control" type="file" id="imagen" name="imagen">
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
+</div>
 </body>
 </html>

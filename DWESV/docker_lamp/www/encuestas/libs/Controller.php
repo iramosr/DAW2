@@ -2,7 +2,11 @@
 
 namespace libs;
 
-class Controller{
+require_once __DIR__ . "../../config/config.php";
+require_once "View.php";
+
+class Controller
+{
     protected $view;
     protected $data;
 

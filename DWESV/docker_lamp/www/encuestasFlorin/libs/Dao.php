@@ -1,31 +1,37 @@
 <?php
+
 namespace libs;
-
-use PDO;
-use PDOException;
-use libs\Database;
-
-require_once "Database.php";
+//use Database;
 
 
+use \PDO;
+use \PDOException;
+require_once (__DIR__ . '/../libs/Database.php');
 abstract class Dao extends Database
 {
     protected $pdo;
 
-    public function __construct() {
+    public function __construct()
+    {
         $this->pdo = Database::getInstance()->pdo();
     }
 
-    abstract public function tableName():string;
-    abstract public function itemsTable():string;
-    protected function select():string {
+    abstract public function tableName(): string;
+
+    abstract public function itemsTable(): string;
+
+    protected function select(): string
+    {
         return 'SELECT ' . $this->itemsTable() . ' FROM ' . $this->tableName();
     }
-    abstract protected function _add($data):object;
-    abstract public function update(int $id, object $datos):bool;
+
+    abstract protected function _add($data): object;
+
+    abstract public function update(int $id, object $datos): bool;
 
 
-    public function add(array|object $data):int|null {
+    public function add(array|object $data): int|null
+    {
         try {
             $this->pdo->beginTransaction();
             $query = $this->_add($data);
@@ -33,15 +39,16 @@ abstract class Dao extends Database
             $id = $this->pdo->lastInsertId();
             $this->pdo->commit();
         } catch (PDOException $e) {
-var_dump($e);
+            var_dump($e);
             $id = null;
             $this->pdo->rollback();
         }
         return $id;
     }
 
-    public function addAll(array $rowsData): bool {
-        $error=false;
+    public function addAll(array $rowsData): bool
+    {
+        $error = false;
         try {
             $this->pdo->beginTransaction();
             foreach ($rowsData as $data) {
@@ -56,21 +63,23 @@ var_dump($e);
         return $error;
     }
 
-    public function get(int $id): object|null {
+    public function get(int $id): object|null
+    {
         $sql = $this->select() . ' WHERE id=:id';
         $query = $this->pdo->prepare($sql);
-        $query->bindParam(':id',$id);
+        $query->bindParam(':id', $id);
         $query->execute();
         $row = $query->fetch(PDO::FETCH_ASSOC);
-        return $row!=null?(object)$row:null;
+        return $row != null ? (object)$row : null;
     }
 
-    public function listAll(array $filter=[]):array {
+    public function listAll(array $filter = []): array
+    {
         $sql = $this->select();
         if (isset($filter['where']))
-            $sql .= ' WHERE '. $filter['where'];
+            $sql .= ' WHERE ' . $filter['where'];
         if (isset($filter['orderBy']))
-            $sql .= ' ORDER BY '. $filter['orderBy'];
+            $sql .= ' ORDER BY ' . $filter['orderBy'];
         $query = $this->pdo->prepare($sql);
         $query->execute();
         $list = $query->fetchall(PDO::FETCH_ASSOC);
@@ -78,13 +87,14 @@ var_dump($e);
     }
 
 
-    public function delete(int $id):bool {
+    public function delete(int $id): bool
+    {
         $error = false;
         $sql = 'DELETE FROM ' . $this->tableName() . ' WHERE id=:id';
         try {
             $this->pdo->beginTransaction();
             $query = $this->pdo->prepare($sql);
-            $query->bindParam(':id',$id);
+            $query->bindParam(':id', $id);
             $query->execute();
             $this->pdo->commit();
         } catch (PDOException $e) {
@@ -94,7 +104,8 @@ var_dump($e);
         return $id;
     }
 
-    public function deleteAll():bool {
+    public function deleteAll(): bool
+    {
         $sql = 'DELETE FROM ' . $this->tableName();
 
         try {

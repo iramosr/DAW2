@@ -4,6 +4,7 @@ namespace controllers;
 
 use dao\EncuestasDao;
 use libs\Controller;
+require_once (__DIR__ . "/../libs/Controller.php");
 
 class EncuestasController extends Controller
 {
