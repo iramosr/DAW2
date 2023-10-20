@@ -10,12 +10,16 @@ function url(){
     return $protocol . "://" . $_SERVER['HTTP_HOST'] . '/' . $app;
 }
 
-define('APP_NAME','encuestas');
+define('APP_NAME','encuestasclase');
 define('BASE_URL',url());
 
-#Define la BD
+# Define la BD
 define ('DB_HOST', 'db:3306');
 define ('DB_NAME', 'dwesv');
 define ('DB_USER', 'dwesv');
 define ('DB_PASSWORD', 'castelar');
 define('DB_CHARSET','utf8mb4');
+
+# Directiorios Uploads
+define('UPLOAD', APP_PATH.'/uploads');
+define('UPLOAD_FOTOS', UPLOAD.'/fotos');
