@@ -12,8 +12,10 @@
 <jsp:include page="layouts/main-menu.jsp"/>
 
 <div class="container">
-    <a class="btn btn-dark" href="empleados/nuevo">Nuevo Empleado</a>
-    <h1>Listado de empleados</h1>
+    <div class="d-flex justify-content-between">
+        <h1>Listado de empleados</h1>
+        <a class="btn btn-dark mb-auto" href="empleados/nuevo">Nuevo Empleado</a>
+    </div>
     <jsp:include page="tabla_empleados.jsp"/>
 </div>
 

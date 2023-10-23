@@ -35,7 +35,7 @@
     <input type="hidden" name="id" value="<%=id%>">
     <div class="card m-2">
         <div class="card-header text-center fw-bold">
-            Nuevo Viaje
+            Viaje
         </div>
         <div class="card-body bg-light-subtle">
             <div class="row mb-3">

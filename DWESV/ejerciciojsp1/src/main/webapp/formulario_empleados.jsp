@@ -20,7 +20,7 @@
 
 <div class="card m-2">
     <div class="card-header text-center fw-bold">
-        Nuevo Empleado
+       Empleado
     </div>
     <div class="card-body bg-light-subtle">
         <div class="row mb-3">

@@ -15,7 +15,7 @@
     <h1>Borra Viaje</h1>
     <form method="post" action="viajes/borrar">
         <jsp:include page="formulario_viajes.jsp">
-            <jsp:param name="titleSubmit" value="Volver"/>
+            <jsp:param name="titleSubmit" value="Borrar"/>
             <jsp:param name="readonly" value="readonly"/>
             <jsp:param name="disabled" value="disabled"/>
         </jsp:include>
