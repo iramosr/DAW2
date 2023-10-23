@@ -1,19 +1,31 @@
 <%@ page import="com.daw2.ejerciciojsp1.entity.Viaje" %>
+<%@ page import="com.daw2.ejerciciojsp1.entity.Empleado" %>
 <%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.util.List" %>
+<%@ page import="com.daw2.ejerciciojsp1.dao.impl.EmpleadosDaoImpl" %>
+<%@ page import="com.daw2.ejerciciojsp1.dao.EmpleadosDao" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%
     Viaje viaje = (Viaje) request.getAttribute("viaje");
     String readonly = request.getParameter("readonly");
+    String disabled = request.getParameter("disabled");
     if (viaje == null) {
         viaje = new Viaje();
     }
     String id = viaje.getId() != null ? String.valueOf(viaje.getId()) : "";
     String codigo = viaje.getCodigo() != null ? viaje.getCodigo() : "";
-    String descripcion = viaje.getDescripcion() != null ? viaje.getDescripcion() : "";
     String precio = viaje.getPrecio() != null ? String.valueOf(viaje.getPrecio()) : "";
     String salida = viaje.getSalida() != null ? new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").format(viaje.getSalida()) : "";
     String llegada = viaje.getLlegada() != null ? new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").format(viaje.getSalida()) : "";
+    String descripcion = viaje.getDescripcion() != null ? viaje.getDescripcion() : "";
+
+    EmpleadosDao empleadosDao = new EmpleadosDaoImpl();
+    List<Empleado> empleados = empleadosDao.findAll();
+
+    //averiguar que empleado es el encargado del viaje
+    Empleado empleadoselec = viaje.getEmpleado();
+    String empleadoId = empleadoselec != null ? String.valueOf(empleadoselec.getId()) : "";
 %>
 
 <link type="text/css" rel="stylesheet" href="assets/main.css">
@@ -32,9 +44,23 @@
                     <label for="codigo">Código</label>
                 </div>
                 <div class="col-12 col-md-6 form-floating">
-                    <input type="descripcion" class="form-control" id="descripcion" name="descripcion"
-                           placeholder="Introduce la descripción" value="<%=descripcion%>"<%=readonly%>>
-                    <label for="descripcion">Descripción</label>
+                    <select class="form-select" id="empleado" name="empleado"
+                            aria-label="floating label select example" <%=disabled%>>
+
+                        <option <% if (empleadoId == "") { %>
+                                selected
+                                <% } %>>
+                            Encargado
+                        </option>
+                        <% for (Empleado empleado : empleados) { %>
+                        <option value="<%=empleado.getId()%>" <%if (Long.parseLong(empleadoId) == empleado.getId()) { %>
+                                selected
+                                <% } %>>
+                            <%=empleado.getNombre() + " " + empleado.getApellido1() + " " + empleado.getApellido2()%>
+                        </option>
+                        <%}%>
+                    </select>
+                    <label for="empleado">Empleado</label>
                 </div>
             </div>
 
@@ -55,8 +81,17 @@
                     <label for="llegada">Llegada</label>
                 </div>
             </div>
+            <div class="row mb-3">
+                <div class="form-floating">
+                    <textarea type="descripcion" class="form-control" id="descripcion" name="descripcion"
+                              placeholder="Introduce la descripción" <%=readonly%>><%=descripcion%></textarea>
+                    <label for="descripcion">Descripción</label>
+                </div>
+            </div>
         </div>
     </div>
+
+
     <div class="card-footer">
         <input class="btn btn-dark float-end" name="btGuardar" type="submit"
                value="<%=request.getParameter("titleSubmit")%>"/><br>

@@ -10,11 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d4ff697-98be-4dd3-a901-1ee9fe06421a" name="Changes" comment="jsp03">
-      <change afterPath="$PROJECT_DIR$/../ejerciciojsp1/src/main/webapp/assets/listado.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ejerciciojsp1/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ejerciciojsp1/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aprendejsp02/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aprendejsp02/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ejerciciojsp1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ejerciciojsp1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ejerciciojsp1/src/main/webapp/listado_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ejerciciojsp1/src/main/webapp/listado_viajes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ejerciciojsp1/src/main/webapp/nuevo_viaje.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ejerciciojsp1/src/main/webapp/nuevo_viaje.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejerciciojsp1/src/main/java/com/daw2/ejerciciojsp1/entity/Viaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ejerciciojsp1/src/main/java/com/daw2/ejerciciojsp1/entity/Viaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejerciciojsp1/src/main/webapp/formulario_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ejerciciojsp1/src/main/webapp/formulario_viajes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejerciciojsp1/src/main/webapp/listado_empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ejerciciojsp1/src/main/webapp/listado_empleados.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejerciciojsp1/src/main/webapp/tabla_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ejerciciojsp1/src/main/webapp/tabla_viajes.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +56,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/daw2/Desktop/DAW2/DAW2/DWESV/aprendejsp02",
+    "last_opened_file_path": "C:/Users/ismae/OneDrive/Escritorio/trabajos/DAW2/DWESV",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -181,6 +183,7 @@
       <workItem from="1696865510985" duration="171000" />
       <workItem from="1696865743286" duration="974000" />
       <workItem from="1697472533523" duration="25000" />
+      <workItem from="1698055893062" duration="45000" />
     </task>
     <task id="LOCAL-00001" summary="jsp03">
       <option name="closed" value="true" />

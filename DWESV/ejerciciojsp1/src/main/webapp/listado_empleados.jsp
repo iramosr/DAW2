@@ -12,7 +12,7 @@
 <jsp:include page="layouts/main-menu.jsp"/>
 
 <div class="container">
-    <a class="btn btn-dark" href="empleados/nuevo/nuevo">Nuevo Empleado</a>
+    <a class="btn btn-dark" href="empleados/nuevo">Nuevo Empleado</a>
     <h1>Listado de empleados</h1>
     <jsp:include page="tabla_empleados.jsp"/>
 </div>

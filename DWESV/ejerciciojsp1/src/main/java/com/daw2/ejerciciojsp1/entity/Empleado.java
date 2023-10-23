@@ -66,4 +66,16 @@ public class Empleado {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    @Override
+    public String toString() {
+        return "Empleado{" +
+                "id=" + id +
+                ", nif='" + nif + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", apellido1='" + apellido1 + '\'' +
+                ", apellido2='" + apellido2 + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }

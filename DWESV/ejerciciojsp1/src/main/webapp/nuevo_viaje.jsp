@@ -17,6 +17,7 @@
         <jsp:include page="formulario_viajes.jsp">
             <jsp:param name="titleSubmit" value="Guardar"/>
             <jsp:param name="readonly" value=""/>
+            <jsp:param name="disbled" value=""/>
         </jsp:include>
     </form>
 

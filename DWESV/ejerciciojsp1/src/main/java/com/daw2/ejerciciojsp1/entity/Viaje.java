@@ -9,16 +9,21 @@ public class Viaje {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    //aqui va una foreign key a la tabla empleados
+    @ManyToOne
+    @JoinColumn(name = "empleado_id")
+    private Empleado empleado;
+
     @Column(unique = true,length = 12)
     private String codigo;
-    @Column(nullable = false,length = 50)
-    private String descripcion;
     @Column(nullable = false)
     private Double precio;
     @Column(nullable = false)
     private Date salida;
     @Column(nullable = false)
     private Date llegada;
+    @Column(nullable = false, length = 255)
+    private String descripcion;
 
     public Long getId() {
         return id;
@@ -26,6 +31,14 @@ public class Viaje {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Empleado getEmpleado() {
+        return empleado;
+    }
+
+    public void setEmpleado(Empleado empleado) {
+        this.empleado = empleado;
     }
 
     public String getCodigo() {
@@ -36,6 +49,30 @@ public class Viaje {
         this.codigo = codigo;
     }
 
+    public Double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(Double precio) {
+        this.precio = precio;
+    }
+
+    public Date getSalida() {
+        return salida;
+    }
+
+    public void setSalida(Date salida) {
+        this.salida = salida;
+    }
+
+    public Date getLlegada() {
+        return llegada;
+    }
+
+    public void setLlegada(Date llegada) {
+        this.llegada = llegada;
+    }
+
     public String getDescripcion() {
         return descripcion;
     }
@@ -44,23 +81,16 @@ public class Viaje {
         this.descripcion = descripcion;
     }
 
-    public Double getPrecio() {
-        return precio;
+    @Override
+    public String toString() {
+        return "Viaje{" +
+                "id=" + id +
+                ", empleado=" + empleado +
+                ", codigo='" + codigo + '\'' +
+                ", precio=" + precio +
+                ", salida=" + salida +
+                ", llegada=" + llegada +
+                ", descripcion='" + descripcion + '\'' +
+                '}';
     }
-
-    public void setPrecio(String precio) {
-        this.precio = Double.parseDouble(precio);
-    }
-
-    public Date getSalida() {
-        return salida;
-    }
-
-    public void setSalida(Date salida) {this.salida = salida;}
-
-    public Date getLlegada() {
-        return llegada;
-    }
-
-    public void setLlegada(Date llegada) {this.llegada = llegada;}
 }

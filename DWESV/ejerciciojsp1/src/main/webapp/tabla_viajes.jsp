@@ -7,20 +7,22 @@
 <table class="table table-info table-striped table-hover">
     <thead>
     <td class="bg-dark text-white">Codigo</td>
-    <td class="bg-dark text-white">Descripcion</td>
+    <td class="bg-dark text-white">Empleado</td>
     <td class="bg-dark text-white">Precio</td>
     <td class="bg-dark text-white">Salida</td>
     <td class="bg-dark text-white">Llegada</td>
+    <td class="bg-dark text-white">Descripcion</td>
     <td class="bg-dark text-white"></td>
     </thead>
     <tbody>
     <%for(Viaje viaje: viajes){%>
     <tr>
         <td class="bg-dark text-white"><%= viaje.getCodigo()%></td>
-        <td class="bg-dark text-white"><%= viaje.getDescripcion()%></td>
+        <td class="bg-dark text-white"><%= viaje.getEmpleado().getId()%></td>
         <td class="bg-dark text-white"><%= viaje.getPrecio()%></td>
         <td class="bg-dark text-white"><%= viaje.getSalida()%></td>
         <td class="bg-dark text-white"><%= viaje.getLlegada()%></td>
+        <td class="bg-dark text-white"><%= viaje.getDescripcion()%></td>
         <td class="bg-dark text-white">
             <a href="viajes/borrar?id=<%=viaje.getId()%>"
                class="rounded bg-danger text-white px-1 me-1 small link-underline link-underline-opacity-0">

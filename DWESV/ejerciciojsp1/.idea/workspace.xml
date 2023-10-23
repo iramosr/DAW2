@@ -9,32 +9,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="add readonly">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/dao/EmpleadosDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/dao/impl/EmpleadosDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/entity/Empleado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/service/EmpleadosService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/ActualizaEmpleadoServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/BorraEmpleadoServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/ListadoEmpleadoServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/NuevoEmpleadoServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/VerEmpleadoServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/actualiza_empleados.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/borra_empleados.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/formulario_empleados.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/listado_empleados.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/nuevo_empleado.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/tabla_empleados.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/ver_empleados.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DIINW/Ejercicios/EjerciciosHTML_CSS/Ejercicio11d/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../DIINW/Ejercicios/EjerciciosHTML_CSS/Ejercicio11d/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DIINW/Ejercicios/EjerciciosHTML_CSS/Ejercicio11d/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../DIINW/Ejercicios/EjerciciosHTML_CSS/Ejercicio11d/index.html" afterDir="false" />
+    <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="add empleados">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AprendeJSP03-json/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AprendeJSP03-json/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AprendeJSP03-json/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AprendeJSP03-json/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aprendejsp02/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aprendejsp02/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191/storage_v2/_src_/schema/dwesv.FdC4BQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191/storage_v2/_src_/schema/dwesv.FdC4BQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/NuevoClienteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/NuevoClienteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/NuevoViajeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/NuevoViajeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/main-menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/main-menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/entity/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/entity/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/entity/Viaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/entity/Viaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/service/ViajesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/service/ViajesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formulario_viajes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/listado_empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listado_empleados.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/nuevo_viaje.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/nuevo_viaje.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/tabla_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tabla_viajes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ver_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ver_viajes.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,31 +62,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/ismae/OneDrive/Escritorio/trabajos/DAW2/DWESV/ejerciciojsp1/src/main/webapp",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ismae/OneDrive/Escritorio/trabajos/DAW2/DWESV/aprendejsp02&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ismae\OneDrive\Escritorio\trabajos\DAW2\DWESV\ejerciciojsp1\src\main\webapp" />
@@ -233,7 +225,9 @@
       <workItem from="1696525077877" duration="168000" />
       <workItem from="1696863855263" duration="783000" />
       <workItem from="1697470286705" duration="1730000" />
-      <workItem from="1698051707700" duration="1780000" />
+      <workItem from="1698051707700" duration="2468000" />
+      <workItem from="1698054188744" duration="3815000" />
+      <workItem from="1698058306319" duration="2503000" />
     </task>
     <task id="LOCAL-00001" summary="Fix ejercicio">
       <option name="closed" value="true" />
@@ -283,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696525232787</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add empleados">
+      <option name="closed" value="true" />
+      <created>1698053558721</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698053558721</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +298,8 @@
     <MESSAGE value="add ejercicios interfaces" />
     <MESSAGE value="finish jsp" />
     <MESSAGE value="add readonly" />
-    <option name="LAST_COMMIT_MESSAGE" value="add readonly" />
+    <MESSAGE value="add empleados" />
+    <option name="LAST_COMMIT_MESSAGE" value="add empleados" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

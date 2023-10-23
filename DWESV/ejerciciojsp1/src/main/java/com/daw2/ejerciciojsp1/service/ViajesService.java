@@ -1,22 +1,29 @@
 package com.daw2.ejerciciojsp1.service;
 
+import com.daw2.ejerciciojsp1.dao.impl.EmpleadosDaoImpl;
+import com.daw2.ejerciciojsp1.entity.Empleado;
 import com.daw2.ejerciciojsp1.entity.Viaje;
 
 import jakarta.servlet.http.HttpServletRequest;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 public class ViajesService {
     public static Viaje formToEntity(HttpServletRequest request){
+        EmpleadosDaoImpl empleadosDao = new EmpleadosDaoImpl();
+
         //  Map<String, String[]> formParams = request.getParameterMap();
         Long id = null;
         try {
             id = Long.parseLong(request.getParameter("id").trim());
         }catch (Exception ex){}
         String codigo = request.getParameter("codigo").trim();
-        String descripcion = request.getParameter("descripcion").trim();
-        String precio = request.getParameter("precio").trim();
+        Double precio = Double.parseDouble(request.getParameter("precio").trim());
+        Empleado empleado = empleadosDao.get(Long.parseLong(request.getParameter("empleado").trim()));
+
+        //Fechas
         Date salida = null;
         try {
             salida = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").parse(request.getParameter("salida").trim());
@@ -29,10 +36,12 @@ public class ViajesService {
         } catch (ParseException e) {
             throw new RuntimeException(e);
         }
+        String descripcion = request.getParameter("descripcion").trim();
+
         Viaje viaje = new Viaje();
         viaje.setId(id);
         viaje.setCodigo(codigo);
-        viaje.setDescripcion(descripcion);
+        viaje.setEmpleado(empleado);
         viaje.setPrecio(precio);
         try {
             viaje.setSalida(salida);
@@ -44,6 +53,7 @@ public class ViajesService {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+        viaje.setDescripcion(descripcion);
         return viaje;
     }
 }
