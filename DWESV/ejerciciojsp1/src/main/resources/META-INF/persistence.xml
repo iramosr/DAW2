@@ -6,6 +6,7 @@
   <persistence-unit name="default">
     <class>com.daw2.ejerciciojsp1.entity.Cliente</class>
     <class>com.daw2.ejerciciojsp1.entity.Viaje</class>
+    <class>com.daw2.ejerciciojsp1.entity.Empleado</class>
 
     <properties>
       <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>

@@ -40,10 +40,10 @@ public class NuevoClienteServlet extends HttpServlet {
         }
         //encuestasDao.add(encuesta);
         if (clientesDao.add(cliente)!=null){
-            request.setAttribute("mensaje","Encuesta guardada");
+            request.setAttribute("mensaje","Cliente guardado");
             clientes=clientesDao.findAll();
         }else{
-            request.setAttribute("mensaje", "Encuesta no guardada");
+            request.setAttribute("mensaje", "Cliente no guardado");
         }
         request.setAttribute("clientes",clientes);
 

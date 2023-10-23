@@ -40,10 +40,10 @@ public class NuevoViajeServlet extends HttpServlet {
         }
         //encuestasDao.add(encuesta);
         if (viajesDao.add(viaje)!=null){
-            request.setAttribute("mensaje","Encuesta guardada");
+            request.setAttribute("mensaje","Viaje guardado");
             viajes = viajesDao.findAll();
         }else{
-            request.setAttribute("mensaje", "Encuesta no guardada");
+            request.setAttribute("mensaje", "Viaje no guardado");
         }
         request.setAttribute("viajes",viajes);
 
