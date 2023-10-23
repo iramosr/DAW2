@@ -22,16 +22,19 @@
         <td class="bg-dark text-white"><%= empleado.getApellido1()%></td>
         <td class="bg-dark text-white"><%= empleado.getApellido2()%></td>
         <td class="bg-dark text-white">
-            <a href="empleados/borrar?id=<%=empleado.getId()%>"
-               class="rounded bg-danger text-white px-1 me-1 small link-underline link-underline-opacity-0">
-                BORRAR
-            </a>
             <a href="empleados/ver?id=<%=empleado.getId()%>"
-               class="rounded bg-info text-white px-1 small me-1 link-underline link-underline-opacity-0">
+               class="rounded bg-info text-white px-1 small me-1 link-underline link-underline-opacity-0"
+                title="Consultar el empleado <%=empleado.getNombre()%>">
                 VER
             </a>
+            <a href="empleados/borrar?id=<%=empleado.getId()%>"
+               class="rounded bg-danger text-white px-1 me-1 small link-underline link-underline-opacity-0"
+                title="Eliminar el empleado <%=empleado.getNombre()%>">
+                BORRAR
+            </a>
             <a href="empleados/actualizar?id=<%=empleado.getId()%>"
-               class="rounded bg-warning text-white px-1 small link-underline link-underline-opacity-0">
+               class="rounded bg-warning text-white px-1 small link-underline link-underline-opacity-0"
+                title="Modificar el empleado <%=empleado.getNombre()%>">
                 ACTUALIZAR
             </a>
         </td>

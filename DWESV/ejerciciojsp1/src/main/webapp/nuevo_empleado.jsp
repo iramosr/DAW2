@@ -14,7 +14,7 @@
 <div class="container">
     <h1>Nuevo Empleado</h1>
     <form method="post" action="empleados/nuevo">
-        <jsp:include page="formulario_clientes.jsp">
+        <jsp:include page="formulario_empleados.jsp">
             <jsp:param name="titleSubmit" value="Guardar"/>
             <jsp:param name="readonly" value=""/>
         </jsp:include>

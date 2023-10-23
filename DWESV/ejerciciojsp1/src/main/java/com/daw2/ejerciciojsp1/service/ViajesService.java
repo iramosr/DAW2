@@ -20,8 +20,9 @@ public class ViajesService {
             id = Long.parseLong(request.getParameter("id").trim());
         }catch (Exception ex){}
         String codigo = request.getParameter("codigo").trim();
+        String idempleado = request.getParameter("empleado").trim();
+        Empleado empleado = empleadosDao.get(Long.parseLong(idempleado));
         Double precio = Double.parseDouble(request.getParameter("precio").trim());
-        Empleado empleado = empleadosDao.get(Long.parseLong(request.getParameter("empleado").trim()));
 
         //Fechas
         Date salida = null;

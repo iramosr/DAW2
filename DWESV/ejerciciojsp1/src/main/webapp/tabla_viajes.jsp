@@ -19,7 +19,7 @@
     <%for(Viaje viaje: viajes){%>
     <tr>
         <td class="bg-dark text-white"><%= viaje.getCodigo()%></td>
-        <td class="bg-dark text-white"><%= viaje.getEmpleado().getId()%></td>
+        <td class="bg-dark text-white"><%= viaje.getEmpleado().getNombre() + " " + viaje.getEmpleado().getApellido1()%></td>
         <td class="bg-dark text-white"><%= viaje.getPrecio()%></td>
         <td class="bg-dark text-white"><%= new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").format(viaje.getSalida())%></td>
         <td class="bg-dark text-white"><%= new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").format(viaje.getLlegada())%></td>

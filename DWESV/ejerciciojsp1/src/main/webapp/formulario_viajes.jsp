@@ -47,10 +47,10 @@
                 <div class="col-12 col-md-6 form-floating">
                     <select class="form-select" id="empleado" name="empleado" <%=disabled%>>
 
-                        <option <% if (empleadoId == "") { %>
+                        <option value="0" <% if (empleadoId == "") { %>
                                 selected
                                 <% } %>>
-                            Empleado
+                            Seleccione un empleado
                         </option>
                         <% for (Empleado empleado : empleados) { %>
                         <option value="<%=empleado.getId()%>" <%if (Objects.equals(empleadoId, empleado.getId().toString())) { %>
@@ -61,6 +61,8 @@
                         <%}%>
                     </select>
                     <label for="empleado">Empleado</label>
+
+                    <input type="hidden" name="empleado" value="<%=empleadoId%>" />
                 </div>
             </div>
 
