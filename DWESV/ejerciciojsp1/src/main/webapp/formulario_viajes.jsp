@@ -4,6 +4,7 @@
 <%@ page import="java.util.List" %>
 <%@ page import="com.daw2.ejerciciojsp1.dao.impl.EmpleadosDaoImpl" %>
 <%@ page import="com.daw2.ejerciciojsp1.dao.EmpleadosDao" %>
+<%@ page import="java.util.Objects" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%
@@ -44,16 +45,15 @@
                     <label for="codigo">Código</label>
                 </div>
                 <div class="col-12 col-md-6 form-floating">
-                    <select class="form-select" id="empleado" name="empleado"
-                            aria-label="floating label select example" <%=disabled%>>
+                    <select class="form-select" id="empleado" name="empleado" <%=disabled%>>
 
                         <option <% if (empleadoId == "") { %>
                                 selected
                                 <% } %>>
-                            Encargado
+                            Empleado
                         </option>
                         <% for (Empleado empleado : empleados) { %>
-                        <option value="<%=empleado.getId()%>" <%if (Long.parseLong(empleadoId) == empleado.getId()) { %>
+                        <option value="<%=empleado.getId()%>" <%if (Objects.equals(empleadoId, empleado.getId().toString())) { %>
                                 selected
                                 <% } %>>
                             <%=empleado.getNombre() + " " + empleado.getApellido1() + " " + empleado.getApellido2()%>
@@ -83,7 +83,7 @@
             </div>
             <div class="row mb-3">
                 <div class="form-floating">
-                    <textarea type="descripcion" class="form-control" id="descripcion" name="descripcion"
+                    <textarea class="form-control" id="descripcion" name="descripcion"
                               placeholder="Introduce la descripción" <%=readonly%>><%=descripcion%></textarea>
                     <label for="descripcion">Descripción</label>
                 </div>

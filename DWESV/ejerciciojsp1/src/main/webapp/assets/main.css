@@ -1,3 +1,10 @@
-input[readonly] {
+input [readonly]{
     background-color: #f8efc2 !important;
 }
+textarea [readonly]{
+    background-color: #f8efc2 !important;
+}
+select :disabled{
+    background: #f8efc2 !important;
+}
+

@@ -1,5 +1,6 @@
 <%@ page import="com.daw2.ejerciciojsp1.entity.Viaje" %>
 <%@ page import="java.util.List" %>
+<%@ page import="java.text.SimpleDateFormat" %>
 <%
     List<Viaje> viajes = (List) request.getAttribute("viajes");
 %>
@@ -20,8 +21,8 @@
         <td class="bg-dark text-white"><%= viaje.getCodigo()%></td>
         <td class="bg-dark text-white"><%= viaje.getEmpleado().getId()%></td>
         <td class="bg-dark text-white"><%= viaje.getPrecio()%></td>
-        <td class="bg-dark text-white"><%= viaje.getSalida()%></td>
-        <td class="bg-dark text-white"><%= viaje.getLlegada()%></td>
+        <td class="bg-dark text-white"><%= new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").format(viaje.getSalida())%></td>
+        <td class="bg-dark text-white"><%= new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").format(viaje.getLlegada())%></td>
         <td class="bg-dark text-white"><%= viaje.getDescripcion()%></td>
         <td class="bg-dark text-white">
             <a href="viajes/borrar?id=<%=viaje.getId()%>"
