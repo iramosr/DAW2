@@ -1,6 +1,6 @@
 body {
     background-image: url("../Fotos/Fondo01.jpg");
-    height:500px; 
+    height:750px; 
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,7 +44,6 @@ body {
     width: 100%;
     padding-left: 10px;
     font-size: 18px;
-    margin-top: 15px;
     border-radius: 5px;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -92,15 +91,4 @@ body {
 
 .boton:hover {
     opacity: 0.9;
-}
-
-
-@media only screen and (max-width: 600px) {
-    #right {
-        display: none;
-    }
-
-    .login-form {
-        width: 100%;
-    }
 }

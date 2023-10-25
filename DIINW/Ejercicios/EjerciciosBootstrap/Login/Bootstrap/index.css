@@ -1,0 +1,9 @@
+body {
+    background-image: url("../Fotos/Fondo01.jpg");
+    height:750px; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: white;
+}
