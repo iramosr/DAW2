@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login con Grid</title>
+    <link rel="stylesheet" href="index.css" />
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="fotousuario">
+            <img src="../Fotos/Usuario.png" alt="">
+        </div>
+        <form class="formulario">
+            <label class="usuariolab">Usuario</label>
+            <input class="usuarioin" type="text" name="email" id="email" autofocus required />
+
+            <label class="passwordlab">Contraseña</label>
+            <input class="passwordin" type="password" name="password" id="password" required />
+
+            <button class="boton" name="submit" id="submit">Entrar</button>
+
+            <label class="olvidado"><a href="#">¿Has olvidado tu contraseña?</a></label>
+        </form>
+    </div>
+</body>
+<script>
+    function cambiaFondo() {
+        let fecha = new Date();
+        let minutos = fecha.getMinutes();
+        //imagen desde en punto hasta y 15
+        if (minutos >= 0 && minutos < 15) {
+            document.body.style.backgroundImage = "url('../Fotos/Fondo01.jpg')";
+            //imagen desde y 15 hasta y 30
+        } else if (minutos >= 15 && minutos < 30) {
+            document.body.style.backgroundImage = "url('../Fotos/Fondo02.jpg')";
+            //imagen desde y 30 hasta y 45
+        } else if (minutos >= 30 && minutos < 45) {
+            document.body.style.backgroundImage = "url('../Fotos/Fondo03.jpg')";
+        } else {
+            document.body.style.backgroundImage = "url('../Fotos/Fondo04.jpg')";
+        }
+
+    }
+    cambiaFondo();
+</script>
+</html>

@@ -1,0 +1,106 @@
+body {
+    background-image: url("../Fotos/Fondo01.jpg");
+    height:500px; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: white;
+}
+
+.main {
+    margin: 0%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0;
+    height: 100vh;
+}
+
+.fotousuario {
+    text-align: center;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.fotousuario img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: -90px;
+}
+
+.formulario {
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.formulario input {
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.formulario div {
+    margin: 20px 0;
+}
+
+.usuariolab {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.usuarioin {
+    grid-area: 2 / 1 / 3 / 4;
+}
+
+.passwordlab {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.passwordin {
+    grid-area: 5 / 1 / 6 / 4;
+}
+
+.boton {
+    grid-area: 7 / 1 / 9 / 4;
+    border-radius: 5px;
+    border: 1px solid #8b2f4e;
+    background-color: #9f3659;
+    font-size: 18px;
+    margin: 25px;
+    padding: 25px;
+}
+
+.olvidado {
+    text-align: center;
+    grid-area: 10 / 1 / 11 / 4;
+}
+
+.olvidado a {
+    color: white;
+    text-decoration: none;
+}
+
+.boton:hover {
+    opacity: 0.9;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #right {
+        display: none;
+    }
+
+    .login-form {
+        width: 100%;
+    }
+}
