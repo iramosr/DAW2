@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <a class="navbar-brand" href="<?= BASE_URL ?>">
             <img src="<?= BASE_URL ?>/assets/images/logo.png" style="width: 50px;" alt="logo" />
-            Encuestas
+            Usuarios
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,7 +14,7 @@
                     <a class="nav-link active" aria-current="page" href="<?= BASE_URL ?>">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= BASE_URL ?>/encuestas">Encuestas</a>
+                    <a class="nav-link" href="<?= BASE_URL ?>/usuarios">Usuarios</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"

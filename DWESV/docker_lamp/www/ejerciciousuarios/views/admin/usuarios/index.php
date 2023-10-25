@@ -8,7 +8,7 @@
 
 <div class="container bg-white">
 
-    <a href="<?=BASE_URL?>/encuestas/add" class="btn btn-dark">NUEVA</a>
+    <a href="<?=BASE_URL?>/usuarios/add" class="btn btn-dark">NUEVO</a>
 
     <table class="table table-striped">
         <thead>
@@ -19,7 +19,7 @@
             <th>Foto</th>
         </thead>
         <tbody>
-            <?php foreach ($data['encuestas'] as $encuesta) { ?>
+            <?php foreach ($data['usuario'] as $usuario) { ?>
                 <tr>
                     <td><?=$encuesta['nombre']?></td>
                     <td><?=$encuesta['apellidos']?></td>

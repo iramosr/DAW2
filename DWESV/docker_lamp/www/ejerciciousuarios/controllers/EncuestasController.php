@@ -2,11 +2,11 @@
 
 namespace controllers;
 
-use dao\EncuestasDao;
+use dao\UsuariosDao;
 use libs\Controller;
 
 
-class EncuestasController extends Controller{
+class UsuariosController extends Controller{
 
     function __construct(){
         parent::__construct();
@@ -14,45 +14,46 @@ class EncuestasController extends Controller{
 
     function index(){
 
-        $dao = new EncuestasDao();
-        $encuestas = $dao->listAll();
-        $this->data['encuestas'] = $encuestas;
-        $this->view->render('admin/encuestas/index', $this->data);
+        $dao = new UsuariosDao();
+        $usuarios = $dao->listAll();
+        $this->data['usuarios'] = $usuarios;
+        $this->view->render('admin/usuarios/index', $this->data);
 
     }
 
     public function add(){
-        $this->view->render('admin/encuestas/add');
+        $this->view->render('admin/usuarios/add');
     }
 
     public function store(){
-        $encuesta = [];
-        $encuesta['nombre'] = $_POST['nombre'] ?? null;
-        $encuesta['apellidos'] = $_POST['apellidos'] ?? null;
-        $encuesta['email'] = $_POST['email'] ?? null;
-        $encuesta['fecha_nacimiento'] = $_POST['fecha_nacimiento'] ?? null;
-        $encuesta['sexo'] = $_POST['sexo'] ?? null;
-        if (isset($_POST['aficiones'])){
-            $encuesta['aficiones'] = implode(",", $_POST['aficiones']);
-        }
-        $encuesta['estudios'] = $_POST['estudios'] ?? null;
-        $encuesta['observaciones'] = $_POST['observaciones'] ?? null;
-        //$encuesta['foto'] = $_FILES['foto']['name'];
+        $usuario = [];
 
+        $usuario['username'] = $_POST['username'] ?? null;
+        $usuario['password'] = $_POST['password'] ?? null;
+        $usuario['email'] = $_POST['email'] ?? null;
+        $usuario['nombre'] = $_POST['nombre'] ?? null;
+        $usuario['apellido1'] = $_POST['apellido1'] ?? null;
+        $usuario['apellido2'] = $_POST['apellido2'] ?? null;
         if ($_FILES['foto'] && $_FILES['foto']['name'] != '') {
             $foto = $_FILES['foto'];
             $nameFoto = uniqid() . '-' . $foto['name'];
-                $localPathImagen = fullPath(UPLOAD_FOTOS, $nameFoto);
+            $localPathImagen = fullPath(UPLOAD_FOTOS, $nameFoto);
             move_uploaded_file($foto['tmp_name'], $localPathImagen);
-            $encuesta['foto'] = $nameFoto;
+            $usuario['foto'] = $nameFoto;
         }
-        $dao = new EncuestasDao();
-        if ($dao->add($encuesta)) {
+        $usuario['activo'] = $_POST['activo'] ?? null;
+        $usuario['bloqueado'] = $_POST['bloqueado'] ?? null;
+        $usuario['num_intentos'] = $_POST['num_intentos'] ?? null;
+        $usuario['ultimo_acceso'] = $_POST['ultimo_acceso'] ?? null;
+
+
+        $dao = new UsuariosDao();
+        if ($dao->add($usuario)) {
             $this->data['result']['type'] = 'success';
-            $this->data['result']['msg'] = "Encuesta guardada";
+            $this->data['result']['msg'] = "Usuario guardada";
         } else {
             $this->data['result']['type'] = 'error';
-            $this->data['result']['msg'] = "Encuesta no guardada";
+            $this->data['result']['msg'] = "Usuario no guardada";
         }
         $this->index();
     }
@@ -60,6 +61,6 @@ class EncuestasController extends Controller{
     public function show($values)
     {
         echo "<h2>Método show</h2>";
-        $this->view->render('admin/encuestas/show');
+        $this->view->render('admin/usuarios/show');
     }
 }
