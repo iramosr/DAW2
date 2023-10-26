@@ -42,10 +42,10 @@ class UsuariosController extends Controller{
             $usuario['foto'] = $nameFoto;
         }
         if (isset($_POST['activo'])){
-            $usuario['activo'] = "TRUE";
+            $usuario['activo'] = 1;
         }
         if (isset($_POST['bloqueado'])){
-            $usuario['bloqueado'] = "TRUE";
+            $usuario['bloqueado'] = 1;
         }
         $usuario['num_intentos'] = $_POST['num_intentos'] ?? null;
         $usuario['ultimo_acceso'] = $_POST['ultimo_acceso'] ?? null;

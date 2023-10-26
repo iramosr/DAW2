@@ -1,6 +1,7 @@
 <?php
 namespace dao;
 
+use http\Params;
 use libs\Dao;
 
 class UsuariosDao extends Dao
@@ -23,9 +24,10 @@ class UsuariosDao extends Dao
 
     protected function _add($data): object
     {
-        $createdAt = $updatedAt = date("Y-m-d H:i:s");
+        $createdAt = $updatedAt = $ultimo_acceso = date("Y-m-d H:i:s");
         $sql = 'INSERT INTO ' . $this->tableName() . ' (' . $this->itemsTable() . ') ' .
-            'VALUES (null, :username, :password, :email, :nombre, :apellido1, :apellido2, :foto, :activo, :bloqueado, :num_intentos, :ultimo_acceso, :createdAt, :updatedAt)';
+            'VALUES (null, :username, :password, :email, :nombre, :apellido1, :apellido2, 
+            :foto, :activo, :bloqueado, :num_intentos, :ultimo_acceso, :createdAt, :updatedAt)';
         $query = $this->pdo->prepare($sql);
         $username = $data['username'] ?? null;
         $password = $data['password'] ?? null;
@@ -37,7 +39,6 @@ class UsuariosDao extends Dao
         $activo = $data['activo'] ?? null;
         $bloqueado = $data['bloqueado'] ?? null;
         $num_intentos = $data['num_intentos'] ?? null;
-        $ultimo_acceso = $data['ultimo_acceso'] ?? null;
 
         $query->bindParam(':username', $username);
         $query->bindParam(':password', $password);
@@ -52,7 +53,7 @@ class UsuariosDao extends Dao
         $query->bindParam(':ultimo_acceso', $ultimo_acceso);
         $query->bindParam(':createdAt', $createdAt);
         $query->bindParam(':updatedAt', $updatedAt);
-        dep($query);
+
         return $query;
     }
 

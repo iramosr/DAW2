@@ -40,13 +40,13 @@
         <div class="mb-3">
             <label>Activo:</label>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="activo[]" id="act" value="TRUE">
+                <input class="form-check-input" type="checkbox" name="activo[]" id="act" value=1>
             </div>
         </div>
         <div class="mb-3">
             <label>Bloqueado:</label>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="bloqueado[]" id="bloq" value="TRUE">
+                <input class="form-check-input" type="checkbox" name="bloqueado[]" id="bloq" value=1>
             </div>
         </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
