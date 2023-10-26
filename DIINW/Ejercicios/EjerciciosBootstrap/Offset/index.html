@@ -1,0 +1,64 @@
+<!-- Debes crear un ejercicio de invención propia en el que debe incluir:
+Offset en varios elementos.
+Reordenación de columnas.
+Etiquetas block y none.
+Debe cambiar en al menos 2 resoluciones.
+Los estilos se darán con bootstrap 5.
+Aprovecha para incorporar etiquetas META: como mínimo author, description y robots. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Offset</title>
+    <meta name="author" content="Ismael Ramos">
+    <meta name="description" content="Ejercicio de Offset">
+    <meta name="robots" content="index, nofollow">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Offset -->
+    <div class="container text-center my-5 border border-3 border-black">
+        <div class="row">
+            <div class="col-md-4 bg-primary">1</div>
+            <div class="col-md-4 offset-md-4 bg-secondary">2</div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 offset-md-1 bg-info">3</div>
+            <div class="col-md-3 offset-md-2 bg-success">4</div>
+            <div class="col-md-2 offset-md-3 bg-danger">5</div>
+        </div>
+        <div class="row">
+            <div class="col-md-9 offset-md-3 bg-warning">6</div>
+        </div>
+    </div>
+    <!-- Reordenación de columnas -->
+    <div class="container text-center my-5 border border-3 border-black">
+        <div class="row">
+            <div class="col order-md-1 bg-primary">
+                1
+            </div>
+            <div class="col order-md-3 bg-success">
+                2
+            </div>
+            <div class="col order-md-2 bg-info">
+                3
+            </div>
+        </div>
+    </div>
+    <!-- Block y none -->
+    <div class="container text-center my-5 border border-3 border-black">
+        <span class="d-block d-sm-none">Solo tamaño pequeño</span>
+        <span class="d-none d-lg-block">Solo tamaño grande</span>
+        <span class="d-none d-sm-block">Todos menos pequeño</span>
+        <span class="d-block d-lg-none">Todos menos grande</span>
+    </div>
+</body>
+
+</html>
