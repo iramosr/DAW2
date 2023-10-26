@@ -41,8 +41,12 @@ class UsuariosController extends Controller{
             move_uploaded_file($foto['tmp_name'], $localPathImagen);
             $usuario['foto'] = $nameFoto;
         }
-        $usuario['activo'] = $_POST['activo'] ?? null;
-        $usuario['bloqueado'] = $_POST['bloqueado'] ?? null;
+        if (isset($_POST['activo'])){
+            $usuario['activo'] = "TRUE";
+        }
+        if (isset($_POST['bloqueado'])){
+            $usuario['bloqueado'] = "TRUE";
+        }
         $usuario['num_intentos'] = $_POST['num_intentos'] ?? null;
         $usuario['ultimo_acceso'] = $_POST['ultimo_acceso'] ?? null;
 
@@ -63,4 +67,9 @@ class UsuariosController extends Controller{
         echo "<h2>Método show</h2>";
         $this->view->render('admin/usuarios/show');
     }
+
+    public function delete($values){
+        $this->view->render('admin/usuarios/delete');
+    }
+
 }

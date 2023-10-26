@@ -25,8 +25,7 @@ class UsuariosDao extends Dao
     {
         $createdAt = $updatedAt = date("Y-m-d H:i:s");
         $sql = 'INSERT INTO ' . $this->tableName() . ' (' . $this->itemsTable() . ') ' .
-            'VALUES (null, :username, :password, :email, :nombre, :apellido1, :apellido2,
-             :foto, :activo, :bloqueado, :num_intentos, :ultimo_acceso, :createdAt, :updatedAt)';
+            'VALUES (null, :username, :password, :email, :nombre, :apellido1, :apellido2, :foto, :activo, :bloqueado, :num_intentos, :ultimo_acceso, :createdAt, :updatedAt)';
         $query = $this->pdo->prepare($sql);
         $username = $data['username'] ?? null;
         $password = $data['password'] ?? null;
@@ -53,6 +52,7 @@ class UsuariosDao extends Dao
         $query->bindParam(':ultimo_acceso', $ultimo_acceso);
         $query->bindParam(':createdAt', $createdAt);
         $query->bindParam(':updatedAt', $updatedAt);
+        dep($query);
         return $query;
     }
 
