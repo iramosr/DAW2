@@ -4,6 +4,7 @@ namespace controllers;
 
 use dao\EncuestasDao;
 use libs\Controller;
+use services\LogService;
 
 
 class EncuestasController extends Controller{
@@ -50,9 +51,11 @@ class EncuestasController extends Controller{
         if ($dao->add($encuesta)) {
             $this->data['result']['type'] = 'success';
             $this->data['result']['msg'] = "Encuesta guardada";
+            LogService::info("Encuesta guardada: ".$encuesta['nombre']);
         } else {
             $this->data['result']['type'] = 'error';
             $this->data['result']['msg'] = "Encuesta no guardada";
+            LogService::error("Encuesta NO guardada: ".$encuesta['nombre']);
         }
         $this->index();
     }

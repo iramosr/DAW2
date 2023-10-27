@@ -23,3 +23,5 @@ define('DB_CHARSET','utf8mb4');
 # Directiorios Uploads
 define('UPLOAD', APP_PATH.'/uploads');
 define('UPLOAD_FOTOS', UPLOAD.'/fotos');
+define('UPLOAD_FOTOS_CLIENTES', UPLOAD_FOTOS.'/clientes');
+define('UPLOAD_FOTOS_USUARIOS', UPLOAD_FOTOS.'/usuarios');

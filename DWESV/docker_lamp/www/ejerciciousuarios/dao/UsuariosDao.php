@@ -100,4 +100,13 @@ class UsuariosDao extends Dao
         }
 
     }
+    public function getByUsername($username):?array
+    {
+        $sql = $this->select() . ' WHERE username=:username';
+        $query = $this->pdo->prepare($sql);
+        $query->bindParam(':username', $username);
+        $query->execute();
+        $row = $query->fetch(\PDO::FETCH_ASSOC);
+        return $row !== false ? $row : null;
+    }
 }

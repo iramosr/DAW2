@@ -4,6 +4,7 @@ namespace controllers;
 
 use dao\UsuariosDao;
 use libs\Controller;
+use services\LogService;
 
 
 class UsuariosController extends Controller{
@@ -28,16 +29,23 @@ class UsuariosController extends Controller{
     public function store(){
         $usuario = [];
 
-        $usuario['username'] = $_POST['username'] ?? null;
-        $usuario['password'] = $_POST['password'] ?? null;
+        if (isset($_POST['username'])){
+            $usuario['username'] = strtolower($_POST['username']);
+        } else {
+            $usuario['username'] = null;
+        }
+        if(isset($_POST['password'])){
+            $usuario['password'] = password_hash($_POST['password'], PASSWORD_BCRYPT);
+        }
         $usuario['email'] = $_POST['email'] ?? null;
         $usuario['nombre'] = $_POST['nombre'] ?? null;
         $usuario['apellido1'] = $_POST['apellido1'] ?? null;
         $usuario['apellido2'] = $_POST['apellido2'] ?? null;
         if ($_FILES['foto'] && $_FILES['foto']['name'] != '') {
             $foto = $_FILES['foto'];
-            $nameFoto = uniqid() . '-' . $foto['name'];
-            $localPathImagen = fullPath(UPLOAD_FOTOS, $nameFoto);
+            $extension = pathinfo($foto['name'], PATHINFO_EXTENSION);
+            $nameFoto = uniqid() . '-' . $usuario['username'].".".$extension;
+            $localPathImagen = fullPath(UPLOAD_FOTOS_USUARIOS, $nameFoto);
             move_uploaded_file($foto['tmp_name'], $localPathImagen);
             $usuario['foto'] = $nameFoto;
         }
@@ -47,7 +55,7 @@ class UsuariosController extends Controller{
         if (isset($_POST['bloqueado'])){
             $usuario['bloqueado'] = 1;
         }
-        $usuario['num_intentos'] = $_POST['num_intentos'] ?? null;
+        $usuario['num_intentos'] = $_POST['num_intentos'] ?? 0;
         $usuario['ultimo_acceso'] = $_POST['ultimo_acceso'] ?? date("Y-m-d");
 
 
@@ -55,9 +63,11 @@ class UsuariosController extends Controller{
         if ($dao->add($usuario)) {
             $this->data['result']['type'] = 'success';
             $this->data['result']['msg'] = "Usuario guardada";
+            LogService::info("Usuario creado: ".$usuario['username']);
         } else {
             $this->data['result']['type'] = 'error';
             $this->data['result']['msg'] = "Usuario no guardada";
+            LogService::error("Usuario NO creado: ".$usuario['username']);
         }
         $this->index();
     }
@@ -110,8 +120,8 @@ class UsuariosController extends Controller{
             } else{
                 $usuario['bloqueado'] = 0;
             }
-            $usuario['num_intentos'] = $_POST['num_intentos'] ?? null;
-            $usuario['ultimo_acceso'] = $_POST['ultimo_acceso'] ?? date("Y-m-d");;
+            $usuario['num_intentos'] = $_POST['num_intentos'] ?? 0;
+            $usuario['ultimo_acceso'] = $_POST['ultimo_acceso'] ?? date("Y-m-d");
 
 
             if ($dao->update($id, $usuario)) {
@@ -129,7 +139,6 @@ class UsuariosController extends Controller{
             $this->data['usuario'] = $usuario;
         }
         $this->view->render('admin/usuarios/update', $this->data);
-
     }
 
 }

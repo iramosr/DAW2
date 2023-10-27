@@ -32,7 +32,7 @@
 
                 <td class="align-middle text-center">
                     <?php if ($usuario['foto'] !== null && $usuario['foto'] != '') { ?>
-                        <img src="<?= BASE_URL . '/uploads/fotos/' . $usuario['foto'] ?>"
+                        <img src="<?= BASE_URL . '/uploads/fotos/usuarios/' . $usuario['foto'] ?>"
                              style="height: 50px">
                     <?php } ?>
                 </td>
@@ -50,7 +50,7 @@
                         <span class="badge bg-danger">No</span>
                     <?php } ?>
                 </td>
-                <td class="align-middle text-center"><?= $usuario['ultimo_acceso'] ?></td>
+                <td class="align-middle text-center"><?= date("d-m-Y",strtotime($usuario['ultimo_acceso']))?></td>
                 <td class="align-middle text-center">
                     <a href="<?= BASE_URL ?>/usuarios/show/<?= $usuario['id'] ?>"
                        class="rounded bg-info text-white m-2 p-2 link-underline link-underline-opacity-0 text-center">
