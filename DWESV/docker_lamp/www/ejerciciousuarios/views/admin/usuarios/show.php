@@ -51,16 +51,19 @@
                    value="<?= isset($data['usuario']['foto']) ? $data['usuario']['foto'] : '' ?>"
                    disabled>
         </div>
+
         <div class="mb-3">
             <label>Activo:</label>
             <input class="form-check-input" type="checkbox" name="activo[]" id="act"
-                   value="<?= (isset($data['usuario']['activo']) == 1) ? 'selected' : '' ?>"
+                   value="<?= $data['usuario']['activo']?>"
+                   <?= ($data['usuario']['activo'] == 1) ? 'checked' : '' ?>
                    disabled>
         </div>
         <div class="mb-3">
             <label>Bloqueado:</label>
             <input class="form-check-input" type="checkbox" name="bloqueado[]" id="bloq"
-                   value="<?= (isset($data['usuario']['bloqueado']) == 1) ? 'selected' : '' ?>"
+                   value="<?= $data['usuario']['bloqueado']?>"
+                <?= ($data['usuario']['bloqueado'] == 1) ? 'checked' : '' ?>
                    disabled>
         </div>
         <button type="submit" class="btn btn-primary">Volver</button>

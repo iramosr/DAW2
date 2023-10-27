@@ -45,9 +45,9 @@
                 </td>
                 <td class="align-middle text-center">
                     <?php if ($usuario['bloqueado']) { ?>
-                        <span class="badge bg-danger">Sí</span>
+                        <span class="badge bg-success">Sí</span>
                     <?php } else { ?>
-                        <span class="badge bg-success">No</span>
+                        <span class="badge bg-danger">No</span>
                     <?php } ?>
                 </td>
                 <td class="align-middle text-center"><?= $usuario['ultimo_acceso'] ?></td>
