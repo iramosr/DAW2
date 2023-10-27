@@ -24,7 +24,7 @@ abstract class Dao
 
     abstract protected function _add($data): object;
 
-    abstract public function update(int $id, object $datos): bool;
+    abstract public function update(int $id, $datos): bool;
 
 
     public function add(array|object $data): int|null

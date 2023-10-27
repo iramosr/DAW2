@@ -59,7 +59,7 @@ class UsuariosDao extends Dao
         return $query;
     }
 
-    public function update(int $id, object $datos): bool
+    public function update(int $id, $data): bool
     {
         try{
             $sql = 'UPDATE ' . $this->tableName() . ' SET 

@@ -63,8 +63,9 @@
                    value="<?= (isset($data['usuario']['bloqueado']) == 1) ? 'selected' : '' ?>"
                    disabled>
         </div>
+        <button type="submit" class="btn btn-primary">Volver</button>
 </div>
-    <button type="submit" class="btn btn-primary">Volver</button>
+
 
 </form>
 

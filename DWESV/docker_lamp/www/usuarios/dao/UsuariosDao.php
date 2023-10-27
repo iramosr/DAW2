@@ -79,8 +79,8 @@ class UsuariosDao extends Dao
         ultimo_acceso = :ultimo_acceso,
         updated_at = :updatedAt
         WHERE id = :id';
-
             $query = $this->pdo->prepare($sql);
+
             $query->bindParam(':id', $id);
             $query->bindParam(':username', $data['username']);
             $query->bindParam(':password', $data['password']);

@@ -102,9 +102,13 @@ class UsuariosController extends Controller{
 
             if (isset($_POST['activo'])){
                 $usuario['activo'] = 1;
+            } else{
+                $usuario['activo'] = 0;
             }
             if (isset($_POST['bloqueado'])){
                 $usuario['bloqueado'] = 1;
+            } else{
+                $usuario['bloqueado'] = 0;
             }
             $usuario['num_intentos'] = $_POST['num_intentos'] ?? null;
             $usuario['ultimo_acceso'] = $_POST['ultimo_acceso'] ?? date("Y-m-d");;
