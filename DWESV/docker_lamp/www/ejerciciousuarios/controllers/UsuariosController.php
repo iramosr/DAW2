@@ -48,7 +48,7 @@ class UsuariosController extends Controller{
             $usuario['bloqueado'] = 1;
         }
         $usuario['num_intentos'] = $_POST['num_intentos'] ?? null;
-        $usuario['ultimo_acceso'] = $_POST['ultimo_acceso'] ?? null;
+        $usuario['ultimo_acceso'] = $_POST['ultimo_acceso'] ?? date("Y-m-d");
 
 
         $dao = new UsuariosDao();
@@ -62,14 +62,70 @@ class UsuariosController extends Controller{
         $this->index();
     }
 
-    public function show($values)
-    {
-        echo "<h2>Método show</h2>";
-        $this->view->render('admin/usuarios/show');
+    public function show($values){
+        $dao = new UsuariosDao();
+        $usuario = $dao->get($values[0]);
+        $this->data['usuario'] = $usuario;
+        $this->view->render('admin/usuarios/show', $this->data);
     }
 
     public function delete($values){
-        $this->view->render('admin/usuarios/delete');
+        {
+            $id = $values[0];
+
+            $dao = new UsuariosDao();
+
+            if ($dao->delete($id)) {
+                $this->data['result']['type'] = 'success';
+                $this->data['result']['msg'] = "Usuario eliminado";
+            } else {
+                $this->data['result']['type'] = 'error';
+                $this->data['result']['msg'] = "Usuario no eliminado";
+            }
+            $this->index();
+        }
+    }
+    public function update($values)
+    {
+        $id = $values[0];
+        $dao = new UsuariosDao();
+        // Verifica si se ha proporcionado un ID de usuario
+        if ($_SERVER['REQUEST_METHOD']=== 'POST'){
+
+            $usuario = [];
+            $usuario['username'] = $_POST['username'] ?? null;
+            $usuario['password'] = $_POST['password'] ?? null;
+            $usuario['email'] = $_POST['email'] ?? null;
+            $usuario['nombre'] = $_POST['nombre'] ?? null;
+            $usuario['apellido1'] = $_POST['apellido1'] ?? null;
+            $usuario['apellido2'] = $_POST['apellido2'] ?? null;
+
+            if (isset($_POST['activo'])){
+                $usuario['activo'] = 1;
+            }
+            if (isset($_POST['bloqueado'])){
+                $usuario['bloqueado'] = 1;
+            }
+            $usuario['num_intentos'] = $_POST['num_intentos'] ?? null;
+            $usuario['ultimo_acceso'] = $_POST['ultimo_acceso'] ?? date("Y-m-d");;
+
+
+            if ($dao->update($id, $usuario)) {
+                $this->data['result']['type'] = 'success';
+                $this->data['result']['msg'] = 'Usuario actualizado';
+
+            } else {
+                $this->data['result']['type'] = 'error';
+                $this->data['result']['msg'] = 'No se pudo actualizar el usuario';
+            }
+        }
+
+        $usuario=$dao->get($id);
+        if ($usuario) {
+            $this->data['usuario'] = $usuario;
+        }
+        $this->view->render('admin/usuarios/update', $this->data);
+
     }
 
 }

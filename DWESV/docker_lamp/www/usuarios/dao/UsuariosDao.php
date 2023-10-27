@@ -1,8 +1,9 @@
 <?php
 namespace dao;
 
-use http\Params;
 use libs\Dao;
+use PDO;
+use PDOException;
 
 class UsuariosDao extends Dao
 {
@@ -14,20 +15,23 @@ class UsuariosDao extends Dao
     public function tableName(): string
     {
         return 'usuarios';
+
     }
+
 
     public function itemsTable(): string
     {
-        return "id, username, password, email, nombre, apellido1, apellido2, foto, activo,
-         bloqueado, num_intentos, ultimo_acceso, created_at, updated_at";
+        return "id, username, password, email, nombre, apellido1, apellido2, foto, activo, bloqueado,
+        num_intentos, ultimo_acceso, created_at, updated_at";
     }
 
     protected function _add($data): object
     {
         $createdAt = $updatedAt = date("Y-m-d H:i:s");
+
         $sql = 'INSERT INTO ' . $this->tableName() . ' (' . $this->itemsTable() . ') ' .
-            'VALUES (null, :username, :password, :email, :nombre, :apellido1, :apellido2, 
-            :foto, :activo, :bloqueado, :num_intentos, :ultimo_acceso, :createdAt, :updatedAt)';
+            'VALUES (NULL, :username, :password, :email, :nombre, :apellido1, :apellido2, :foto, :activo, :bloqueado,
+        :numero_intentos, :ultimo_acceso, :createdAt, :updatedAt)';
         $query = $this->pdo->prepare($sql);
         $username = $data['username'] ?? null;
         $password = $data['password'] ?? null;
@@ -36,9 +40,9 @@ class UsuariosDao extends Dao
         $apellido1 = $data['apellido1'] ?? null;
         $apellido2 = $data['apellido2'] ?? null;
         $foto = $data['foto'] ?? null;
-        $activo = $data['activo'] ?? 0;
-        $bloqueado = $data['bloqueado'] ?? 0;
-        $num_intentos = $data['num_intentos'] ?? null;
+        $activo = $data['activo'] ?? null;
+        $bloqueado = $data['bloqueado'] ?? null;
+        $numero_intentos = $data['num_intentos'] ?? null;
         $ultimo_acceso = $data['ultimo_acceso'] ?? null;
 
         $query->bindParam(':username', $username);
@@ -50,16 +54,15 @@ class UsuariosDao extends Dao
         $query->bindParam(':foto', $foto);
         $query->bindParam(':activo', $activo);
         $query->bindParam(':bloqueado', $bloqueado);
-        $query->bindParam(':num_intentos', $num_intentos);
+        $query->bindParam(':numero_intentos', $numero_intentos);
         $query->bindParam(':ultimo_acceso', $ultimo_acceso);
         $query->bindParam(':createdAt', $createdAt);
         $query->bindParam(':updatedAt', $updatedAt);
-    
-
         return $query;
     }
 
-    public function update(int $id, object $datos): bool
+
+    public function update($id, $data): bool
     {
         try{
             $sql = 'UPDATE ' . $this->tableName() . ' SET 
@@ -100,4 +103,12 @@ class UsuariosDao extends Dao
         }
 
     }
+    public function delete(int $id): bool
+    {
+        $sql = 'DELETE FROM ' . $this->tableName() . ' WHERE id = :id';
+        $query = $this->pdo->prepare($sql);
+        $query->bindParam(':id', $id);
+        return $query->execute();
+    }
+
 }

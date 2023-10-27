@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <a class="navbar-brand" href="<?= BASE_URL ?>">
             <img src="<?= BASE_URL ?>/assets/images/logo.png" style="width: 50px;" alt="logo" />
-            Usuarios
+            Encuestas
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +59,6 @@
                 <?php /*} */ ?>
 -->
 
-<!-- Muestra si se ha añadido el usuario -->
 <?php if (isset($data['result'])) {
     $icon = match ($data['result']['type']) {
         'info' => "<i class='fa-solid fa-circle-info fa-lg'></i>",
@@ -106,6 +105,6 @@
         });
     </script>
 <?php } ?>
+
+
 </div>
-
-
