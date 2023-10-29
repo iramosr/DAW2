@@ -19,8 +19,9 @@ public class ViajesService {
         try {
             id = Long.parseLong(request.getParameter("id").trim());
         }catch (Exception ex){}
-        String codigo = request.getParameter("codigo").trim();
         String idempleado = request.getParameter("empleado").trim();
+        String codigo = request.getParameter("codigo").trim();
+        String titulo = request.getParameter("titulo").trim();
         Empleado empleado = empleadosDao.get(Long.parseLong(idempleado));
         Double precio = Double.parseDouble(request.getParameter("precio").trim());
 
@@ -41,8 +42,9 @@ public class ViajesService {
 
         Viaje viaje = new Viaje();
         viaje.setId(id);
-        viaje.setCodigo(codigo);
         viaje.setEmpleado(empleado);
+        viaje.setCodigo(codigo);
+        viaje.setTitulo(titulo);
         viaje.setPrecio(precio);
         try {
             viaje.setSalida(salida);

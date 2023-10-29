@@ -17,6 +17,7 @@
         <jsp:include page="formulario_clientes.jsp">
             <jsp:param name="titleSubmit" value="Guardar"/>
             <jsp:param name="readonly" value=""/>
+            <jsp:param name="required" value="required"/>
         </jsp:include>
     </form>
 

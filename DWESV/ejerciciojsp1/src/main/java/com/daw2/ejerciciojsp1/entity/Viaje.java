@@ -1,6 +1,7 @@
 package com.daw2.ejerciciojsp1.entity;
 
 import jakarta.persistence.*;
+
 import java.util.Date;
 
 @Entity
@@ -14,8 +15,10 @@ public class Viaje {
     @JoinColumn(name = "empleado_id")
     private Empleado empleado;
 
-    @Column(unique = true,length = 12)
+    @Column(unique = true, length = 12)
     private String codigo;
+    @Column(nullable = false)
+    private String titulo;
     @Column(nullable = false)
     private Double precio;
     @Column(nullable = false)
@@ -47,6 +50,14 @@ public class Viaje {
 
     public void setCodigo(String codigo) {
         this.codigo = codigo;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
     public Double getPrecio() {
@@ -87,6 +98,7 @@ public class Viaje {
                 "id=" + id +
                 ", empleado=" + empleado +
                 ", codigo='" + codigo + '\'' +
+                ", titulo='" + titulo + '\'' +
                 ", precio=" + precio +
                 ", salida=" + salida +
                 ", llegada=" + llegada +

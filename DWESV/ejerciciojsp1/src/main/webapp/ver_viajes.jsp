@@ -1,4 +1,4 @@
-<%@ page import="com.daw2.ejerciciojsp1.entity.Cliente" %>
+<%@ page import="com.daw2.ejerciciojsp1.entity.Viaje" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
@@ -18,6 +18,7 @@
             <jsp:param name="titleSubmit" value="Volver"/>
             <jsp:param name="readonly" value="readonly"/>
             <jsp:param name="disabled" value="disabled"/>
+            <jsp:param name="mostrarboton" value="mostrarboton"/>
         </jsp:include>
     </form>
     <jsp:include page="tabla_viajes.jsp"/>

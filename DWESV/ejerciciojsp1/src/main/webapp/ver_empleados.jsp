@@ -7,7 +7,6 @@
 
 <html>
 <jsp:include page="layouts/head.jsp"/>
-
 <body>
 <jsp:include page="layouts/main-menu.jsp"/>
 
@@ -17,6 +16,7 @@
         <jsp:include page="formulario_empleados.jsp">
             <jsp:param name="titleSubmit" value="Volver"/>
             <jsp:param name="readonly" value="readonly"/>
+            <jsp:param name="mostrarboton" value="mostrarboton"/>
         </jsp:include>
     </form>
     <jsp:include page="tabla_empleados.jsp"/>

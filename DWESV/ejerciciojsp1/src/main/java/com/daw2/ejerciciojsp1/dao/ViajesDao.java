@@ -6,6 +6,10 @@ import com.daw2.ejerciciojsp1.entity.Viaje;
 import java.util.List;
 
 public interface ViajesDao extends GenericDao<Viaje, Long>{
-    List<Viaje> findByCodigo(String codigo);
+    Viaje findByCodigo(String codigo);
+
+    List<Viaje> findByIdCliente(Long idCliente);
+
+    List<Viaje> findByIdEmpleado(Long idEmpleado);
 }
 

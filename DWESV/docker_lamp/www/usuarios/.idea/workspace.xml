@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="00b4c76e-0267-45b2-8f31-361b757017cd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../ejerciciojsp1/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ejerciciojsp1/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ejerciciojsp1/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ejerciciojsp1/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ejerciciojsp1/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191/storage_v2/_src_/schema/dwesv.FdC4BQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ejerciciojsp1/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191/storage_v2/_src_/schema/dwesv.FdC4BQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ejerciciojsp1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ejerciciojsp1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ejerciciojsp1/src/main/java/com/daw2/ejerciciojsp1/entity/Viaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ejerciciojsp1/src/main/java/com/daw2/ejerciciojsp1/entity/Viaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ejerciciojsp1/src/main/java/com/daw2/ejerciciojsp1/service/ViajesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ejerciciojsp1/src/main/java/com/daw2/ejerciciojsp1/service/ViajesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ejerciciojsp1/src/main/webapp/formulario_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ejerciciojsp1/src/main/webapp/formulario_viajes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ejerciciojsp1/src/main/webapp/tabla_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ejerciciojsp1/src/main/webapp/tabla_clientes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ejerciciojsp1/src/main/webapp/tabla_empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ejerciciojsp1/src/main/webapp/tabla_empleados.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ejerciciojsp1/src/main/webapp/tabla_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ejerciciojsp1/src/main/webapp/tabla_viajes.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2X4Ndo4jm2zOs3oN3x33geAp5dv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ismae/OneDrive/Escritorio/trabajos/DAW2/DWESV/docker_lamp/www/usuarios&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Language Defaults&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Servidores\PHP\www\encuestasclase\assets\images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00b4c76e-0267-45b2-8f31-361b757017cd" name="Changes" comment="" />
+      <created>1697884481263</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697884481263</updated>
+      <workItem from="1697884482260" duration="710000" />
+      <workItem from="1697885245523" duration="263000" />
+      <workItem from="1698092055205" duration="46000" />
+      <workItem from="1698092252849" duration="13000" />
+      <workItem from="1698092409847" duration="740000" />
+      <workItem from="1698093166533" duration="705000" />
+      <workItem from="1698093879537" duration="4994000" />
+      <workItem from="1698134583021" duration="1454000" />
+      <workItem from="1698136757833" duration="1278000" />
+      <workItem from="1698138067247" duration="4194000" />
+      <workItem from="1698229128944" duration="240000" />
+      <workItem from="1698229383163" duration="34128000" />
+      <workItem from="1698313388378" duration="614000" />
+      <workItem from="1698397589538" duration="25000" />
+      <workItem from="1698397624826" duration="255000" />
+      <workItem from="1698397884548" duration="3108000" />
+      <workItem from="1698404547311" duration="4997000" />
+      <workItem from="1698409866523" duration="68000" />
+      <workItem from="1698412231915" duration="463000" />
+      <workItem from="1698576229095" duration="59000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

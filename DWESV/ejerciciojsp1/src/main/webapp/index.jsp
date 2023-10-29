@@ -2,15 +2,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JSP - Hello World</title>
+  <title>Viajes</title>
   <jsp:include page="layouts/head.jsp"/>
 </head>
 <body>
 <jsp:include page="layouts/main-menu.jsp"/>
-<h1><%= "Hello World!" %>
+<h1>
+  Viajes
 </h1>
 <br/>
-<a href="hello-servlet">Hello Servlet</a>
+Por favor, seleccione una opción del menú superior.
 <jsp:include page="layouts/footer.jsp"/>
 </body>
 </html>

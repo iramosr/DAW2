@@ -7,6 +7,7 @@
     <class>com.daw2.ejerciciojsp1.entity.Cliente</class>
     <class>com.daw2.ejerciciojsp1.entity.Viaje</class>
     <class>com.daw2.ejerciciojsp1.entity.Empleado</class>
+    <class>com.daw2.ejerciciojsp1.entity.Contratacion</class>
 
     <properties>
       <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>

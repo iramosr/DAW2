@@ -1,7 +1,7 @@
 package com.daw2.ejerciciojsp1.dao.impl;
 
-import com.daw2.ejerciciojsp1.dao.ViajesDao;
-import com.daw2.ejerciciojsp1.entity.Viaje;
+import com.daw2.ejerciciojsp1.dao.ContratacionesDao;
+import com.daw2.ejerciciojsp1.entity.Contratacion;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
@@ -9,9 +9,9 @@ import jakarta.persistence.Query;
 
 import java.util.List;
 
-public class ViajesDaoImpl implements ViajesDao {
+public class ContratacionesDaoImpl implements ContratacionesDao {
     private EntityManagerFactory emf;
-    public ViajesDaoImpl(){
+    public ContratacionesDaoImpl(){
         try {
             emf = Persistence.createEntityManagerFactory("default");
         } catch (Exception e){
@@ -19,7 +19,7 @@ public class ViajesDaoImpl implements ViajesDao {
         }
     }
     @Override
-    public Long add(Viaje entity) {
+    public Long add(Contratacion entity) {
         Long id =null;
         EntityManager em = emf.createEntityManager();
         try {
@@ -38,13 +38,13 @@ public class ViajesDaoImpl implements ViajesDao {
     }
 
     @Override
-    public Boolean add(List<Viaje> list) {
+    public Boolean add(List<Contratacion> list) {
         boolean error = false;
         EntityManager em= emf.createEntityManager();
         try{
             em.getTransaction().begin();
-            for (Viaje viaje: list){
-                em.persist(viaje);
+            for (Contratacion contratacion: list){
+                em.persist(contratacion);
                 em.flush();
             }
             em.getTransaction().commit();
@@ -58,7 +58,7 @@ public class ViajesDaoImpl implements ViajesDao {
     }
 
     @Override
-    public Boolean update(Viaje entity) {
+    public Boolean update(Contratacion entity) {
         boolean error = false;
         EntityManager em = emf.createEntityManager();
         try {
@@ -81,9 +81,9 @@ public class ViajesDaoImpl implements ViajesDao {
         boolean error=false;
         EntityManager em = emf.createEntityManager();
         try {
-            Viaje viaje = em.find(Viaje.class, id);
+            Contratacion contratacion = em.find(Contratacion.class, id);
             em.getTransaction().begin();
-            em.remove(viaje);
+            em.remove(contratacion);
             em.getTransaction().commit();
         }catch (Exception e){
             error = true;
@@ -100,54 +100,43 @@ public class ViajesDaoImpl implements ViajesDao {
     }
 
     @Override
-    public Viaje get(long id){
+    public Contratacion get(long id){
         EntityManager em = emf.createEntityManager();
-        Query query = em.createQuery("SELECT v FROM Viaje v WHERE v.id=:id",Viaje.class);
+        Query query = em.createQuery("SELECT c FROM Contratacion c WHERE c.id=:id",Contratacion.class);
         query.setParameter("id", id);
-        Viaje viaje = (Viaje) query.getSingleResult();
+        Contratacion contratacion = (Contratacion) query.getSingleResult();
         em.close();
-        return viaje;
+        return contratacion;
     }
 
     @Override
-    public List<Viaje> findAll() {
-        List<Viaje> viajes;
+    public List<Contratacion> findAll() {
+        List<Contratacion> contrataciones;
         EntityManager em = emf.createEntityManager();
-        viajes = em.createQuery("SELECT v FROM Viaje v",Viaje.class).getResultList();
+        contrataciones = em.createQuery("SELECT c FROM Contratacion c",Contratacion.class).getResultList();
         em.close();
-        return viajes;
+        return contrataciones;
     }
 
     @Override
-    public Viaje findByCodigo(String codigo) {
-
+    public List<Contratacion> findByIdViaje(Long idviaje) {
+        List<Contratacion> contrataciones;
         EntityManager em = emf.createEntityManager();
-        Query query = em.createQuery("SELECT v FROM Viaje v WHERE v.codigo=:codigo",Viaje.class);
-        query.setParameter("codigo", codigo);
-        Viaje viaje = (Viaje) query.getSingleResult();
+        Query query = em.createQuery("SELECT c FROM Contratacion c WHERE c.viaje.id=:idviaje",Contratacion.class);
+        query.setParameter("idviaje", idviaje);
+        contrataciones = query.getResultList();
         em.close();
-        return viaje;
+        return contrataciones;
     }
 
     @Override
-    public List<Viaje> findByIdCliente(Long idCliente) {
-        List<Viaje> viajes;
+    public List<Contratacion> findByIdCliente(Long idcliente) {
+        List<Contratacion> contrataciones;
         EntityManager em = emf.createEntityManager();
-        Query query = em.createQuery("SELECT v FROM Viaje v INNER JOIN Contratacion c ON v.id=c.viaje.id WHERE c.cliente.id=:idCliente",Viaje.class);
-        query.setParameter("idCliente", idCliente);
-        viajes = query.getResultList();
+        Query query = em.createQuery("SELECT c FROM Contratacion c WHERE c.cliente.id=:idcliente",Contratacion.class);
+        query.setParameter("idcliente", idcliente);
+        contrataciones = query.getResultList();
         em.close();
-        return viajes;
-    }
-
-    @Override
-    public List<Viaje> findByIdEmpleado(Long idEmpleado) {
-        List<Viaje> viajes;
-        EntityManager em = emf.createEntityManager();
-        Query query = em.createQuery("SELECT v FROM Viaje v WHERE v.empleado.id=:idEmpleado",Viaje.class);
-        query.setParameter("idEmpleado", idEmpleado);
-        viajes = query.getResultList();
-        em.close();
-        return viajes;
+        return contrataciones;
     }
 }
