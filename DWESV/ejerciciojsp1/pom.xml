@@ -6,7 +6,7 @@
 
   <groupId>com.daw2</groupId>
   <artifactId>ejerciciojsp01</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <name>ejerciciojsp01</name>
   <packaging>war</packaging>
 

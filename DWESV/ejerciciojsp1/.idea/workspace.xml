@@ -9,15 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="fix botones">
+    <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="fix horas">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191/storage_v2/_src_/schema/dwesv.FdC4BQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191/storage_v2/_src_/schema/dwesv.FdC4BQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formulario_clientes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario_empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formulario_empleados.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formulario_viajes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tabla_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tabla_viajes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,32 +50,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ismae/OneDrive/Escritorio/trabajos/DAW2/DWESV/ejerciciojsp1/src/main/webapp&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/daw2/Desktop/DAW2/DAW2/DWESV/ejerciciojsp1",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;,
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite",
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ismae\OneDrive\Escritorio\trabajos\DAW2\DWESV\ejerciciojsp1\src\main\webapp" />
@@ -223,6 +219,7 @@
       <workItem from="1698074379080" duration="7063000" />
       <workItem from="1698319487463" duration="869000" />
       <workItem from="1698575323007" duration="23793000" />
+      <workItem from="1698685287245" duration="2164000" />
     </task>
     <task id="LOCAL-00001" summary="Fix ejercicio">
       <option name="closed" value="true" />
@@ -296,7 +293,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698075833744</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix horas">
+      <option name="closed" value="true" />
+      <created>1698684121135</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1698684121135</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +317,8 @@
     <MESSAGE value="add empleados" />
     <MESSAGE value="add fixes" />
     <MESSAGE value="fix botones" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix botones" />
+    <MESSAGE value="fix horas" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix horas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

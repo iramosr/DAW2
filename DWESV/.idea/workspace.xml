@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f060dffa-f9db-4b8a-aa5c-b43a22fde244" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/AprendeJSP03-json/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AprendeJSP03-json/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AprendeJSP03-json/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AprendeJSP03-json/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aprendejsp02/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/aprendejsp02/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ejerciciojsp1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciojsp1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejerciciojsp1/src/main/java/com/daw2/ejerciciojsp1/entity/Viaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciojsp1/src/main/java/com/daw2/ejerciciojsp1/entity/Viaje.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejerciciojsp1/src/main/webapp/formulario_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciojsp1/src/main/webapp/formulario_viajes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejerciciojsp1/src/main/webapp/listado_empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciojsp1/src/main/webapp/listado_empleados.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejerciciojsp1/src/main/webapp/tabla_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciojsp1/src/main/webapp/tabla_viajes.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +29,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/ismae/OneDrive/Escritorio/trabajos/DAW2/DWESV/aprendejsp02",
+    "last_opened_file_path": "C:/Users/daw2/Desktop/DAW2/DAW2/DWESV",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -54,6 +47,7 @@
       <workItem from="1695649030232" duration="12000" />
       <workItem from="1696504566255" duration="9000" />
       <workItem from="1698055938963" duration="65000" />
+      <workItem from="1698684237073" duration="36000" />
     </task>
     <servers />
   </component>
