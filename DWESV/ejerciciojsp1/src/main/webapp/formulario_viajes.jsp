@@ -26,8 +26,8 @@
     String codigo = viaje.getCodigo() != null ? viaje.getCodigo() : "";
     String titulo = viaje.getTitulo() != null ? viaje.getTitulo() : "";
     String precio = viaje.getPrecio() != null ? String.valueOf(viaje.getPrecio()) : "";
-    String salida = viaje.getSalida() != null ? new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").format(viaje.getSalida()) : "";
-    String llegada = viaje.getLlegada() != null ? new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").format(viaje.getSalida()) : "";
+    String salida = viaje.getSalida() != null ? new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(viaje.getSalida()) : "";
+    String llegada = viaje.getLlegada() != null ? new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(viaje.getLlegada()) : "";
     String descripcion = viaje.getDescripcion() != null ? viaje.getDescripcion() : "";
 
     EmpleadosDao empleadosDao = new EmpleadosDaoImpl();
@@ -99,10 +99,7 @@
             </div>
             <div class="row mb-3">
                 <div class="form-floating">
-                    <textarea class="form-control" id="descripcion" name="descripcion"
-                              placeholder="Introduce la descripción" <%=readonly%> <%=required%>>
-                        <%=descripcion%>
-                    </textarea>
+                    <textarea class="form-control" id="descripcion" name="descripcion" placeholder="Introduce la descripción" <%=readonly%> <%=required%>><%=descripcion%></textarea>
                     <label for="descripcion">Descripción</label>
                 </div>
             </div>

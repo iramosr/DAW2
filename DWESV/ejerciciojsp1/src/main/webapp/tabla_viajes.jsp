@@ -27,9 +27,9 @@
         </td>
         <td class="bg-dark text-white"><%= viaje.getPrecio()%>
         </td>
-        <td class="bg-dark text-white"><%= new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").format(viaje.getSalida())%>
+        <td class="bg-dark text-white"><%= new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(viaje.getSalida())%>
         </td>
-        <td class="bg-dark text-white"><%= new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").format(viaje.getLlegada())%>
+        <td class="bg-dark text-white"><%= new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(viaje.getLlegada())%>
         </td>
         <td class="bg-dark text-white"><%= viaje.getDescripcion()%>
         </td>

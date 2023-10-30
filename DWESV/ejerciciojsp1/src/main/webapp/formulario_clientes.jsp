@@ -100,10 +100,10 @@
                     <%= contratacion.getViaje().getTitulo()%>
                 </td>
                 <td>
-                    <%= new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").format(contratacion.getViaje().getSalida())%>
+                    <%= new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(contratacion.getViaje().getSalida())%>
                 </td>
                 <td>
-                    <%= new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").format(contratacion.getViaje().getLlegada())%>
+                    <%= new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(contratacion.getViaje().getLlegada())%>
                 </td>
                 <td>
                     <% totalpagado += contratacion.getPagado(); %>

@@ -97,10 +97,10 @@
                     <%= viaje.getTitulo()%>
                 </td>
                 <td>
-                    <%= new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").format(viaje.getSalida())%>
+                    <%= new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(viaje.getSalida())%>
                 </td>
                 <td>
-                    <%= new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").format(viaje.getLlegada())%>
+                    <%= new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(viaje.getLlegada())%>
                 </td>
             </tr>
             <%}%>
