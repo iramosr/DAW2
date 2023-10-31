@@ -23,7 +23,9 @@ class UsuariosController extends Controller{
     }
 
     public function add(){
-        $this->view->render('admin/usuarios/add');
+        $this->data['accion'] = BASE_URL."/usuarios/store";
+        $this->data['boton'] = 'Insertar';
+        $this->view->render('admin/usuarios/add', $this->data);
     }
 
     public function store(){
@@ -76,6 +78,10 @@ class UsuariosController extends Controller{
         $dao = new UsuariosDao();
         $usuario = $dao->get($values[0]);
         $this->data['usuario'] = $usuario;
+        $this->data['readonly'] = 'readonly';
+        $this->data['disabled'] = 'disabled';
+        $this->data['accion'] = BASE_URL."/usuarios/index/";
+        $this->data['boton'] = 'Volver';
         $this->view->render('admin/usuarios/show', $this->data);
     }
 
@@ -138,6 +144,8 @@ class UsuariosController extends Controller{
         if ($usuario) {
             $this->data['usuario'] = $usuario;
         }
+        $this->data['accion'] = BASE_URL."/usuarios/update/".$id;
+        $this->data['boton'] = 'Cambiar';
         $this->view->render('admin/usuarios/update', $this->data);
     }
 
