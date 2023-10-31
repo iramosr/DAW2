@@ -9,11 +9,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="fix horas">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="fix botones">
+      <change afterPath="$PROJECT_DIR$/../docker_lamp/www/usuarios/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../docker_lamp/www/usuarios/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/dao/ContratacionesDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/dao/impl/ContratacionesDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/entity/Contratacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/service/ContratacionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/ActualizaContratacionServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/BorraContratacionServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/ListadoContratacionServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/NuevaContratacionServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/VerContratacionServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/actualiza_contrataciones.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/borra_contrataciones.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/formulario_contrataciones.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/listado_contrataciones.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/nueva_contratacion.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/tabla_contrataciones.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/ver_contrataciones.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker_lamp/www/ejerciciousuarios/views/admin/usuarios/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../docker_lamp/www/ejerciciousuarios/views/admin/usuarios/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191/storage_v2/_src_/schema/dwesv.FdC4BQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191/storage_v2/_src_/schema/dwesv.FdC4BQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/dao/ViajesDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/dao/ViajesDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/dao/impl/ViajesDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/dao/impl/ViajesDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/entity/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/entity/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/entity/Viaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/entity/Viaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/service/ViajesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/service/ViajesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/VerClienteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/VerClienteServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/VerEmpleadoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/VerEmpleadoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/VerViajeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/VerViajeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formulario_clientes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario_empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formulario_empleados.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formulario_viajes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/head.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/main-menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/main-menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/nuevo_cliente.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/nuevo_cliente.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/nuevo_empleado.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/nuevo_empleado.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/nuevo_viaje.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/nuevo_viaje.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/tabla_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tabla_clientes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/tabla_empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tabla_empleados.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/tabla_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tabla_viajes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ver_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ver_clientes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ver_empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ver_empleados.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ver_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ver_viajes.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +99,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/daw2/Desktop/DAW2/DAW2/DWESV/ejerciciojsp1",
+    "last_opened_file_path": "C:/Users/ismae/OneDrive/Escritorio/trabajos/DAW2/DWESV/ejerciciojsp1/src/main/webapp",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -219,7 +262,6 @@
       <workItem from="1698074379080" duration="7063000" />
       <workItem from="1698319487463" duration="869000" />
       <workItem from="1698575323007" duration="23793000" />
-      <workItem from="1698685287245" duration="2164000" />
     </task>
     <task id="LOCAL-00001" summary="Fix ejercicio">
       <option name="closed" value="true" />
@@ -293,15 +335,7 @@
       <option name="project" value="LOCAL" />
       <updated>1698075833744</updated>
     </task>
-    <task id="LOCAL-00010" summary="fix horas">
-      <option name="closed" value="true" />
-      <created>1698684121135</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1698684121135</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,8 +351,7 @@
     <MESSAGE value="add empleados" />
     <MESSAGE value="add fixes" />
     <MESSAGE value="fix botones" />
-    <MESSAGE value="fix horas" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix horas" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix botones" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -327,6 +360,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/BorraEmpleadoServlet.java</url>
           <line>26</line>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/BorraEmpleadoServlet.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/dao/impl/EmpleadosDaoImpl.java</url>
