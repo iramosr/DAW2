@@ -3,8 +3,16 @@
 namespace services;
 
 
-class LogService
-{
+use dao\LogsDao;
+
+require_once "dao/LogsDao.php";
+
+class LogService{
+
+    private static function logToDatabase($logType, $logMessage){
+        $logDao = new LogsDao();
+        $logDao->insertLog($logType, $logMessage);
+    }
 
     private static function createDirectoryLog(){
         $path = fullPath(APP_PATH, 'log');
@@ -23,19 +31,23 @@ class LogService
         file_put_contents($path, $linea, FILE_APPEND);
     }
     public static function info($msg){
+        self::logToDatabase("INFO", $msg);
         self::line("INFO", $msg);
 
     }
 
     public static function error($msg){
+        self::logToDatabase("ERROR", $msg);
         self::line("ERROR", $msg);
     }
 
     public static function debug($msg){
+        self::logToDatabase("DEBUG", $msg);
         self::line("DEBUG", $msg);
     }
 
     public static function warning($msg){
+        self::logToDatabase("WARNING", $msg);
         self::line("WARNING", $msg);
     }
 
@@ -45,6 +57,7 @@ class LogService
     # pasa el tipo de log y el mensaje
     # --------------------------------------------
     public static function log($type, $msg){
+        self::logToDatabase(strtoupper($type), $msg);
         self::line(strtoupper($type), $msg);
 
     }
