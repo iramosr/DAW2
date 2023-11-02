@@ -3,7 +3,7 @@
 namespace controllers;
 use dao\UsuariosDao;
 use libs\Controller;
-class HomeController extends Controller
+class AdminController extends Controller
 {
 
     function __construct() {
@@ -17,7 +17,7 @@ class HomeController extends Controller
 
     function home()
     {
-        $this->view->render('public/home');
+        $this->view->render('admin/home');
     }
 
 }

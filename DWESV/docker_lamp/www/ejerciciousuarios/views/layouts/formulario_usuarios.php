@@ -9,7 +9,6 @@
     <div class="mb-3">
         <label for="password" class="form-label">Contraseña:</label>
         <input type="password" class="form-control" id="password" name="password"
-               value="<?= isset($data['usuario']['email']) ? $data['usuario']['password'] : '' ?>"
             <?= $data['readonly'] ?? '' ?>>
     </div>
     <div class="mb-3">
@@ -59,6 +58,27 @@
             <?= isset($data['usuario']['bloqueado']) && ($data['usuario']['bloqueado'] == 1) ? 'checked' : '' ?>
             <?= $data['disabled'] ?? '' ?>>
     </div>
-    <button type="submit" class="btn btn-primary"><?= $data['boton'] ?? '' ?></button>
+    <div class="mb-3">
+        <label>Administrador:</label>
+        <input class="form-check-input" type="checkbox" name="rolAdmin" id="rolAdmin"
+               value="<?= isset($data['usuario']['rolAdmin']) ? $data['usuario']['rolAdmin'] : '' ?>"
+            <?= isset($data['usuario']['rolAdmin']) && ($data['usuario']['rolAdmin'] == 1) ? 'checked' : '' ?>
+            <?= $data['disabled'] ?? '' ?>>
+    </div>
+    <div class="mb-3">
+        <label>Empleado:</label>
+        <input class="form-check-input" type="checkbox" name="rolEmpleado" id="rolEmpleado"
+               value="<?= isset($data['usuario']['rolEmpleado']) ? $data['usuario']['rolEmpleado'] : '' ?>"
+            <?= isset($data['usuario']['rolEmpleado']) && ($data['usuario']['rolEmpleado'] == 1) ? 'checked' : '' ?>
+            <?= $data['disabled'] ?? '' ?>>
+    </div>
+    <div class="mb-3">
+        <label>Cliente:</label>
+        <input class="form-check-input" type="checkbox" name="rolCliente" id="rolCliente"
+               value="<?= isset($data['usuario']['rolCliente']) ? $data['usuario']['rolCliente'] : '' ?>"
+            <?= isset($data['usuario']['rolCliente']) && ($data['usuario']['rolCliente'] == 1) ? 'checked' : '' ?>
+            <?= $data['disabled'] ?? '' ?>>
+    </div>
+    <button type="submit" class="btn btn-save"><?= $data['boton'] ?? '' ?></button>
 
 </form>

@@ -1,0 +1,27 @@
+.bg-navbar{
+    background-color: #a0d8a9;
+}
+
+.bg-footer{
+    background-color: #a0d8b4;
+}
+
+.btn-save{
+    background-color: #4e59d2;
+    border-color: #c8c7ce;
+}
+
+.btn-save:hover{
+    background-color: #868dd2;
+    border-color: #c8c7ce;
+}
+
+.btn-new{
+    background-color: #9a31cc;
+    border-color: #c8c7ce;
+}
+
+.btn-new:hover{
+    background-color: #a24ed2;
+    border-color: #c8c7ce;
+}

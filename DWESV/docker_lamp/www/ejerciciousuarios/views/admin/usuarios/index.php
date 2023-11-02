@@ -8,7 +8,7 @@
 
 <div class="container bg-white">
 
-    <a href="<?= BASE_URL ?>/usuarios/add" class="btn btn-dark">NUEVO</a>
+    <a href="<?= BASE_URL ?>/usuarios/add" class="btn btn-new">NUEVO</a>
 
     <table class="table table-striped align-middle text-center">
         <thead>
