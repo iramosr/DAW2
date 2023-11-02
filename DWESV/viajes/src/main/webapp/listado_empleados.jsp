@@ -14,7 +14,11 @@
 <div class="container">
     <div class="d-flex justify-content-between">
         <h1>Listado de empleados</h1>
-        <a class="btn btn-dark mb-auto" href="empleados/nuevo">Nuevo Empleado</a>
+        <a class="btn btn-dark mb-auto" href="empleados/nuevo" title="Nuevo empleado">
+            <button class="btn text-center m-0 p-0" style="width: 30px; height: 30px">
+                <i class="fa-solid fa-user-plus" style="color: #ffffff;"></i>
+            </button>
+        </a>
     </div>
     <jsp:include page="tabla_empleados.jsp"/>
 </div>

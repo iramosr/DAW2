@@ -55,12 +55,12 @@
             <div class="col-12 col-md-4 form-floating">
                 <input type="apellido1" class="form-control" id="apellido1" name="apellido1"
                        placeholder="Introduce tu primer apellido" value="<%=apellido1%>" <%=readonly%> <%=required%>>
-                <label for="apellido1">Apellido 1</label>
+                <label for="apellido1">Primer apellido</label>
             </div>
             <div class="col-12 col-md-4 form-floating">
                 <input type="apellido2" class="form-control" id="apellido2" name="apellido2"
                        placeholder="Introduce tu segundo apellido" value="<%=apellido2%>"<%=readonly%>>
-                <label for="apellido2">Apellido 2</label>
+                <label for="apellido2">Segundo apellido</label>
             </div>
         </div>
         <!-- Aquí se muestra un boton que muestra una tabla con todos los viajes del cliente si es que tiene alguno -->

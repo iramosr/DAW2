@@ -14,7 +14,11 @@
 <div class="container">
     <div class="d-flex justify-content-between">
         <h1>Listado de contrataciones</h1>
-        <a class="btn btn-dark mb-auto" href="contrataciones/nuevo">Nueva Contratación</a>
+        <a class="btn btn-dark mb-auto" href="contrataciones/nuevo" title="Nueva contratación">
+            <button class="btn text-center m-0 p-0" style="width: 30px; height: 30px">
+                <i class="fa-solid fa-cart-plus" style="color: #ffffff;"></i>
+            </button>
+        </a>
     </div>
     <jsp:include page="tabla_contrataciones.jsp"/>
 </div>

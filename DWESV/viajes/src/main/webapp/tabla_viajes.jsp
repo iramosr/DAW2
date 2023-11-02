@@ -1,8 +1,12 @@
 <%@ page import="com.daw2.viajes.entity.Viaje" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.time.LocalDateTime" %>
+<%@ page import="java.text.DateFormat" %>
+<%@ page import="java.util.Date" %>
 <%
     List<Viaje> viajes = (List) request.getAttribute("viajes");
+
 %>
 
 <table class="table table-info table-striped table-hover align-middle text-center">
@@ -17,7 +21,12 @@
     <td class="bg-dark text-white">Opciones</td>
     </thead>
     <tbody>
-    <%for (Viaje viaje : viajes) {%>
+    <%for (Viaje viaje : viajes) {
+        String salidaString = viaje.getSalida().toString();
+        DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm");
+        Date date = (Date)formatter.parse(salidaString);
+
+    %>
     <tr>
         <td class="bg-dark text-white"><%= viaje.getCodigo()%>
         </td>
@@ -27,9 +36,9 @@
         </td>
         <td class="bg-dark text-white"><%= viaje.getPrecio()%>
         </td>
-        <td class="bg-dark text-white"><%= new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(viaje.getSalida())%>
+        <td class="bg-dark text-white"><%= salidaString%>
         </td>
-        <td class="bg-dark text-white"><%= new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(viaje.getLlegada())%>
+        <td class="bg-dark text-white"><%= new SimpleDateFormat("dd/MM/yyyy'T'HH:mm").format(viaje.getLlegada())%>
         </td>
         <td class="bg-dark text-white"><%= viaje.getDescripcion()%>
         </td>

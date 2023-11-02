@@ -27,13 +27,13 @@ public class ViajesService {
         //Fechas
         Date salida = null;
         try {
-            salida = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").parse(request.getParameter("salida").trim());
+            salida = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").parse(request.getParameter("salida").trim());
         } catch (ParseException e) {
             throw new RuntimeException(e);
         }
         Date llegada = null;
         try {
-            llegada = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").parse(request.getParameter("llegada").trim());
+            llegada = new SimpleDateFormat("dd/MM/yyyy HH:mm").parse(request.getParameter("llegada").trim());
         } catch (ParseException e) {
             throw new RuntimeException(e);
         }

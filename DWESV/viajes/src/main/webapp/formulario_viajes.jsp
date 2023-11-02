@@ -26,8 +26,8 @@
     String codigo = viaje.getCodigo() != null ? viaje.getCodigo() : "";
     String titulo = viaje.getTitulo() != null ? viaje.getTitulo() : "";
     String precio = viaje.getPrecio() != null ? String.valueOf(viaje.getPrecio()) : "";
-    String salida = viaje.getSalida() != null ? new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(viaje.getSalida()) : "";
-    String llegada = viaje.getLlegada() != null ? new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(viaje.getLlegada()) : "";
+    String salida = viaje.getSalida() != null ? new SimpleDateFormat("dd/MM/yyyy'T'HH:mm").format(viaje.getSalida()) : "";
+    String llegada = viaje.getLlegada() != null ? new SimpleDateFormat("dd/MM/yyyy'T'HH:mm").format(viaje.getLlegada()) : "";
     String descripcion = viaje.getDescripcion() != null ? viaje.getDescripcion() : "";
 
     EmpleadosDao empleadosDao = new EmpleadosDaoImpl();
@@ -82,17 +82,17 @@
 
             <div class="row mb-3">
                 <div class="col-12 col-md-4 form-floating">
-                    <input type="precio" class="form-control" id="precio" name="precio"
+                    <input type="number" step="0.01" class="form-control" id="precio" name="precio"
                            placeholder="Introduce el precio" value="<%=precio%>"<%=readonly%> <%=required%>>
                     <label for="precio">Precio</label>
                 </div>
                 <div class="col-12 col-md-4 form-floating">
-                    <input type="salida" class="form-control" id="salida" name="salida"
+                    <input type="datetime-local" class="form-control" id="salida" name="salida"
                            placeholder="Introduce la salida" value="<%=salida%>"<%=readonly%> <%=required%>>
                     <label for="salida">Salida</label>
                 </div>
                 <div class="col-12 col-md-4 form-floating">
-                    <input type="llegada" class="form-control" id="llegada" name="llegada"
+                    <input type="datetime-local" class="form-control" id="llegada" name="llegada"
                            placeholder="Introduce la llegada" value="<%=llegada%>"<%=readonly%> <%=required%>>
                     <label for="llegada">Llegada</label>
                 </div>

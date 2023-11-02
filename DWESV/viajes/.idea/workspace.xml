@@ -2,16 +2,26 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="ejerciciojsp01:war exploded" />
+      <artifact name="Viajes:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="fix botones">
+    <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="start viajes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/service/ViajesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/service/ViajesService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formulario_clientes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario_empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formulario_empleados.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formulario_viajes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/listado_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listado_clientes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/listado_contrataciones.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listado_contrataciones.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/listado_empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listado_empleados.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/listado_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listado_viajes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/tabla_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tabla_viajes.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +64,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/daw2/Desktop/DAW2/DAW2/DWESV/ejerciciojsp1",
+    "last_opened_file_path": "C:/Users/daw2/Desktop/DAW2/DAW2/DWESV/viajes",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -97,9 +107,9 @@
     <configuration name="Tomcat 10.1.13" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.13" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="ejerciciojsp01:war exploded">
+        <artifact name="Viajes:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/ejerciciojsp01_war_exploded" />
+            <option name="CONTEXT_PATH" value="/Viajes_war_exploded" />
           </settings>
         </artifact>
       </deployment>
@@ -179,6 +189,7 @@
         <option name="BuildArtifacts" enabled="true">
           <artifact name="ejerciciojsp1:war exploded" />
           <artifact name="ejerciciojsp01:war exploded" />
+          <artifact name="Viajes:war exploded" />
         </option>
       </method>
     </configuration>
@@ -218,6 +229,7 @@
       <workItem from="1698319487463" duration="869000" />
       <workItem from="1698575323007" duration="23793000" />
       <workItem from="1698936462382" duration="1204000" />
+      <workItem from="1698940862015" duration="3295000" />
     </task>
     <task id="LOCAL-00001" summary="Fix ejercicio">
       <option name="closed" value="true" />
@@ -291,7 +303,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698075833744</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="start viajes">
+      <option name="closed" value="true" />
+      <created>1698940933531</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1698940933531</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,38 +327,39 @@
     <MESSAGE value="add empleados" />
     <MESSAGE value="add fixes" />
     <MESSAGE value="fix botones" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix botones" />
+    <MESSAGE value="start viajes" />
+    <option name="LAST_COMMIT_MESSAGE" value="start viajes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/BorraEmpleadoServlet.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/BorraEmpleadoServlet.java</url>
           <line>26</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/BorraEmpleadoServlet.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/BorraEmpleadoServlet.java</url>
           <line>42</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/dao/impl/EmpleadosDaoImpl.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/impl/EmpleadosDaoImpl.java</url>
           <line>80</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/BorraViajeServlet.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/BorraViajeServlet.java</url>
           <line>26</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/BorraViajeServlet.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/BorraViajeServlet.java</url>
           <line>42</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/daw2/ejerciciojsp1/servlet/VerViajeServlet.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/VerViajeServlet.java</url>
           <line>36</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>

@@ -2,16 +2,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Viajes</title>
+  <title>Viajes Castelar</title>
   <jsp:include page="layouts/head.jsp"/>
 </head>
 <body>
 <jsp:include page="layouts/main-menu.jsp"/>
-<h1>
+<h1 class="text-center">
   Viajes
 </h1>
-<br/>
+<p class="text-center">
 Por favor, seleccione una opción del menú superior.
+</p>
 <jsp:include page="layouts/footer.jsp"/>
 </body>
 </html>

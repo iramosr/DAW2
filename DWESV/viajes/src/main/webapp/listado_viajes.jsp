@@ -14,7 +14,11 @@
 <div class="container">
     <div class="d-flex justify-content-between">
         <h1>Listado de viajes</h1>
-        <a class="btn btn-dark mb-auto" href="viajes/nuevo">Nuevo Viaje</a>
+        <a class="btn btn-dark mb-auto" href="viajes/nuevo" title="Nuevo viaje">
+            <button class="btn text-center m-0 p-0" style="width: 30px; height: 30px">
+                <i class="fa-solid fa-calendar-plus" style="color: #ffffff;"></i>
+            </button>
+        </a>
     </div>
     <jsp:include page="tabla_viajes.jsp"/>
 </div>
