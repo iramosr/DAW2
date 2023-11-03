@@ -19,20 +19,23 @@ class UsuariosController extends Controller{
         $this->filterAccess('EMPLE');
         $dao = new UsuariosDao();
         $usuarios = $dao->listAll();
+        $this->data['accion'] = BASE_URL."/usuarios/store";
+        $this->data['title-btn-submit'] = 'Guardar';
+        $this->data['usuario'] = ['activo'=>true];
         $this->data['usuarios'] = $usuarios;
         $this->data['page-title'] = "LISTADO DE USUARIOS";
         $this->view->render('admin/usuarios/index', $this->data);
 
     }
 
-    public function add(){
-        $this->filterAccess('ADMIN');
-        $this->data['page-title'] = "NUEVO USUARIO";
-        $this->data['accion'] = BASE_URL."/usuarios/store";
-        $this->data['title-btn-submit'] = 'Guardar';
-        $this->data['usuario'] = ['activo'=>true];
-        $this->view->render('admin/usuarios/add', $this->data);
-    }
+//    public function add(){
+//        $this->filterAccess('ADMIN');
+//        $this->data['page-title'] = "NUEVO USUARIO";
+//        $this->data['accion'] = BASE_URL."/usuarios/store";
+//        $this->data['title-btn-submit'] = 'Guardar';
+//        $this->data['usuario'] = ['activo'=>true];
+//        $this->view->render('admin/usuarios/add', $this->data);
+//    }
 
     public function store(){
         $this->filterAccess('ADMIN');

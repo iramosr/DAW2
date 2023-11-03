@@ -5,3 +5,20 @@ INFO:2023-11-03 15:19:42:Usuario actializado: 1111
 ERROR:2023-11-03 15:27:17:Usuario NO creado: eqeqwe
 INFO:2023-11-03 15:27:32:Usuario borrado: 30
 INFO:2023-11-03 15:29:48:Usuario creado: eje1
+INFO:2023-11-03 16:55:22:Usuario actializado: usuario1
+DEBUG:2023-11-03 17:01:43:Acceso a endpoint: usuarios-api/get_by_username usuario1
+INFO:2023-11-03 17:01:43:Acceso a endpoint: usuarios-api/get_by_username usuario1
+ERROR:2023-11-03 17:01:46:Usuario NO creado: usuario1
+DEBUG:2023-11-03 17:01:55:Acceso a endpoint: usuarios-api/get_by_username hirgfgwi
+INFO:2023-11-03 17:01:55:Acceso a endpoint: usuarios-api/get_by_username hirgfgwi
+DEBUG:2023-11-03 17:02:02:Acceso a endpoint: usuarios-api/get_by_username pepito1
+INFO:2023-11-03 17:02:02:Acceso a endpoint: usuarios-api/get_by_username pepito1
+DEBUG:2023-11-03 17:02:24:Acceso a endpoint: usuarios-api/get_by_username usuario1
+INFO:2023-11-03 17:02:24:Acceso a endpoint: usuarios-api/get_by_username usuario1
+DEBUG:2023-11-03 17:05:22:Acceso a endpoint: usuarios-api/get_by_username hirgfgwi
+INFO:2023-11-03 17:05:22:Acceso a endpoint: usuarios-api/get_by_username hirgfgwi
+DEBUG:2023-11-03 17:05:30:Acceso a endpoint: usuarios-api/get_by_username 1111
+INFO:2023-11-03 17:05:30:Acceso a endpoint: usuarios-api/get_by_username 1111
+ERROR:2023-11-03 17:05:32:Usuario NO creado: 1111
+DEBUG:2023-11-03 17:09:36:Acceso a endpoint: usuarios-api/get_by_username usuario1
+INFO:2023-11-03 17:09:36:Acceso a endpoint: usuarios-api/get_by_username usuario1

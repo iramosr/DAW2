@@ -33,9 +33,8 @@
                 <?php } ?>
             </ul>
             <?php if (!isset($_SESSION['usuario'])) { ?>
-                <form class="d-flex" role="search" action="<?= BASE_URL ?>/login">
-                    <button class="btn btn-outline-success" type="submit">Login</button>
-                </form>
+                <button class="btn btn-outline-succes"
+                data-bs-toggle="modal" data-bs-target="modalLogin">Entrar</button>
             <?php } else { ?>
                 <div class="fw-bold me-1">
                     <?= $_SESSION['usuario']['nombre'] . ' ' . $_SESSION['usuario']['apellido1'] . ' ' . $_SESSION['usuario']['apellido2'] ?>
@@ -47,6 +46,8 @@
         </div>
     </div>
 </nav>
+<!-- CARGO MODAL LOGIN -->
+<?php require_once 'views/layouts/modal_login.php'; ?>
 
 
 <div id="msg">

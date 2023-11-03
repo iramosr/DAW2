@@ -39,14 +39,15 @@
                 <?php } ?>
             </td>
             <td class="align-middle text-center"><?= date("d-m-Y", strtotime($usuario['ultimo_acceso'])) ?></td>
+
             <td class="align-middle text-center">
-                <a href="<?= BASE_URL ?>/usuarios/show/<?= $usuario['username'] ?>"
-                   class="link-underline link-underline-opacity-0 text-center"
-                   title="Ver usuario <?= $usuario['username'] ?>">
-                    <button class="btn btn-info text-center" style="width: 40px; height: 40px">
-                        <i class="fa-solid fa-eye fa-sm" style="color: #ffffff;"></i>
-                    </button>
-                </a>
+
+                <button class="btn px-1 btn-info rounded link-underline link-underline-opacity-0 text-center"
+                        style="width: 40px; height: 40px"
+                        data-bs-toggle="modal" data-bs-target="#modalForm"
+                        onclick="loadUsuario('<?= $usuario['username'] ?>')">
+                    <i class="fa-solid fa-eye fa-sm" style="color: #ffffff;"></i>
+                </button>
 
                 <a href="<?= BASE_URL ?>/usuarios/update/<?= $usuario['id'] ?>"
                    class="link-underline link-underline-opacity-0 text-center"
@@ -69,3 +70,89 @@
     <?php } ?>
     <tbody>
 </table>
+
+<script>
+    function loadUsuario(username) {
+        url = "<?=BASE_URL?>/usuarios-api/get_by_username";
+        var data = new URLSearchParams();
+        data.append('username', username);
+        fetch(url, {
+            method: 'POST',
+            body: data
+        }).then(response => {
+            if (response.status === 200) {
+                return response.json();
+            } else {
+                throw new Error('Error en la solicitud');
+            }
+        })
+            .then(data => {
+                asignaCampos(data);
+            })
+            .catch(error => {
+                console.log("Error" + error);
+            });
+    }
+
+    function asignaCampos(data) {
+        var usernameEl = document.getElementById('username');
+        if (usernameEl) {
+            usernameEl.value = data.username;
+            usernameEl.readOnly = true;
+        }
+        var passwordEl = document.getElementById('password');
+        if (passwordEl) {
+            passwordEl.readOnly = true;
+        }
+        var emailEl = document.getElementById('email');
+        if (emailEl) {
+            emailEl.value = data.email;
+            emailEl.readOnly = true;
+        }
+        var nombreEl = document.getElementById('nombre');
+        if (nombreEl) {
+            nombreEl.value = data.nombre;
+            nombreEl.readOnly = true;
+        }
+        var apellido1El = document.getElementById('apellido1');
+        if (apellido1El) {
+            apellido1El.value = data.apellido1;
+            apellido1El.readOnly = true;
+        }
+        var apellido2El = document.getElementById('apellido2');
+        if (apellido2El) {
+            apellido2El.value = data.apellido2;
+            apellido2El.readOnly = true;
+        }
+        var fotoEl = document.getElementById('foto');
+        if (fotoEl) {
+            fotoEl.value = data.foto;
+            fotoEl.disabled = true;
+        }
+        var actEl = document.getElementById('act');
+        if (actEl) {
+            actEl.checked = data.activo;
+            actEl.disabled = true;
+        }
+        var bloqEl = document.getElementById('bloq');
+        if (bloqEl) {
+            bloqEl.checked = data.bloqueado;
+            bloqEl.disabled = true;
+        }
+        var rolAdminEl = document.getElementById('rolAdmin');
+        if (rolAdminEl) {
+            rolAdminEl.checked = data.rolAdmin;
+            rolAdminEl.disabled = true;
+        }
+        var rolEmpleadoEl = document.getElementById('rolEmpleado');
+        if (rolEmpleadoEl) {
+            rolEmpleadoEl.checked = data.rolEmpleado;
+            rolEmpleadoEl.disabled = true;
+        }
+        var rolClienteEl = document.getElementById('rolCliente');
+        if (rolClienteEl) {
+            rolClienteEl.checked = data.rolCliente;
+            rolClienteEl.disabled = true;
+        }
+    }
+</script>

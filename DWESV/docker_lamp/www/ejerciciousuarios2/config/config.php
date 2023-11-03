@@ -10,7 +10,7 @@ function url(){
     return $protocol . "://" . $_SERVER['HTTP_HOST'] . '/' . $app;
 }
 
-define('APP_NAME','ejerciciousuarios');
+define('APP_NAME','ejerciciousuarios2');
 define('BASE_URL',url());
 
 # Define la BD
