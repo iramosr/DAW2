@@ -1,4 +1,3 @@
-
 <form action="<?= $data['accion'] ?? '' ?>" method="post" enctype="multipart/form-data">
     <div class="mb-3">
         <label for="username" class="form-label">Usuario:</label>
@@ -46,9 +45,8 @@
         <label>Activo:</label>
         <input class="form-check-input" type="checkbox" name="activo[]" id="act"
                value="<?= isset($data['usuario']['activo']) ? $data['usuario']['activo'] : '' ?>"
-            <?= isset($data['usuario']['activo']) && ($data['usuario']['activo'] == 1) ? 'checked' : '' ?>
+            <?= isset($data['usuario']) && $data['usuario']['activo'] ? 'checked' : '' ?>
             <?= $data['disabled'] ?? '' ?>
-            <?= isset($data['boton']) && $data['boton'] == 'Insertar' ? 'checked' : '' ?>
         >
     </div>
     <div class="mb-3">
@@ -79,6 +77,8 @@
             <?= isset($data['usuario']['rolCliente']) && ($data['usuario']['rolCliente'] == 1) ? 'checked' : '' ?>
             <?= $data['disabled'] ?? '' ?>>
     </div>
-    <button type="submit" class="btn btn-save"><?= $data['boton'] ?? '' ?></button>
+    <?php if (isset($data['title-btn-submit'])) { ?>
+        <input type="submit" class="btn-save" value="<?= $data['title-btn-submit'] ?>">
+    <?php } ?>
 
 </form>

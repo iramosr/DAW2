@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="686d77fe-3408-4039-9f89-1ecd9c477ee8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios/views/admin/usuarios/table_list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios/views/errors/400.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios/views/errors/401.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios/views/errors/403.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios/views/errors/404.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios/views/errors/405.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/Tablas.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/assets/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/assets/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/assets/images/error_page.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/assets/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/assets/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/assets/js/admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/config/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/controllers/AdminController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/controllers/ErrorsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/controllers/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/controllers/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/controllers/UsuariosController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/dao/LogsDao.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/dao/RolesDao.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/dao/UsuariosDao.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/dao/UsuariosRolesDao.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/helpers/helpers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/helpers/helpers_dev.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/libs/App.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/libs/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/libs/Dao.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/libs/Database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/libs/View.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/log/log_2023-10-27.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/log/log_2023-10-31.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/log/log_2023-11-02.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/log/log_2023-11-03.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/services/LogService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/uploads/fotos/clientes/653b948fd268b-Captura de pantalla 2023-10-27 123455.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/uploads/fotos/clientes/653b94b284938-Captura de pantalla 2023-10-27 123455.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/uploads/fotos/clientes/653b94c0a873e-Captura de pantalla 2023-10-27 123455.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/uploads/fotos/clientes/653b95b175626-Captura de pantalla 2023-10-27 123455.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/uploads/fotos/clientes/653bbca0c101e-Captura de pantalla 2023-10-27 153518.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/uploads/fotos/clientes/653bbce34a1da-Captura de pantalla 2023-10-27 153518.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/uploads/fotos/usuarios/653b948fd268b-Captura de pantalla 2023-10-27 123455.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/uploads/fotos/usuarios/653b94b284938-Captura de pantalla 2023-10-27 123455.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/uploads/fotos/usuarios/653b94c0a873e-Captura de pantalla 2023-10-27 123455.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/uploads/fotos/usuarios/653b95b175626-Captura de pantalla 2023-10-27 123455.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/uploads/fotos/usuarios/653bbca0c101e-Captura de pantalla 2023-10-27 153518.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/uploads/fotos/usuarios/653bbce34a1da-Captura de pantalla 2023-10-27 153518.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/uploads/fotos/usuarios/653bd54d3bb82-uy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/uploads/fotos/usuarios/653bd5688285e-uy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/uploads/fotos/usuarios/653bd68ef146f-uy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/uploads/fotos/usuarios/653bd75e36526-uye.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/views/admin/home.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/views/admin/usuarios/add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/views/admin/usuarios/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/views/admin/usuarios/form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/views/admin/usuarios/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/views/admin/usuarios/show.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/views/admin/usuarios/table_list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/views/admin/usuarios/update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/views/errors/400.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/views/errors/401.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/views/errors/403.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/views/errors/404.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/views/errors/405.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/views/layouts/footer_admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/views/layouts/footer_main.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/views/layouts/head_admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/views/layouts/head_main.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/views/layouts/header_admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/views/layouts/header_main.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/views/public/home.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ejerciciousuarios2/views/public/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejerciciousuarios.zip" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciousuarios.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejerciciousuarios/controllers/ErrorsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciousuarios/controllers/ErrorsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejerciciousuarios/controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciousuarios/controllers/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejerciciousuarios/controllers/UsuariosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciousuarios/controllers/UsuariosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejerciciousuarios/dao/RolesDao.php" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciousuarios/dao/RolesDao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejerciciousuarios/libs/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciousuarios/libs/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejerciciousuarios/views/admin/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciousuarios/views/admin/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejerciciousuarios/views/admin/usuarios/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciousuarios/views/admin/usuarios/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejerciciousuarios/views/admin/usuarios/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciousuarios/views/admin/usuarios/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejerciciousuarios/views/admin/usuarios/show.php" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciousuarios/views/admin/usuarios/show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejerciciousuarios/views/admin/usuarios/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciousuarios/views/admin/usuarios/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejerciciousuarios/views/layouts/footer_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciousuarios/views/layouts/footer_admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejerciciousuarios/views/layouts/footer_main.php" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciousuarios/views/layouts/footer_main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejerciciousuarios/views/layouts/formulario_usuarios.php" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciousuarios/views/admin/usuarios/form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejerciciousuarios/views/layouts/header_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/ejerciciousuarios/views/layouts/header_admin.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerConfigs">
+    <option name="configs">
+      <option value="$PROJECT_DIR$/encuestasclase/composer.json" />
+      <option value="$PROJECT_DIR$/ejerciciousuarios/composer.json" />
+    </option>
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/encuestas/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2XfkrSMfndtLeY2liY8X6qBOoGJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/daw2/Desktop/DAW2/DAW2/DWESV/docker_lamp/www/ejerciciousuarios2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\daw2\Desktop\DAW2\DAW2\DWESV\docker_lamp\www" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="686d77fe-3408-4039-9f89-1ecd9c477ee8" name="Changes" comment="" />
+      <created>1699027719871</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699027719871</updated>
+      <workItem from="1699027720874" duration="33000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
