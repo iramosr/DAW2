@@ -1,11 +1,11 @@
 package com.daw2.viajes.dao.impl;
 
 import com.daw2.viajes.dao.EmpleadosDao;
+import com.daw2.viajes.entity.Cliente;
+import com.daw2.viajes.entity.Contratacion;
 import com.daw2.viajes.entity.Empleado;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.Persistence;
-import jakarta.persistence.Query;
+import com.daw2.viajes.entity.Viaje;
+import jakarta.persistence.*;
 
 import java.util.List;
 
@@ -78,14 +78,26 @@ public class EmpleadosDaoImpl implements EmpleadosDao {
 
     @Override
     public Boolean delete(long id) {
-        boolean error=false;
+        boolean error = false;
         EntityManager em = emf.createEntityManager();
         try {
             Empleado empleado = em.find(Empleado.class, id);
             em.getTransaction().begin();
-            em.remove(empleado);
-            em.getTransaction().commit();
-        }catch (Exception e){
+            if (empleado != null) {
+                //Para borrar el empleado primero borro los viajes en los que está
+                TypedQuery<Viaje> query = em.createQuery("SELECT v FROM Viaje v WHERE V.empleado = :empleado", Viaje.class);
+                query.setParameter("empleado", empleado);
+                List<Viaje> viajes = query.getResultList();
+                for (Viaje viaje : viajes) {
+                    em.remove(viaje);
+                }
+                em.remove(empleado);
+                em.getTransaction().commit();
+            } else {
+                error = true;
+                em.getTransaction().rollback();
+            }
+        } catch (Exception e) {
             error = true;
             em.getTransaction().rollback();
         } finally {

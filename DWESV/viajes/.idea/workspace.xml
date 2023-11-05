@@ -9,75 +9,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="fixear fechas">
-      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/descripcion_viajes.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/mostrar_contrataciones.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/mostrar_viajes.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ejerciciojsp1/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ejerciciojsp1/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ejerciciojsp1/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ejerciciojsp1/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ejerciciojsp1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ejerciciojsp1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191/storage_v2/_src_/schema/dwesv.FdC4BQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191/storage_v2/_src_/schema/dwesv.FdC4BQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="cambios proyecto">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/borrar_alerta.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/mostrar_clientes.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/ViajesDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/ViajesDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/impl/ClientesDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/impl/ClientesDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/impl/EmpleadosDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/impl/EmpleadosDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/impl/ViajesDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/impl/ViajesDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/entity/Viaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/entity/Viaje.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/service/ContratacionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/service/ContratacionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/service/ViajesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/service/ViajesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/ActualizaClienteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/clientes/ActualizaClienteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/ActualizaContratacionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/contrataciones/ActualizaContratacionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/ActualizaEmpleadoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/empleados/ActualizaEmpleadoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/ActualizaViajeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/viajes/ActualizaViajeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/BorraClienteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/clientes/BorraClienteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/BorraContratacionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/contrataciones/BorraContratacionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/BorraEmpleadoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/empleados/BorraEmpleadoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/BorraViajeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/viajes/BorraViajeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/ListadoClienteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/clientes/ListadoClienteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/ListadoContratacionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/contrataciones/ListadoContratacionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/ListadoEmpleadoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/empleados/ListadoEmpleadoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/ListadoViajeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/viajes/ListadoViajeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/NuevaContratacionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/contrataciones/NuevaContratacionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/NuevoClienteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/clientes/NuevoClienteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/NuevoEmpleadoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/empleados/NuevoEmpleadoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/NuevoViajeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/viajes/NuevoViajeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/VerClienteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/clientes/VerClienteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/VerContratacionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/contrataciones/VerContratacionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/VerEmpleadoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/empleados/VerEmpleadoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/VerViajeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/viajes/VerViajeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/actualiza_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientes/actualiza_clientes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/actualiza_contrataciones.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/contrataciones/actualiza_contrataciones.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/actualiza_empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/empleados/actualiza_empleados.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/actualiza_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/viajes/actualiza_viajes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/borra_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientes/borra_clientes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/borra_contrataciones.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/contrataciones/borra_contrataciones.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/borra_empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/empleados/borra_empleados.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/borra_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/viajes/borra_viajes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientes/formulario_clientes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario_contrataciones.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/contrataciones/formulario_contrataciones.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario_empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/empleados/formulario_empleados.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/formulario_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/viajes/formulario_viajes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/contrataciones/BorraContratacionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/contrataciones/BorraContratacionServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/empleados/BorraEmpleadoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/empleados/BorraEmpleadoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/clientes/formulario_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientes/formulario_clientes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/clientes/nuevo_cliente.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientes/nuevo_cliente.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/empleados/formulario_empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/empleados/formulario_empleados.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/listado_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientes/listado_clientes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/listado_contrataciones.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/contrataciones/listado_contrataciones.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/listado_empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/empleados/listado_empleados.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/listado_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/viajes/listado_viajes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/nueva_contratacion.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/contrataciones/nueva_contratacion.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/nuevo_cliente.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientes/nuevo_cliente.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/nuevo_empleado.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/empleados/nuevo_empleado.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/nuevo_viaje.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/viajes/nuevo_viaje.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tabla_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientes/tabla_clientes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tabla_contrataciones.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/contrataciones/tabla_contrataciones.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tabla_empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/empleados/tabla_empleados.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tabla_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/viajes/tabla_viajes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ver_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientes/ver_clientes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ver_contrataciones.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/contrataciones/ver_contrataciones.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ver_empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/empleados/ver_empleados.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ver_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/viajes/ver_viajes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/main-menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/main-menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/viajes/formulario_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/viajes/formulario_viajes.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,32 +65,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ismae/OneDrive/Escritorio/trabajos/DAW2/DWESV/viajes/src/main/webapp/WEB-INF/viajes&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/ismae/OneDrive/Escritorio/trabajos/DAW2/DWESV/Viajes2",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;,
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite",
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ismae\OneDrive\Escritorio\trabajos\DAW2\DWESV\ejerciciojsp1\src\main\webapp" />
@@ -298,7 +245,7 @@
       <workItem from="1698940862015" duration="3644000" />
       <workItem from="1699110484128" duration="12000" />
       <workItem from="1699110931422" duration="4813000" />
-      <workItem from="1699195108450" duration="17547000" />
+      <workItem from="1699195108450" duration="22418000" />
     </task>
     <task id="LOCAL-00001" summary="Fix ejercicio">
       <option name="closed" value="true" />
@@ -388,7 +335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698944494427</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="cambios proyecto">
+      <option name="closed" value="true" />
+      <created>1699214045377</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1699214045377</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,7 +361,8 @@
     <MESSAGE value="fix botones" />
     <MESSAGE value="start viajes" />
     <MESSAGE value="fixear fechas" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixear fechas" />
+    <MESSAGE value="cambios proyecto" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambios proyecto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -415,11 +371,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/impl/EmpleadosDaoImpl.java</url>
           <line>80</line>
           <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/impl/ViajesDaoImpl.java</url>
-          <line>105</line>
-          <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/daw2/viajes/service/ContratacionService.java</url>

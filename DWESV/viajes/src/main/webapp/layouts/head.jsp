@@ -19,5 +19,7 @@
     <script src="js/descripcion_viajes.mjs" defer></script>
     <script src="js/mostrar_viajes.mjs" defer></script>
     <script src="js/mostrar_contrataciones.mjs" defer></script>
+    <script src="js/mostrar_clientes.mjs" defer></script>
+    <script src="js/borrar_alerta.mjs" defer></script>
 </head>
 

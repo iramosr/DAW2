@@ -11,6 +11,7 @@
 <body>
 <jsp:include page="../layouts/main-menu.jsp"/>
 
+
 <div class="container">
     <h1>Nuevo Cliente</h1>
     <form method="post" action="clientes/nuevo">

@@ -1,11 +1,9 @@
 package com.daw2.viajes.dao.impl;
 
 import com.daw2.viajes.dao.ViajesDao;
+import com.daw2.viajes.entity.Contratacion;
 import com.daw2.viajes.entity.Viaje;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.Persistence;
-import jakarta.persistence.Query;
+import jakarta.persistence.*;
 
 import java.util.List;
 
@@ -85,8 +83,20 @@ public class ViajesDaoImpl implements ViajesDao {
         try {
             Viaje viaje = em.find(Viaje.class, id);
             em.getTransaction().begin();
-            em.remove(viaje);
-            em.getTransaction().commit();
+            if (viaje != null) {
+                //Para borrar el viaje primero borro las contrataciones en las que está
+                TypedQuery<Contratacion> query = em.createQuery("SELECT c FROM Contratacion c WHERE c.viaje = :viaje", Contratacion.class);
+                query.setParameter("viaje", viaje);
+                List<Contratacion> contrataciones = query.getResultList();
+                for (Contratacion contratacion : contrataciones) {
+                    em.remove(contratacion);
+                }
+                em.remove(viaje);
+                em.getTransaction().commit();
+            } else {
+                error = true;
+                em.getTransaction().rollback();
+            }
         } catch (Exception e) {
             error = true;
             em.getTransaction().rollback();

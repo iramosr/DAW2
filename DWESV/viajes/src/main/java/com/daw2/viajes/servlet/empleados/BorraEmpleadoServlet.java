@@ -30,9 +30,10 @@ public class BorraEmpleadoServlet extends HttpServlet {
         try{
             long idBorra = Long.parseLong(id);
             empleado = empleadosDao.get(idBorra);
+            request.setAttribute("empleado", empleado);
         } catch (Exception ex){}
 
-        request.setAttribute("empleado", empleado);
+
         empleados = empleadosDao.findAll();
         request.setAttribute("empleados",empleados);
         request.getRequestDispatcher("/empleados/borra_empleados.jsp").forward(request,response);

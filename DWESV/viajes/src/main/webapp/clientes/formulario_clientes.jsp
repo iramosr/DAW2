@@ -10,13 +10,11 @@
 
     List<Contratacion> contrataciones = (List) request.getAttribute("contrataciones");
     String mostrarboton;
-    if (contrataciones.isEmpty()) {
+    if ((contrataciones == null) || (contrataciones.isEmpty())) {
         mostrarboton = "";
     } else {
         mostrarboton = request.getParameter("mostrarboton");
     }
-    System.out.println("Mostrar boton: " + mostrarboton);
-    System.out.println("Contrataciones: " + contrataciones);
 
     Cliente cliente = (Cliente) request.getAttribute("cliente");
     String readonly = request.getParameter("readonly");
@@ -114,11 +112,11 @@
                 </td>
                 <td>
                     <% totalpagado += contratacion.getPagado(); %>
-                    <%= contratacion.getPagado()%>
+                    <%= Math.round(contratacion.getPagado()* 100.0) / 100.0%>
                 </td>
                 <td>
                     <% totalsinpagar += contratacion.getViaje().getPrecio() - contratacion.getPagado(); %>
-                    <%= contratacion.getViaje().getPrecio() - contratacion.getPagado()%>
+                    <%= Math.round((contratacion.getViaje().getPrecio() - contratacion.getPagado())* 100.0) / 100.0%>
                 </td>
             </tr>
             <%}%>

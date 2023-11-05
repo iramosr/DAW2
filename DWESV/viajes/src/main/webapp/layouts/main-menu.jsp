@@ -25,3 +25,9 @@
         </div>
     </div>
 </nav>
+<% Object mensaje = request.getAttribute("mensaje");%>
+<% if (mensaje != null) {%>
+<div id="alerta" class="alert alert-success" style="display: block;">
+    <strong><%= mensaje %></strong>
+</div>
+<% } %>

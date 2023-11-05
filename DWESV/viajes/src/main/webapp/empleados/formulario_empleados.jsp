@@ -8,7 +8,7 @@
 
     List<Viaje> viajes = (List) request.getAttribute("viajes");
     String mostrarboton;
-    if (viajes.isEmpty()) {
+    if ((viajes == null) || (viajes .isEmpty())) {
         mostrarboton = "";
     } else {
         mostrarboton = request.getParameter("mostrarboton");
@@ -27,7 +27,7 @@
     String apellido1 = empleado.getApellido1() != null ? empleado.getApellido1() : "";
     String apellido2 = empleado.getApellido2() != null ? empleado.getApellido2() : "";
 %>
-<link type="text/css" rel="stylesheet" href="../assets/main.css">
+
 
 <input type="hidden" name="id" value="<%=id%>">
 

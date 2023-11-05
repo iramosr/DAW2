@@ -2,6 +2,8 @@ package com.daw2.viajes.dao.impl;
 
 import com.daw2.viajes.dao.ClientesDao;
 import com.daw2.viajes.entity.Cliente;
+import com.daw2.viajes.entity.Contratacion;
+import com.daw2.viajes.entity.Viaje;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -75,14 +77,26 @@ public class ClientesDaoImpl implements ClientesDao {
 
     @Override
     public Boolean delete(long id) {
-        boolean error=false;
+        boolean error = false;
         EntityManager em = emf.createEntityManager();
         try {
             Cliente cliente = em.find(Cliente.class, id);
             em.getTransaction().begin();
-            em.remove(cliente);
-            em.getTransaction().commit();
-        }catch (Exception e){
+            if (cliente != null) {
+                //Para borrar el cliente primero borro las contrataciones en las que está
+                TypedQuery<Contratacion> query = em.createQuery("SELECT c FROM Contratacion c WHERE c.cliente = :cliente", Contratacion.class);
+                query.setParameter("cliente", cliente);
+                List<Contratacion> contrataciones = query.getResultList();
+                for (Contratacion contratacion : contrataciones) {
+                    em.remove(contratacion);
+                }
+                em.remove(cliente);
+                em.getTransaction().commit();
+            } else {
+                error = true;
+                em.getTransaction().rollback();
+            }
+        } catch (Exception e) {
             error = true;
             em.getTransaction().rollback();
         } finally {

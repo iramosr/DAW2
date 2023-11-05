@@ -13,12 +13,17 @@
     double totalsiningresar = 0;
 
     List<Contratacion> contrataciones = (List) request.getAttribute("contrataciones");
+    String mostrarboton;
+    if ((contrataciones == null) || (contrataciones.isEmpty())) {
+        mostrarboton = "";
+    } else {
+        mostrarboton = request.getParameter("mostrarboton");
+    }
 
     Viaje viaje = (Viaje) request.getAttribute("viaje");
     String readonly = request.getParameter("readonly");
     String disabled = request.getParameter("disabled");
     String required = request.getParameter("required");
-    String mostrarboton = request.getParameter("mostrarboton");
     if (viaje == null) {
         viaje = new Viaje();
     }
@@ -39,7 +44,6 @@
     String empleadoId = empleadoselec != null ? String.valueOf(empleadoselec.getId()) : "";
 %>
 
-<link type="text/css" rel="stylesheet" href="../assets/main.css">
 
 <div class="card m-2">
     <input type="hidden" name="id" value="<%=id%>">
@@ -154,11 +158,11 @@
                     </td>
                     <td>
                         <% totalingresado += contratacion.getPagado(); %>
-                        <%= contratacion.getPagado()%>
+                        <%= Math.round(contratacion.getPagado() * 100.0) / 100.0%>
                     </td>
                     <td>
                         <% totalsiningresar += contratacion.getViaje().getPrecio() - contratacion.getPagado(); %>
-                        <%= contratacion.getViaje().getPrecio() - contratacion.getPagado()%>
+                        <%= Math.round((contratacion.getViaje().getPrecio() - contratacion.getPagado()) * 100.0) / 100.0%>
                     </td>
                 </tr>
                 <%}%>
@@ -185,14 +189,3 @@
         </div>
     </div>
 </div>
-<script>
-    document.getElementById('btnMostrarClientes').addEventListener('click', function () {
-        let tabla = document.getElementById('tablaClientes');
-        console.log(tabla);
-        if (tabla.style.display === 'none') {
-            tabla.style.display = 'table'; // Muestra la tabla
-        } else {
-            tabla.style.display = 'none'; // Oculta la tabla
-        }
-    });
-</script>

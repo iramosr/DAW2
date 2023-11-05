@@ -29,7 +29,9 @@ public class BorraContratacionServlet extends HttpServlet {
         try{
             long idBorra = Long.parseLong(id);
             contratacion = contratacionesDao.get(idBorra);
-        } catch (Exception ex){}
+        } catch (Exception ex){
+            request.setAttribute("mensaje", "Contratación no borrada");
+        }
 
         request.setAttribute("contratacion", contratacion);
         contrataciones = contratacionesDao.findAll();
