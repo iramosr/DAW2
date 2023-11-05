@@ -5,6 +5,7 @@ import com.daw2.viajes.entity.Empleado;
 import com.daw2.viajes.entity.Viaje;
 
 import jakarta.servlet.http.HttpServletRequest;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -23,17 +24,32 @@ public class ViajesService {
         String titulo = request.getParameter("titulo").trim();
         Empleado empleado = empleadosDao.get(Long.parseLong(idempleado));
         Double precio = Double.parseDouble(request.getParameter("precio").trim());
+        Double plazas = Double.parseDouble(request.getParameter("plazas").trim());
 
         //Fechas
         Date salida = null;
         try {
-            salida = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").parse(request.getParameter("salida").trim());
+            // Obtener la fecha de salida del formulario
+            String inputSalida = request.getParameter("salida");
+            // Reemplazar la T por un espacio en blanco y poner 00 en los segundos
+            String stringSalida = inputSalida.replace("T", " ") + ":00";
+            // Convertir la fecha de salida a un objeto Date
+            salida =  new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(stringSalida);
         } catch (ParseException e) {
             throw new RuntimeException(e);
         }
+
+
+
         Date llegada = null;
         try {
-            llegada = new SimpleDateFormat("dd/MM/yyyy HH:mm").parse(request.getParameter("llegada").trim());
+            // Obtener la fecha de salida del formulario
+            String inputLlegada = request.getParameter("llegada");
+            // Reemplazar la T por un espacio en blanco y poner 00 en los segundos
+            String stringLlegada = inputLlegada.replace("T", " ") + ":00";
+            System.out.println(stringLlegada);
+            // Convertir la fecha de salida a un objeto Date
+            llegada =  new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(stringLlegada);
         } catch (ParseException e) {
             throw new RuntimeException(e);
         }
@@ -45,6 +61,7 @@ public class ViajesService {
         viaje.setCodigo(codigo);
         viaje.setTitulo(titulo);
         viaje.setPrecio(precio);
+        viaje.setPlazas(plazas);
         try {
             viaje.setSalida(salida);
         } catch (Exception e) {

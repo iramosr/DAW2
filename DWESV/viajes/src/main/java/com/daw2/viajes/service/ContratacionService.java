@@ -20,8 +20,8 @@ public class ContratacionService {
         try {
             id = Long.parseLong(request.getParameter("id").trim());
         }catch (Exception ex){}
-        String idviaje = request.getParameter("viaje").trim();
-        String idcliente = request.getParameter("cliente").trim();
+        String idviaje = request.getParameter("viajeId").trim();
+        String idcliente = request.getParameter("clienteId").trim();
         Double pagado = Double.parseDouble(request.getParameter("pagado").trim());
         Viaje viaje = viajesDao.get(Long.parseLong(idviaje));
         Cliente cliente = clientesDao.get(Long.parseLong(idcliente));

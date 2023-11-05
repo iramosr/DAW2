@@ -10,5 +10,7 @@ public interface ViajesDao extends GenericDao<Viaje, Long>{
     List<Viaje> findByIdCliente(Long idCliente);
 
     List<Viaje> findByIdEmpleado(Long idEmpleado);
+
+    List<Viaje> filtrarViajes(String filtro1, String filtro2);
 }
 

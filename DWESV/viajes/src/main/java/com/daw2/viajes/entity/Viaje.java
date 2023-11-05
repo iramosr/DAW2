@@ -21,11 +21,15 @@ public class Viaje {
     private String titulo;
     @Column(nullable = false)
     private Double precio;
+
+    @Column(nullable = false)
+    private Double plazas;
+
     @Column(nullable = false)
     private Date salida;
     @Column(nullable = false)
     private Date llegada;
-    @Column(nullable = false, length = 255)
+    @Column(nullable = false, length = 10000)
     private String descripcion;
 
     public Long getId() {
@@ -68,6 +72,14 @@ public class Viaje {
         this.precio = precio;
     }
 
+    public Double getPlazas() {
+        return plazas;
+    }
+
+    public void setPlazas(Double plazas) {
+        this.plazas = plazas;
+    }
+
     public Date getSalida() {
         return salida;
     }
@@ -100,6 +112,7 @@ public class Viaje {
                 ", codigo='" + codigo + '\'' +
                 ", titulo='" + titulo + '\'' +
                 ", precio=" + precio +
+                ", plazas=" + plazas +
                 ", salida=" + salida +
                 ", llegada=" + llegada +
                 ", descripcion='" + descripcion + '\'' +
