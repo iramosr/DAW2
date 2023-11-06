@@ -9,23 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="cambios proyecto">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/borrar_alerta.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/mostrar_clientes.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/impl/ClientesDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/impl/ClientesDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/impl/EmpleadosDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/impl/EmpleadosDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/impl/ViajesDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/impl/ViajesDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/contrataciones/BorraContratacionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/contrataciones/BorraContratacionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/empleados/BorraEmpleadoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/empleados/BorraEmpleadoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/clientes/formulario_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientes/formulario_clientes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/clientes/nuevo_cliente.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientes/nuevo_cliente.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/empleados/formulario_empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/empleados/formulario_empleados.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/main-menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/main-menu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/viajes/formulario_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/viajes/formulario_viajes.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="fixear fechas" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,32 +49,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/ismae/OneDrive/Escritorio/trabajos/DAW2/DWESV/Viajes2",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ismae/OneDrive/Escritorio/trabajos/DAW2/DWESV/Viajes2&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ismae\OneDrive\Escritorio\trabajos\DAW2\DWESV\ejerciciojsp1\src\main\webapp" />
