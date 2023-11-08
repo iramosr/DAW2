@@ -9,23 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="cambios proyecto">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/borrar_alerta.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/mostrar_clientes.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/impl/ClientesDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/impl/ClientesDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/impl/EmpleadosDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/impl/EmpleadosDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/impl/ViajesDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/impl/ViajesDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/contrataciones/BorraContratacionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/contrataciones/BorraContratacionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/empleados/BorraEmpleadoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daw2/viajes/servlet/empleados/BorraEmpleadoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/clientes/formulario_clientes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientes/formulario_clientes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/clientes/nuevo_cliente.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientes/nuevo_cliente.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/empleados/formulario_empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/empleados/formulario_empleados.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/layouts/main-menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/layouts/main-menu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/viajes/formulario_viajes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/viajes/formulario_viajes.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="add zip" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -245,7 +229,7 @@
       <workItem from="1698940862015" duration="3644000" />
       <workItem from="1699110484128" duration="12000" />
       <workItem from="1699110931422" duration="4813000" />
-      <workItem from="1699195108450" duration="22418000" />
+      <workItem from="1699195108450" duration="22616000" />
     </task>
     <task id="LOCAL-00001" summary="Fix ejercicio">
       <option name="closed" value="true" />
@@ -343,7 +327,23 @@
       <option name="project" value="LOCAL" />
       <updated>1699214045377</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fin proyecto">
+      <option name="closed" value="true" />
+      <created>1699218805372</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1699218805372</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add zip">
+      <option name="closed" value="true" />
+      <created>1699218873524</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1699218873524</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +362,9 @@
     <MESSAGE value="start viajes" />
     <MESSAGE value="fixear fechas" />
     <MESSAGE value="cambios proyecto" />
-    <option name="LAST_COMMIT_MESSAGE" value="cambios proyecto" />
+    <MESSAGE value="fin proyecto" />
+    <MESSAGE value="add zip" />
+    <option name="LAST_COMMIT_MESSAGE" value="add zip" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
