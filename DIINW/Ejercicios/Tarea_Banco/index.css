@@ -1,81 +1,228 @@
-body{   
+body {
     margin: 0%;
     font-family: 'Roboto', sans-serif;
 }
 
-nav{
+nav {
     background: #ffffff;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     vertical-align: middle;
 }
 
-nav ul{
+nav ul {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     width: 50%;
     list-style: none;
     margin: 0;
     padding-top: 2px;
 }
 
-nav ul li{
-    padding: 0px;
+nav ul li {
     text-align: center;
     vertical-align: middle;
 }
 
-nav a{
-    text-transform:uppercase;
+nav a {
     color: #4f4f4f;
     text-decoration: none;
-    font-size:x-small;
 }
 
-.menu-superior{
+.menu-superior {
     height: 35px;
     vertical-align: middle;
-    font-weight: 800;
+    font-weight: 900;
+    text-transform: uppercase;
     border-bottom: 1px solid #e5e5e5;
+    font-size: x-small;
 }
 
-.menu-superior li{
+.menu-superior li {
     margin-top: -5px;
 }
 
-.menu-superior a:hover{
+.menu-superior a:hover {
     padding-bottom: 8px;
     border-bottom: 2px solid #0A79D0;
 }
 
 
-.menu-ppal{
+.menu-ppal {
+    height: 80px;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
-    background-color: bisque;
+    font-weight: 700;
+    font-size: smaller;
+    background-color: white;
+    z-index: 10;
+
+}
+
+.menu-ppal ul {
     height: 80px;
+    width: 80%;
+    vertical-align: middle;
+    align-content: space-around;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
 }
 
-.menu-ppal button{
-    font-size: 11;
-    margin: 26px 4px;
-    padding: 5px 10px;
+.menu-ppal li {
+    margin: 1% 4px;
+    padding: 1% 10px;
 }
 
-#nuevoCliente{
-    background-color: transparent;
+.menu-ppal img {
+    vertical-align: middle;
+}
+
+.menu-ppal button {
+    text-transform: uppercase;
+    font-size: smaller;
+    width: 130px;
+    margin-top: -219px;
+    padding: 4% 20%;
+}
+
+#nuevo-cliente {
+    background-color: white;
     color: black;
     border: 1px solid black;
     border-radius: 5px;
 }
 
-#accesoCliente{
+#nuevo-cliente:hover {
+    background-color: #C2D8F0;
+}
+
+#acceso-cliente {
     background-color: #0A79D0;
     color: #ffffff;
     border: none;
     border-radius: 5px;
+}
+
+#acceso-cliente:hover {
+    background-color: #3C95D9;
+}
+
+
+.local-vamos {
+    background-image: url(img/ladrillos.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    z-index: 0;
+    height: 70%;
+}
+
+
+
+.tabla table {
+    width: 40%;
+    height: 100%;
+    margin: 2%;
+    float: right;
+    background-color: white;
+    border-collapse: collapse;
+    font-size: 11px;
+}
+
+.tabla thead {
+    background-color: #E9E9E9;
+}
+
+.tabla td {
+    padding: 5px;
+}
+
+svg {
+    position: relative;
+    margin-top: 10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+
+    stroke: #fff;
+    width: 900px;
+
+    animation-name: animate;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animate {
+    0% {
+        filter: drop-shadow(0px 0px 1px #fff) drop-shadow(0px 0px 3px #fff) drop-shadow(0px 0px 10px #80ddff) drop-shadow(0px 0px 30px #4dbbff) drop-shadow(0px 0px 50px #009dff);
+    }
+
+    100% {
+        filter: drop-shadow(0px 0px 3px #fff) drop-shadow(0px 0px 6px #fff) drop-shadow(0px 0px 15px #80ddff) drop-shadow(0px 0px 40px #4dbbff) drop-shadow(0px 0px 60px #009dff);
+    }
+}
+
+.eslogan{
+    color: white;
+    font-size: x-large;
+    font-weight: 400;
+    margin-top: -200px;
+    padding-left: 350px;
+    padding-bottom: 100px;
+}
+
+.menu-especial{
+    background-image: url(img/fondoMenu.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    z-index: 0;
+    width: 100%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.img-menu{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.img-menu img{
+    margin-top: 250px;
+    margin-left: 250px;
+}
+
+.txt-menu{
+    grid-row: 1;
+    grid-column: 2;
+    margin: 4% 4% 4% 0%;
+    padding: 4%;
+    width: 85%;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255, 0.5);
+    text-align: justify;
+    line-height: 24px;
+    font-size: large;
+    font-weight: 400;
+    color: #33393e;
+}
+
+.txt-menu ul{
+    list-style-image: url(img/check.png); 
+}
+
+.txt-menu a{
+    color: #55A2DE;
+    text-decoration: none;
 }
