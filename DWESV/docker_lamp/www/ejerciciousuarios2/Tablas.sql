@@ -46,3 +46,10 @@ ALTER TABLE usuarios_roles ADD CONSTRAINT fk_ur_usuarios FOREIGN KEY (usuario_id
 INSERT INTO roles (rol, descripcion) VALUES ('ADMIN', 'Administrador');
 INSERT INTO roles (rol, descripcion) VALUES ('EMPLE', 'Empleado');
 INSERT INTO roles (rol, descripcion) VALUES ('CLIENTE', 'Cliente');
+
+#La contraseña es "admin"
+INSERT INTO `usuarios` (`username`, `password`, `email`, `nombre`, `apellido1`, `apellido2`, `foto`, `activo`, `bloqueado`, `num_intentos`, `ultimo_acceso`, `created_at`, `updated_at`) VALUES
+    ('admin', '$2y$10$gdvtFgaDO7llOdMqenzWWeeHTXWLaM6fLEetBmWuodmwDLmvbgh2.', 'admin@admin.com', 'admin', 'admin', 'admin', NULL, 1, 0, 0, '2023-11-08', '2023-11-08 21:31:41', '2023-11-08 21:31:41');
+
+INSERT INTO usuarios_roles (usuario_id, rol_id) VALUES ((SELECT id from usuarios where usuarios.username like "admin"),
+                                                        (SELECT id from roles where roles.rol like "ADMIN"));

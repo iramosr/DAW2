@@ -46,3 +46,8 @@ ALTER TABLE usuarios_roles ADD CONSTRAINT fk_ur_usuarios FOREIGN KEY (usuario_id
 INSERT INTO roles (rol, descripcion) VALUES ('ADMIN', 'Administrador');
 INSERT INTO roles (rol, descripcion) VALUES ('EMPLE', 'Empleado');
 INSERT INTO roles (rol, descripcion) VALUES ('CLIENTE', 'Cliente');
+
+INSERT INTO usuarios (username, password, email, nombre, apellido1, apellido2, activo, bloqueado, num_intentos)
+VALUES ('admin', 'admin', 'admin@admin.com', 'admin', 'admin', 'admin', 1, 0, 0);
+INSERT INTO usuarios_roles (usuario_id, rol_id) VALUES ((SELECT id from usuarios where email like "admin@admin.com"),
+                                                        (SELECT id from roles where rol like "ADMIN"));
