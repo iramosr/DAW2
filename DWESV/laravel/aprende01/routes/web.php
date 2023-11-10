@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArticulosController;
 use App\Http\Controllers\SaludosController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,7 +28,9 @@ Route::get('/saludo', function () {
 });
 
 Route::get('/hola-mundo2', [SaludosController::class,'hola2']);
-
 Route::get('/saludo2', [SaludosController::class,'saludo2']);
-
 Route::get('/saludo3/{nombre}', [SaludosController::class,'saludo3']);
+
+Route::get('/articulos', [ArticulosController::class,'index'])->name("articulos.index");
+Route::get('/articulos/create', [ArticulosController::class,'create'])->name("articulos.create");
+Route::post('/articulos/store', [ArticulosController::class,'store'])->name("articulos.store");
