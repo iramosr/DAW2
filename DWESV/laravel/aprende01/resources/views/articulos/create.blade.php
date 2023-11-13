@@ -18,8 +18,10 @@
     </h1>
 
     <form action="{{route('articulos.store')}}" method="post">
+        @csrf
         <div class="container mx-auto flex items-center justify-center">
             <div class="w-full md:w-1/2 bg-indigo-200 shadow-lg p-2 m-2 rounded-lg">
+                {{-- 1ª fila --}}
                 <div class="mb-4">
                     {{-- Referencia --}}
                     <div class="grid grid-flow-row sm:grid-flow-col gap-3">
@@ -27,49 +29,47 @@
                             <label class="block text-gray-700 text-sm font-bold" for="ref">
                                 Referencia<sup>*</sup>
                             </label>
-                            <input type="text" placeholder="referencia" name="ref" required
-                                   class="">
-
+                            <input type="text" placeholder="Referencia" name="ref" required
+                                   class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none">
                         </div>
                         {{-- Precio --}}
-                        <div class="">
+                        <div class="sm:col-span-4 justify-center">
                             <label class="block text-gray-700 text-sm font-bold" for="precio">
-                                Precio<sup>*</sup>
+                                Precio
                             </label>
-                            <input type="number" step="0.01" placeholder="precio" name="precio"
-                                   class="">
+                            <input type="number" step="0.01" placeholder="Precio" name="precio"
+                                   class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none">
                         </div>
                     </div>
                 </div>
-                {{--Descripción --}}
-                <div class="mb-4">
-                    <div class="">
-                        <label class="block text-gray-700 text-sm font-bold" for="descripcion">
-                            Descripción
-                        </label>
-                        <input type="text" placeholder="descripcion"
-                               id="descripcion" name="descripcion" required
-                               class="">
-                    </div>
-                    <div class="">
 
-                    </div>
-                </div>
-                {{--Observaciones--}}
+                {{-- 2ª fila --}}
                 <div class="mb-4">
-                    <div class="">
-                        <label class="block text-gray-700 text-sm font-bold"
-                               for="observaciones">Observaciones</label>
-                        <textarea id="observaciones" name="observaciones"
-                                  class=""
-                                  rows="5" placeholder="observaciones sobre el artículo" required></textarea>
-                    </div>
+                    {{-- Descripción --}}
+                    <label class="block text-gray-700 text-sm font-bold" for="descripcion">
+                        Descripción<sup>*</sup>
+                    </label>
+                    <input type="text" placeholder="Descripción"
+                           id="descripcion" name="descripcion" required
+                           class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none">
                 </div>
-                {{--Botón--}}
+
+                {{-- 3ª fila --}}
+                <div class="mb-4">
+                    {{-- Observaciones --}}
+                    <label class="block text-gray-700 text-sm font-bold"
+                           for="observaciones">Observaciones</label>
+                    <textarea id="observaciones" name="observaciones"
+                              class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
+                              rows="5" placeholder="Observaciones sobre el artículo"></textarea>
+                </div>
+
+                {{-- 4ª fila --}}
                 <div class="flex items-center justify-between">
                     <div class="bg-yellow-200 w-full px-4 py-1 font-semibold text-red-500 mr-2 rounded">
                         Introduce el artículo
                     </div>
+                    {{-- Botón --}}
                     <button
                         class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded"
                         type="submit">Aceptar
