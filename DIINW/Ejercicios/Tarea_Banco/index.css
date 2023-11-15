@@ -237,15 +237,15 @@ nav a {
 
     stroke: #fff;
     width: auto;
-    max-width: 850px;
+    max-width: 900px;
 
-    animation-name: animate;
+    animation-name: animacion;
     animation-duration: 0.8s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
-@keyframes animate {
+@keyframes animacion {
     0% {
         filter: drop-shadow(0px 0px 1px #fff) drop-shadow(0px 0px 3px #fff) drop-shadow(0px 0px 10px #80ddff) drop-shadow(0px 0px 30px #4dbbff) drop-shadow(0px 0px 50px #009dff);
     }
