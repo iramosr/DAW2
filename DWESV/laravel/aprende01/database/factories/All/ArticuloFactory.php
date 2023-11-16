@@ -1,9 +1,8 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Factories\All;
 
 use App\Models\Articulo;
-use App\Models\Proveedor;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -24,7 +23,6 @@ class ArticuloFactory extends Factory
             'descripcion' => $this->faker->sentence(5),
             'precio' => $this->faker->randomFloat(2, 0, 500),
             'observaciones' => $this->faker->paragraph,
-            'proveedor_id' => Proveedor::all()->random()->id,
         ];
     }
 }

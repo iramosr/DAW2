@@ -9,5 +9,10 @@ class Articulo extends Model
 {
     use HasFactory;
     protected $table = 'articulos';
-    protected $fillable = ['ref', 'descripcion', 'precio', 'observaciones'];
+    protected $fillable = ['ref', 'descripcion', 'precio', 'observaciones', 'proveedor_id'];
+
+    public function proveedor()
+    {
+        return $this->belongsTo(Proveedor::class);
+    }
 }

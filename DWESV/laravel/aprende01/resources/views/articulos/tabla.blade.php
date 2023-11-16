@@ -4,6 +4,7 @@
         <th></th>
         <th class="py-1">Referencia</th>
         <th class="py-1">Descripción</th>
+        <th class="py-1">Proveedor</th>
         <th class="py-1">Precio</th>
     </tr>
     </thead>
@@ -13,6 +14,7 @@
             <td class="py-1 px-2">{{ (request()->page-1)*10 + $key + 1 }}</td>
             <td class="py-1 px-2">{{ $articulo->ref }}</td>
             <td class="py-1 px-2">{{ $articulo->descripcion }}</td>
+            <td class="py-1 px-2">{{ $articulo->proveedor->razon_social }}</td>
             <td class="py-1 px-2 text-right w-20">{{ $articulo->precio }}</td>
         </tr>
     @endforeach

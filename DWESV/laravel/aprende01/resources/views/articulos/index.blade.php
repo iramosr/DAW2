@@ -13,9 +13,8 @@
 @include("articulos.menu")
 
 <div class="container mx-auto">
-    <h1 class="text-center text-4xl font-semibold bg-white p-4 my-2 shadow-lg">
-        LISTADO DE ARTÍCULOS
-    </h1>
+
+    <x-title title="LISTADO DE ARTICULO"/>
 </div>
 <div class="container mx-auto">
 

@@ -13,9 +13,7 @@
 @include("articulos.menu")
 
 <div class="container mx-auto">
-    <h1 class="text-center text-4xl font-semibold bg-white p-4 my-2 shadow-lg">
-        NUEVO ARTÍCULO
-    </h1>
+<x-title title="NUEVO ARTICULO"/>
 
     <form action="{{route('articulos.store')}}" method="post">
         @csrf
@@ -23,14 +21,31 @@
             <div class="w-full md:w-1/2 bg-indigo-200 shadow-lg p-2 m-2 rounded-lg">
                 {{-- 1ª fila --}}
                 <div class="mb-4">
-                    {{-- Referencia --}}
                     <div class="grid grid-flow-row sm:grid-flow-col gap-3">
+                        {{-- Referencia --}}
                         <div class="sm:col-span-4 justify-center">
                             <label class="block text-gray-700 text-sm font-bold" for="ref">
                                 Referencia<sup>*</sup>
                             </label>
                             <input type="text" placeholder="Referencia" name="ref" required
-                                   class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none">
+                                   class="border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none
+                                   @error('ref') border-red-500 @enderror">
+                        </div>
+                        {{-- Proveedor --}}
+                        <div class="sm:col-span-4 justify-center">
+                            <label class="block text-gray-700 text-sm font-bold" for="ref">
+                                Proveedor<sup>*</sup>
+                            </label>
+                             <select name="proveedor_id" required
+                                     class="w-full py-2 px-3 border rounded text-gray-700 leading-tight focus:outline-none"
+                             >
+                                 <option value=""></option>
+                                 @foreach($proveedores as $proveedor)
+                                     <option value="{{$proveedor->id}}">
+                                         {{$proveedor->razon_social}} - [{{$proveedor->nif}}]
+                                     </option>
+                                @endforeach
+                             </select>
                         </div>
                         {{-- Precio --}}
                         <div class="sm:col-span-4 justify-center">
@@ -67,13 +82,21 @@
                 {{-- 4ª fila --}}
                 <div class="flex items-center justify-between">
                     <div class="bg-yellow-200 w-full px-4 py-1 font-semibold text-red-500 mr-2 rounded">
-                        Introduce el artículo
+                        @if($errors->any())
+                            @foreach($errors->all() as $error)
+                                <span class="text-red-500">{{$error}}</span>
+                            @endforeach
+                        @else
+                            <span class="text-blue-500">Introduce el artículo</span>
+                        @endif
                     </div>
                     {{-- Botón --}}
-                    <button
+                    {{--<x-boton-save/>--}}
+                    <x-boton-save name="GUARDAR"/>
+{{--                 <button
                         class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded"
                         type="submit">Aceptar
-                    </button>
+                    </button> --}}
                 </div>
             </div>
         </div>
