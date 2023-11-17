@@ -1,1 +1,5 @@
-INDEX CLIENTES
+@extends("layouts.app-admin")
+
+@section("content")
+    CILENTES
+@endsection

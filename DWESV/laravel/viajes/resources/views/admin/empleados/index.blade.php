@@ -1,1 +1,5 @@
-INDEX EMPLEADOS
+@extends("layouts.app-admin")
+
+@section("content")
+    EMPLEADOS
+@endsection

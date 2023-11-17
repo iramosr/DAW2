@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\ClientesAdminController;
+use App\Http\Controllers\Admin\EmpleadosAdminController;
+use App\Http\Controllers\Admin\ViajesAdminController;
 use App\Http\Controllers\MisViajesController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ViajesController;
@@ -18,11 +22,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+}) ->name('home');
 
+/*
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+*/
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -30,7 +36,14 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('mis-viajes',[MisViajesController::class,'index'])->name('mis-viajes');
-Route::get('viajes',[ViajesController::class,'index'])->name('viajes');
+Route::middleware('auth')->group(function () {
+    Route::resource('admin-empleados', EmpleadosAdminController::class);
+    Route::resource('admin-clientes', ClientesAdminController::class);
+    Route::resource('admin-viajes', ViajesAdminController::class);
+    Route::resource('admin', AdminController::class);
+});
+
+Route::get('mis-viajes', [MisViajesController::class,"index"])->name('mis-viajes');
+Route::get('viajes', [ViajesController::class,"index"])->name('viajes');
 
 require __DIR__.'/auth.php';
