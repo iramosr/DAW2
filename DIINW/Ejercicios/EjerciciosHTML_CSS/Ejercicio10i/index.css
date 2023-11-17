@@ -1,17 +1,17 @@
 .main{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 0px;
+    grid-template-columns: repeat(4, 140px);
+    grid-template-rows: repeat(6, 140px);
     color: white;
-    font-size: 10px;
-    width: 50%;
+    font-size: 10px;    
+    gap: 1%;
 }
 
-.main div{
-    width: 150px;
-    height: 150px;
+.main div:not(.d2){
+    width: inherit;
     background-color: palevioletred;
+    border-radius: 5px;
+    padding: 1%;
 }
 
 h4{
@@ -24,7 +24,15 @@ h4{
 }
 
 .d2{
-    grid-area: 2 / 2 / 3 / 4;
+    grid-area: 2 / 2 / 3 / 5;
+    width: 280px;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    text-align: end;
 }
 
 .d3{
@@ -52,5 +60,5 @@ h4{
 }
 
 .d9{
-    grid-area: 6 / 2 / 7 / 4;
+    grid-area: 6 / 2 / 7 / 3;
 }
