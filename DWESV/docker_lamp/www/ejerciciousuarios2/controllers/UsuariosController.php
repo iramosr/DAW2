@@ -19,7 +19,7 @@ class UsuariosController extends Controller{
         $this->filterAccess('EMPLE');
         $dao = new UsuariosDao();
         $usuarios = $dao->listAll();
-        $this->data['accion'] = BASE_URL."/usuarios/store";
+            $this->data['accion'] = BASE_URL."/usuarios/store";
         $this->data['title-btn-submit'] = 'Guardar';
         $this->data['usuario'] = ['activo'=>true];
         $this->data['usuarios'] = $usuarios;

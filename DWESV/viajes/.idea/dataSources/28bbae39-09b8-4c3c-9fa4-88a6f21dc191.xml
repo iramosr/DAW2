@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="dwesv@localhost">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.49">
-    <root id="1">
-      <DefaultCasing>mixed/mixed</DefaultCasing>
-      <DefaultEngine>InnoDB</DefaultEngine>
-      <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
-      <Grants>dwesv|schema||dwesv||ALTER|G
-dwesv|schema||dwesv||ALTER ROUTINE|G
-dwesv|schema||dwesv||CREATE|G
-dwesv|schema||dwesv||CREATE ROUTINE|G
-dwesv|schema||dwesv||CREATE TEMPORARY TABLES|G
-dwesv|schema||dwesv||CREATE VIEW|G
-dwesv|schema||dwesv||DELETE|G
-dwesv|schema||dwesv||DROP|G
-dwesv|schema||dwesv||EVENT|G
-dwesv|schema||dwesv||EXECUTE|G
-dwesv|schema||dwesv||INDEX|G
-dwesv|schema||dwesv||INSERT|G
-dwesv|schema||dwesv||LOCK TABLES|G
-dwesv|schema||dwesv||REFERENCES|G
-dwesv|schema||dwesv||SELECT|G
-dwesv|schema||dwesv||SHOW VIEW|G
-dwesv|schema||dwesv||TRIGGER|G
-dwesv|schema||dwesv||UPDATE|G</Grants>
-      <ServerVersion>8.1.0</ServerVersion>
-    </root>
+    <root id="1"/>
     <collation id="2" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
     </collation>

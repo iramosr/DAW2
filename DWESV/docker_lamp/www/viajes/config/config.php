@@ -15,7 +15,7 @@ define('BASE_URL',url());
 
 # Define la BD
 define ('DB_HOST', 'db:3306');
-define ('DB_NAME', 'dwesv');
+define ('DB_NAME', 'viajes_php');
 define ('DB_USER', 'dwesv');
 define ('DB_PASSWORD', 'castelar');
 define('DB_CHARSET','utf8mb4');

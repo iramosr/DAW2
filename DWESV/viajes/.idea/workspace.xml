@@ -10,20 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="fixear fechas">
-      <change afterPath="$PROJECT_DIR$/../docker_lamp/www/viajes/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../docker_lamp/www/viajes/assets/images/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../docker_lamp/www/viajes/assets/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../docker_lamp/www/viajes/dao/ViajesDao.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../docker_lamp/www/viajes/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/viajes/database/migrations/2023_11_17_165327_create_clientes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/viajes/database/migrations/2023_11_17_165327_create_clientes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/viajes/database/migrations/2023_11_17_165345_create_empleados_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/viajes/database/migrations/2023_11_17_165345_create_empleados_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/viajes/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/viajes/database/seeders/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191/storage_v2/_src_/schema/dwesv.FdC4BQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191/storage_v2/_src_/schema/dwesv.FdC4BQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -48,6 +48,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\php-8.2.12\php.exe" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -66,7 +67,7 @@
     "WebServerToolWindowFactoryState": "false",
     "database.data.extractors.current.export.id": "SQL Inserts",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/ismae/OneDrive/Escritorio/trabajos/DAW2/DWESV/Viajes2",
+    "last_opened_file_path": "C:/Users/daw2/Desktop/DAW2/DAW2/DWESV/docker_lamp/www/viajes",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -243,6 +244,10 @@
       <workItem from="1699195108450" duration="22418000" />
       <workItem from="1699962218440" duration="1088000" />
       <workItem from="1700477493772" duration="2094000" />
+      <workItem from="1700490872354" duration="622000" />
+      <workItem from="1700491612216" duration="33000" />
+      <workItem from="1700492198013" duration="17000" />
+      <workItem from="1700497547580" duration="39000" />
     </task>
     <task id="LOCAL-00001" summary="Fix ejercicio">
       <option name="closed" value="true" />
@@ -362,20 +367,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="cambios proyecto" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/daw2/viajes/dao/impl/EmpleadosDaoImpl.java</url>
-          <line>80</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/daw2/viajes/service/ContratacionService.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="java.lang.NumberFormatException" memberName="stackTrace" />

@@ -41,7 +41,7 @@ class LoginController extends Controller
             unset($_SESSION['usuario']); //Elimina el login del usuario
         }
 
-//      $this->view->render('public/home', $this->data);
+        $this->view->render('public/home', $this->data);
         $_SESSION['result'] = $this->data['result'];
         header("Location: " . BASE_URL);
     }

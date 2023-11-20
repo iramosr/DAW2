@@ -34,7 +34,7 @@
             </ul>
             <?php if (!isset($_SESSION['usuario'])) { ?>
                 <button class="btn btn-outline-succes"
-                data-bs-toggle="modal" data-bs-target="modalLogin">Entrar</button>
+                data-bs-toggle="modal" data-bs-target="#modalLogin">Entrar</button>
             <?php } else { ?>
                 <div class="fw-bold me-1">
                     <?= $_SESSION['usuario']['nombre'] . ' ' . $_SESSION['usuario']['apellido1'] . ' ' . $_SESSION['usuario']['apellido2'] ?>

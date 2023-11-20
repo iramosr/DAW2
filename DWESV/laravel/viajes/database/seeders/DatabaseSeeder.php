@@ -26,10 +26,11 @@ class DatabaseSeeder extends Seeder
         ]);
         User::factory(10)->create();
 
-        /*
+
         Cliente::factory(50)->create();
         Empleado::factory(50)->create();
         Viaje::factory(50)->create();
-        */
+
+        $this->call(InscripcionViajeSeeder::class);
     }
 }
