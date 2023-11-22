@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('titulo', 200);
             $table->string('slug', 250)->unique();
             $table->decimal('precio', 10,2)->nullable();
+            $table->integer('numero_participantes')->nullable();
             $table->timestamp('salida')->nullable();
             $table->timestamp('llegada')->nullable();
             $table->string('foto')->nullable();
