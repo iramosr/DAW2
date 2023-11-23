@@ -7,17 +7,20 @@ use libs\Controller;
 use services\LogService;
 
 
-class ViajesController extends Controller{
+class ViajesController extends Controller
+{
 
-    function __construct(){
+    function __construct()
+    {
         parent::__construct();
     }
 
-    function index(){
+    function index()
+    {
         $this->filterAccess('CLIENTE');
         $dao = new ViajesDao();
         $viajes = $dao->listAll();
-        $this->data['accion'] = BASE_URL."/viajes/store";
+        $this->data['accion'] = BASE_URL . "/viajes/store";
         $this->data['title-btn-submit'] = 'Guardar';
         $this->data['viajes'] = $viajes;
         $this->data['page-title'] = "LISTADO DE VIAJES";
@@ -25,13 +28,14 @@ class ViajesController extends Controller{
 
     }
 
-    public function store(){
-        $this->filterAccess('EMPLE');
+    public function store()
+    {
+//        $this->filterAccess('EMPLE');
         $viaje = [];
 
-        $viaje['codigo']=$_POST['codigo'] ?? null;
-        $viaje['titulo']=$_POST['titulo'] ?? null;
-        $viaje['descripcion'] =$_POST['descripcion'] ?? null;
+        $viaje['codigo'] = $_POST['codigo'] ?? null;
+        $viaje['titulo'] = $_POST['titulo'] ?? null;
+        $viaje['descripcion'] = $_POST['descripcion'] ?? null;
         $viaje['salida'] = $_POST['salida'] ?? null;
         $viaje['llegada'] = $_POST['llegada'] ?? null;
         $viaje['plazas'] = $_POST['plazas'] ?? null;
@@ -40,7 +44,7 @@ class ViajesController extends Controller{
         if ($_FILES['foto'] && $_FILES['foto']['name'] != '') {
             $foto = $_FILES['foto'];
             $extension = pathinfo($foto['name'], PATHINFO_EXTENSION);
-            $nameFoto = uniqid() . '-' . $viaje['codigo'].".".$extension;
+            $nameFoto = uniqid() . '-' . $viaje['codigo'] . "." . $extension;
             $localPathImagen = fullPath(UPLOAD_FOTOS_VIAJES, $nameFoto);
             move_uploaded_file($foto['tmp_name'], $localPathImagen);
             $viaje['foto'] = $nameFoto;
@@ -54,20 +58,21 @@ class ViajesController extends Controller{
         if ($viajeId != null) {
             $this->data['result']['type'] = 'success';
             $this->data['result']['msg'] = "Viaje guardado";
-            LogService::info("Viaje creado: ".$viaje['codigo']);
+            LogService::info("Viaje creado: " . $viaje['codigo']);
         } else {
             $this->data['result']['type'] = 'error';
             $this->data['result']['msg'] = "Viaje no guardado";
-            LogService::error("Viaje NO creado: ".$viaje['codigo']);
+            LogService::error("Viaje NO creado: " . $viaje['codigo']);
         }
         $_SESSION['result'] = $this->data['result'];
-header("Location: " . BASE_URL . "/viajes/index");
+        header("Location: " . BASE_URL . "/viajes/index");
     }
 
 
     //PASANDO CODIGO VIAJE
-    public function show($values){
-        $this->filterAccess('EMPLE');
+    public function show($values)
+    {
+//        $this->filterAccess('EMPLE');
         $codigo = $values[0];
         $dao = new ViajesDao();
         $viaje = $dao->getByCodigo($codigo);
@@ -75,12 +80,13 @@ header("Location: " . BASE_URL . "/viajes/index");
         $this->data['page-title'] = "CONSULTA DEL VIAJE";
         $this->data['readonly'] = 'readonly';
         $this->data['disabled'] = 'disabled';
-        $this->data['accion'] = BASE_URL."/viajes/index/";
+        $this->data['accion'] = BASE_URL . "/viajes/index/";
         $this->data['title-btn-submit'] = 'Volver';
-        $this->view->render('admin/viajes/show', $this->data);
+        $this->view->render('main/viajes/show', $this->data);
     }
 
-    public function delete($values){
+    public function delete($values)
+    {
         {
             $id = $values[0];
 
@@ -89,21 +95,22 @@ header("Location: " . BASE_URL . "/viajes/index");
             if ($dao->delete($id)) {
                 $this->data['result']['type'] = 'success';
                 $this->data['result']['msg'] = "Viaje eliminado";
-                LogService::info("Viaje borrado: ".$id);
+                LogService::info("Viaje borrado: " . $id);
             } else {
                 $this->data['result']['type'] = 'error';
                 $this->data['result']['msg'] = "Viaje no eliminado";
-                LogService::info("Viaje NO borrado: ".$id);
+                LogService::info("Viaje NO borrado: " . $id);
             }
             $this->index();
         }
     }
+
     public function update($values)
     {
         $id = $values[0];
         $dao = new ViajesDao();
         $viajeBD = $dao->get($id);
-        if ($_SERVER['REQUEST_METHOD']=== 'POST'){
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $viaje = [];
             $viaje['codigo'] = $_POST['codigo'] ?? null;
@@ -126,12 +133,12 @@ header("Location: " . BASE_URL . "/viajes/index");
             }
         }
 
-        $viaje=$dao->get($id);
+        $viaje = $dao->get($id);
         if ($viaje) {
             $this->data['viaje'] = $viaje;
-            LogService::info("Viaje actializado: ".$viaje['codigo']);
+            LogService::info("Viaje actializado: " . $viaje['codigo']);
         }
-        $this->data['accion'] = BASE_URL."/viajes/update/".$id;
+        $this->data['accion'] = BASE_URL . "/viajes/update/" . $id;
         $this->data['title-btn-submit'] = 'Cambiar';
         $this->view->render('admin/viajes/update', $this->data);
     }

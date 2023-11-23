@@ -43,6 +43,7 @@ class LoginController extends Controller
 
         $this->view->render('public/home', $this->data);
         $_SESSION['result'] = $this->data['result'];
+        //borra location del header
         header("Location: " . BASE_URL);
     }
 

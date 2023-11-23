@@ -16,7 +16,7 @@ class UsuariosController extends Controller{
     }
 
     function index(){
-        $this->filterAccess('EMPLE');
+        $this->filterAccess('ADMIN');
         $dao = new UsuariosDao();
         $usuarios = $dao->listAll();
         $this->data['accion'] = BASE_URL."/usuarios/store";

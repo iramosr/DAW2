@@ -1,0 +1,16 @@
+INFO:2023-11-23 15:39:57:Usuario borrado: 1
+INFO:2023-11-23 15:40:03:Usuario borrado: 1
+INFO:2023-11-23 15:40:03:Usuario borrado: 1
+INFO:2023-11-23 15:40:03:Usuario borrado: 1
+DEBUG:2023-11-23 15:40:10:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-23 15:40:10:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-23 15:40:18:Usuario actializado: admin
+INFO:2023-11-23 15:52:16:Usuario creado: usuario1
+INFO:2023-11-23 15:52:22:Usuario actializado: usuario1
+INFO:2023-11-23 15:52:27:Usuario actializado: usuario1
+ERROR:2023-11-23 16:30:08:Viaje NO creado: 43453E
+ERROR:2023-11-23 16:34:18:Viaje NO creado: 43453E
+ERROR:2023-11-23 16:36:16:Viaje NO creado: 43453E
+ERROR:2023-11-23 16:37:39:Viaje NO creado: 43453E
+ERROR:2023-11-23 16:40:56:Viaje NO creado: 
+ERROR:2023-11-23 16:43:00:Viaje NO creado: 

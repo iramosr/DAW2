@@ -50,7 +50,8 @@ CREATE TABLE IF NOT EXISTS viajes(
                       llegada DATETIME NOT NULL,
                       plazas INTEGER NOT NULL,
                       precio DOUBLE NOT NULL,
-                      empleado_id INT NOT NULL,
+                      foto VARCHAR(100),
+                      empleado_id INT,
                       created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
                       updated_at DATETIME,
                       KEY (codigo)
