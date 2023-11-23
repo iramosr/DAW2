@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Cliente;
 use Illuminate\Http\Request;
 
 class ClientesAdminController extends Controller
@@ -12,7 +13,8 @@ class ClientesAdminController extends Controller
      */
     public function index()
     {
-        return view('admin.clientes.index');
+        $clientes = Cliente::orderBy('nif')->paginate(10);
+        return view('admin.clientes.index')->with('clientes', $clientes);
 
     }
 
@@ -21,7 +23,8 @@ class ClientesAdminController extends Controller
      */
     public function create()
     {
-        //
+        $clientes = Cliente::latest()->paginate(10);
+        return view('admin.clientes.create')->with('clientes', $clientes);
     }
 
     /**

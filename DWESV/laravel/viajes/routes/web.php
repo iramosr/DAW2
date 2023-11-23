@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\ClientesAdminController;
 use App\Http\Controllers\Admin\EmpleadosAdminController;
 use App\Http\Controllers\Admin\ViajesAdminController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MisViajesController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ViajesController;
@@ -20,9 +21,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-}) ->name('home');
+//Route::get('/', function () {
+//    return view('welcome');
+//}) ->name('home');
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 /*
 Route::get('/dashboard', function () {
@@ -37,10 +40,16 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::middleware('auth')->group(function () {
-    Route::resource('admin-empleados', EmpleadosAdminController::class);
-    Route::resource('admin-clientes', ClientesAdminController::class);
-    Route::resource('admin-viajes', ViajesAdminController::class);
-    Route::resource('admin', AdminController::class);
+//    Route::resource('admin-empleados', EmpleadosAdminController::class);
+//    Route::resource('admin-clientes', ClientesAdminController::class);
+//    Route::resource('admin-viajes', ViajesAdminController::class);
+//    Route::resource('admin', AdminController::class);
+
+    Route::resource('admin/clientes', ClientesAdminController::class)->names('admin.clientes');
+    Route::resource('admin/empleados', EmpleadosAdminController::class)->names('admin.empleados');
+    Route::resource('admin/viajes', ViajesAdminController::class)->names('admin.viajes');
+
+    Route::get('admin/index', [AdminController::class,"index"])->name('admin.index');
 });
 
 Route::get('mis-viajes', [MisViajesController::class,"index"])->name('mis-viajes');

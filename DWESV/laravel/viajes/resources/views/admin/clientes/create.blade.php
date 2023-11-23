@@ -2,13 +2,14 @@
 
 @section("content")
     <x-share.page-admin-title
-        action="create"
+        action="store"
         titleOption="CLIENTES"
-        subtitileOption="Listado de clientes"
+        subtitileOption="Alta de clientes"
     />
 
     <form id="mainForm"
         action="{{route('admin.clientes.create')}}"
-        method="get">
+        method="post">
+        FORMULARIO
     </form>
 @endsection
