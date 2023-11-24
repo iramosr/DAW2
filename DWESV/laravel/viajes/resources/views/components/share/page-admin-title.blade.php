@@ -1,6 +1,6 @@
 @props(['form'=>'mainForm', 'titleOption', 'subtitileOption'=>'', 'action'])
 
-<div class="bg-white rounded-lg py-1 px-3 shadow-lg mb-4">
+<div class="bg-white rounded-lg py-1 px-3 shadow-lg my-4">
     <div class="flex justify-between">
         <div>
             <h1 class="text-red-600 text-2xl font-semibold">{{ $titleOption }}</h1>

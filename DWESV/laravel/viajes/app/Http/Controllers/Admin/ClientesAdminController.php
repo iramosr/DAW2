@@ -66,4 +66,26 @@ class ClientesAdminController extends Controller
     {
         //
     }
+
+    //----------------------------------------
+    public function filtro(Request $request)
+    {
+        $requestData = $request->all();
+        $clientes = Cliente::orderBy('nif');
+        if (isset($requestData['filtroNombre'])) {
+            $clientes = $clientes
+                ->where('nombre', 'like', '%' . $requestData['filtroNombre'] . '%');
+        }
+        if (isset($requestData['filtroApellido1'])) {
+            $clientes = $clientes
+                ->where('apellido1', 'like', '%' . $requestData['filtroApellido1'] . '%');
+        }
+        if (isset($requestData['filtroApellido2'])) {
+            $clientes = $clientes
+                ->where('apellido2', 'like', '%' . $requestData['filtroApellido2'] . '%');
+        }
+        $clientes = $clientes->paginate(10);
+        return view('admin.clientes.index')
+            ->with('clientes', $clientes);
+    }
 }

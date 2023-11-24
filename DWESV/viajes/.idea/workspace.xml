@@ -10,12 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="fixear fechas">
-      <change beforePath="$PROJECT_DIR$/../laravel/viajes/database/migrations/2023_11_17_165327_create_clientes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/viajes/database/migrations/2023_11_17_165327_create_clientes_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../laravel/viajes/database/migrations/2023_11_17_165345_create_empleados_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/viajes/database/migrations/2023_11_17_165345_create_empleados_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../laravel/viajes/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/viajes/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +62,7 @@
     "WebServerToolWindowFactoryState": "false",
     "database.data.extractors.current.export.id": "SQL Inserts",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/daw2/Desktop/DAW2/DAW2/DWESV/docker_lamp/www/viajes",
+    "last_opened_file_path": "C:/Users/daw2/Desktop/DAW2/DAW2/DWESV/laravel/viajes",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -248,6 +243,7 @@
       <workItem from="1700491612216" duration="33000" />
       <workItem from="1700492198013" duration="17000" />
       <workItem from="1700497547580" duration="39000" />
+      <workItem from="1700836507785" duration="63000" />
     </task>
     <task id="LOCAL-00001" summary="Fix ejercicio">
       <option name="closed" value="true" />

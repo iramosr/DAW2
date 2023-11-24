@@ -50,6 +50,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('admin/viajes', ViajesAdminController::class)->names('admin.viajes');
 
     Route::get('admin/index', [AdminController::class,"index"])->name('admin.index');
+    Route::post('admin/clientes/filtro',[ClientesAdminController::class,"filtro"])->name('admin.clientes.filtro');
 });
 
 Route::get('mis-viajes', [MisViajesController::class,"index"])->name('mis-viajes');
