@@ -17,8 +17,9 @@ class PagoViajeFactory extends Factory
      */
     public function definition(): array
     {
+        $InscripcionViaje = InscripcionViaje::pluck('id')->toArray();
         return [
-            'inscripcion_viaje_id' => $this->faker->randomElement(InscripcionViaje::all()['id']),
+            'inscripcion_viaje_id' => $this->faker->randomElement($InscripcionViaje),
             'pagado' => $this->faker->optional(0.2)->randomFloat(2, 0, 3500),
         ];
     }
