@@ -8,8 +8,10 @@
     />
 
     <form id="mainForm"
-        action="{{route('admin.clientes.create')}}"
-        method="post">
-        <x-admin-clientes.form/>
+          action="{{route('admin.clientes.store')}}"
+          method="post"
+          enctype="multipart/form-data">
+        @csrf
+        <x-admin-clientes.form :cliente="$cliente"/>
     </form>
 @endsection

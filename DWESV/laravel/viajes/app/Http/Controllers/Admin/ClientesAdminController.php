@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Cliente;
+use Exception;
 use Illuminate\Http\Request;
 
 class ClientesAdminController extends Controller
@@ -24,7 +25,10 @@ class ClientesAdminController extends Controller
     public function create()
     {
         $clientes = Cliente::latest()->paginate(10);
-        return view('admin.clientes.create')->with('clientes', $clientes);
+        return view('admin.clientes.create')
+            ->with('clientes', $clientes)
+            ->with('cliente', new Cliente());
+
     }
 
     /**
@@ -32,7 +36,21 @@ class ClientesAdminController extends Controller
      */
     public function store(Request $request)
     {
-        //
+//        $request->validate();
+
+        $requestData = $request->all();
+        if ($request->hasFile('foto')) {
+            //
+        }
+        try {
+            $cliente = Cliente::create($requestData);
+            return to_route('admin.clientes.create')
+                ->with('alert-success', 'El cliente ha sido guardado');
+        } catch (Exception $e){
+            return to_route('admin.clientes.create')
+                ->with('alert-error', 'El cliente no ha sido guardado');
+        }
+
     }
 
     /**

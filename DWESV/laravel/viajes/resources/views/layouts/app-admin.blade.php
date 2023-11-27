@@ -19,6 +19,8 @@
     {{--    @include('components.share.menu-admin')--}}
         <x-share.menu-admin/>
 
+        <x-alerts.alert-header/>
+
         <!-- Page Content -->
         <main class="container mx-auto">
             @yield('content')
