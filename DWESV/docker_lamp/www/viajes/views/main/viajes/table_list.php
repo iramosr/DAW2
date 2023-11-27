@@ -13,6 +13,7 @@
     <tbody>
     <?php use dao\UsuariosDao;
 
+    $fila = 0;
     foreach ($data['viajes'] as $viaje) { ?>
         <tr>
             <td class="align-middle"><?= $viaje['codigo'] ?></td>
@@ -41,16 +42,38 @@
                 <button class="btn px-1 btn-info rounded link-underline link-underline-opacity-0 text-center"
                         style="width: 40px; height: 40px"
                         data-bs-toggle="modal" data-bs-target="#modalForm"
-                        onclick="loadViaje('<?= $viaje['codigo'] ?>')">
+                        onclick="loadViaje('<?= $viaje['codigo'] ?>')"
+                        title="Ver detalles del viaje <?= $viaje['codigo'] ?>">
                     <i class="fa-solid fa-eye fa-sm" style="color: #ffffff;"></i>
+                </button>
+                <button class="btn px-1 btn-success rounded link-underline link-underline-opacity-0 text-center"
+                        style="width: 40px; height: 40px"
+                        onclick="mostrarDescripcion('<?= $fila ?>')"
+                        title="Ver descripción del viaje <?= $viaje['codigo'] ?>">
+                    <i class="fa-solid fa-comment fa-sm" style="color: #ffffff;"></i>
                 </button>
             </td>
         </tr>
-    <?php } ?>
+        <tr class="desc" style="display: none">
+            <td colspan="9" style="height: 50px; overflow-y: auto;" class="text-start">
+                <?= $viaje['descripcion'] ?>
+            </td>
+        </tr>
+        <?php $fila++;
+    } ?>
     <tbody>
 </table>
 
 <script>
+    function mostrarDescripcion(fila) {
+        var desc = document.getElementsByClassName('desc')[fila];
+        if (desc.style.display === 'none') {
+            desc.style.display = 'table-row';
+        } else {
+            desc.style.display = 'none';
+        }
+    }
+
     function loadViaje(codigo) {
         url = "<?=BASE_URL?>/viajes-api/get_by_codigo";
         var data = new URLSearchParams();
@@ -109,12 +132,12 @@
         }
         var fotoEl = document.getElementById('foto');
         if (fotoEl) {
-            fotoEl.value = data.foto;
-            fotoEl.disabled = true;
+            //le asigno la foto
+            fotoEl.src = "<?=BASE_URL?>/uploads/fotos/viajes/" + data.foto;
         }
         var empleadoEl = document.getElementById('empleado_id');
         if (empleadoEl) {
-            empleadoEl.checked = data.empleado_id
+            empleadoEl.value = data.empleado_id;
             empleadoEl.disabled = true;
         }
     }

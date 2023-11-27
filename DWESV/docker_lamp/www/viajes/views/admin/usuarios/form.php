@@ -59,22 +59,22 @@
     <div class="mb-3">
         <label>Administrador:</label>
         <input class="form-check-input" type="checkbox" name="rolAdmin" id="rolAdmin"
-               value="<?= isset($data['usuario']['rolAdmin']) ? $data['usuario']['rolAdmin'] : '' ?>"
-            <?= isset($data['usuario']['rolAdmin']) && ($data['usuario']['rolAdmin'] == 1) ? 'checked' : '' ?>
+               value="<?= in_array('ADMIN', $data['usuario']['roles']) ? 'ADMIN' : '' ?>"
+            <?= isset($data['usuario']['roles']) && (in_array('ADMIN', $data['usuario']['roles'])) ? 'checked' : '' ?>
             <?= $data['disabled'] ?? '' ?>>
     </div>
     <div class="mb-3">
         <label>Empleado:</label>
         <input class="form-check-input" type="checkbox" name="rolEmpleado" id="rolEmpleado"
-               value="<?= isset($data['usuario']['rolEmpleado']) ? $data['usuario']['rolEmpleado'] : '' ?>"
-            <?= isset($data['usuario']['rolEmpleado']) && ($data['usuario']['rolEmpleado'] == 1) ? 'checked' : '' ?>
+               value="<?= in_array('EMPLE', $data['usuario']['roles']) ? 'EMPLE' : '' ?>"
+            <?= isset($data['usuario']['roles']) && (in_array('EMPLE', $data['usuario']['roles'])) ? 'checked' : '' ?>
             <?= $data['disabled'] ?? '' ?>>
     </div>
     <div class="mb-3">
         <label>Cliente:</label>
         <input class="form-check-input" type="checkbox" name="rolCliente" id="rolCliente"
-               value="<?= isset($data['usuario']['rolCliente']) ? $data['usuario']['rolCliente'] : '' ?>"
-            <?= isset($data['usuario']['rolCliente']) && ($data['usuario']['rolCliente'] == 1) ? 'checked' : '' ?>
+               value="<?= in_array('CLIENTE', $data['usuario']['roles']) ? 'CLIENTE' : '' ?>"
+            <?= isset($data['usuario']['roles']) && (in_array('CLIENTE', $data['usuario']['roles'])) ? 'checked' : '' ?>
             <?= $data['disabled'] ?? '' ?>>
     </div>
     <?php if (isset($data['title-btn-submit'])) { ?>

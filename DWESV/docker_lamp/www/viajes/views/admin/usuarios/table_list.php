@@ -126,7 +126,7 @@
         }
         var fotoEl = document.getElementById('foto');
         if (fotoEl) {
-            fotoEl.value = data.foto;
+            fotoEl.filename = data.foto;
             fotoEl.disabled = true;
         }
         var actEl = document.getElementById('act');
@@ -141,18 +141,26 @@
         }
         var rolAdminEl = document.getElementById('rolAdmin');
         if (rolAdminEl) {
-            rolAdminEl.checked = data.rolAdmin;
+            rolAdminEl.checked = data.roles.includes('ADMIN');
             rolAdminEl.disabled = true;
+        }
+        else {
+            rolAdminEl.checked = false;
         }
         var rolEmpleadoEl = document.getElementById('rolEmpleado');
         if (rolEmpleadoEl) {
-            rolEmpleadoEl.checked = data.rolEmpleado;
+            rolEmpleadoEl.checked = data.roles.includes('EMPLE')
             rolEmpleadoEl.disabled = true;
+        }
+        else {
+            rolEmpleadoEl.checked = false;
         }
         var rolClienteEl = document.getElementById('rolCliente');
         if (rolClienteEl) {
-            rolClienteEl.checked = data.rolCliente;
+            rolClienteEl.checked = data.roles.includes('CLIENTE');
             rolClienteEl.disabled = true;
+        }else {
+            rolClienteEl.checked = false;
         }
     }
 </script>

@@ -74,7 +74,7 @@
 
 <script>
     function loadContratacion(id) {
-        url = "<?=BASE_URL?>/contratacioness-api/get";
+        url = "<?=BASE_URL?>/contrataciones-api/get";
         var data = new URLSearchParams();
         data.append('id', id);
 
@@ -83,13 +83,13 @@
             body: data
         }).then(response => {
             if (response.status === 200) {
+                console.log("1")
                 return response.json();
             } else {
                 throw new Error('Error en la solicitud');
             }
         })
             .then(data => {
-
                 asignaCampos(data);
             })
             .catch(error => {
@@ -101,12 +101,12 @@
         var viajeEl = document.getElementById('viaje_id');
         if (viajeEl) {
             viajeEl.value = data.viaje_id;
-            viajeEl.readOnly = true;
+            viajeEl.disabled = true;
         }
         var clienteEl = document.getElementById('cliente_id');
         if (clienteEl) {
             clienteEl.value = data.cliente_id;
-            clienteEl.readOnly = true;
+            clienteEl.disabled = true;
         }
         var pagadoEl = document.getElementById('pagado');
         if (pagadoEl) {

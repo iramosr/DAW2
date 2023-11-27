@@ -15,7 +15,8 @@
     <tbody>
     <?php use dao\UsuariosDao;
 
-    foreach ($data['viajes'] as $viaje) {?>
+    $fila = 0;
+    foreach ($data['viajes'] as $viaje) { ?>
         <tr>
             <td class="align-middle"><?= $viaje['codigo'] ?></td>
             <td class="align-middle"><?= $viaje['titulo'] ?></td>
@@ -51,6 +52,15 @@
                     <i class="fa-solid fa-eye fa-sm" style="color: #ffffff;"></i>
                 </button>
 
+                <button class="btn px-1 btn-success rounded link-underline link-underline-opacity-0 text-center"
+                        style="width: 40px; height: 40px"
+                        onclick="mostrarDescripcion('<?= $fila ?>')"
+                        title="Ver descripción del viaje <?= $viaje['codigo'] ?>">
+                    <i class="fa-solid fa-comment fa-sm" style="color: #ffffff;"></i>
+                </button>
+
+                <br>
+
                 <a href="<?= BASE_URL ?>/viajes/update/<?= $viaje['id'] ?>"
                    class="link-underline link-underline-opacity-0 text-center"
                    title="Modificar viaje <?= $viaje['titulo'] ?>">
@@ -69,11 +79,26 @@
 
             </td>
         </tr>
-    <?php } ?>
+        <tr class="desc" style="display: none">
+            <td colspan="11" style="height: 50px; overflow-y: auto;" class="text-start">
+                <?= $viaje['descripcion'] ?>
+            </td>
+        </tr>
+        <?php $fila++;
+    } ?>
     <tbody>
 </table>
 
 <script>
+    function mostrarDescripcion(fila) {
+        var desc = document.getElementsByClassName('desc')[fila];
+        if (desc.style.display === 'none') {
+            desc.style.display = 'table-row';
+        } else {
+            desc.style.display = 'none';
+        }
+    }
+
     function loadViaje(codigo) {
         url = "<?=BASE_URL?>/viajes-api/get_by_codigo";
         var data = new URLSearchParams();

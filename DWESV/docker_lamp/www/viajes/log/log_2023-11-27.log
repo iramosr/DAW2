@@ -38,3 +38,385 @@ DEBUG:2023-11-27 00:25:53:Acceso a endpoint: viajes-api/get_by_codigo 123
 INFO:2023-11-27 00:25:53:Acceso a endpoint: viajes-api/get_by_codigo 123
 DEBUG:2023-11-27 00:30:39:Acceso a endpoint: viajes-api/get_by_codigo 123
 INFO:2023-11-27 00:30:39:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 10:11:29:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 10:11:29:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 10:11:39:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 10:11:39:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 10:11:51:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 10:11:51:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 10:11:57:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 10:11:57:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 10:28:34:Acceso a endpoint: contrataciones-api/get 2
+INFO:2023-11-27 10:28:34:Acceso a endpoint: contrataciones-api/get 2
+DEBUG:2023-11-27 10:29:09:Acceso a endpoint: contrataciones-api/get 2
+INFO:2023-11-27 10:29:09:Acceso a endpoint: contrataciones-api/get 2
+INFO:2023-11-27 10:29:10:Contratacion actualizada 2
+INFO:2023-11-27 10:29:24:Contratacion actualizada 2
+INFO:2023-11-27 10:29:31:Contratacion actualizada 2
+INFO:2023-11-27 10:29:34:Contratacion actualizada 2
+INFO:2023-11-27 10:30:03:Contratacion creada: 3 - 3
+DEBUG:2023-11-27 10:30:08:Acceso a endpoint: contrataciones-api/get 4
+INFO:2023-11-27 10:30:08:Acceso a endpoint: contrataciones-api/get 4
+INFO:2023-11-27 10:30:30:Contratacion actualizada 2
+INFO:2023-11-27 10:30:58:Contratacion actualizada 2
+DEBUG:2023-11-27 10:32:05:Acceso a endpoint: contrataciones-api/get 2
+INFO:2023-11-27 10:32:05:Acceso a endpoint: contrataciones-api/get 2
+DEBUG:2023-11-27 10:32:15:Acceso a endpoint: contrataciones-api/get 2
+INFO:2023-11-27 10:32:15:Acceso a endpoint: contrataciones-api/get 2
+DEBUG:2023-11-27 10:32:24:Acceso a endpoint: contrataciones-api/get 2
+INFO:2023-11-27 10:32:24:Acceso a endpoint: contrataciones-api/get 2
+INFO:2023-11-27 10:32:34:Contratacion actualizada 4
+INFO:2023-11-27 10:32:37:Contratacion actualizada 4
+INFO:2023-11-27 10:33:06:Contratacion actualizada 4
+INFO:2023-11-27 10:33:09:Contratacion actualizada 4
+DEBUG:2023-11-27 10:33:51:Acceso a endpoint: contrataciones-api/get 2
+INFO:2023-11-27 10:33:51:Acceso a endpoint: contrataciones-api/get 2
+DEBUG:2023-11-27 10:33:56:Acceso a endpoint: contrataciones-api/get 4
+INFO:2023-11-27 10:33:56:Acceso a endpoint: contrataciones-api/get 4
+INFO:2023-11-27 10:33:57:Contratacion actualizada 4
+INFO:2023-11-27 10:34:00:Contratacion actualizada 4
+INFO:2023-11-27 10:34:04:Contratacion actualizada 4
+INFO:2023-11-27 10:34:06:Contratacion actualizada 4
+INFO:2023-11-27 10:35:53:Contratacion actualizada 2
+INFO:2023-11-27 10:35:55:Contratacion actualizada 2
+INFO:2023-11-27 10:36:07:Contratacion actualizada 2
+DEBUG:2023-11-27 10:36:52:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 10:36:52:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 10:36:57:Acceso a endpoint: contrataciones-api/get 2
+INFO:2023-11-27 10:36:57:Acceso a endpoint: contrataciones-api/get 2
+INFO:2023-11-27 10:37:01:Contratacion actualizada 2
+DEBUG:2023-11-27 10:37:15:Acceso a endpoint: contrataciones-api/get 2
+INFO:2023-11-27 10:37:15:Acceso a endpoint: contrataciones-api/get 2
+DEBUG:2023-11-27 10:37:36:Acceso a endpoint: contrataciones-api/get 2
+INFO:2023-11-27 10:37:36:Acceso a endpoint: contrataciones-api/get 2
+INFO:2023-11-27 10:37:39:Contratacion actualizada 2
+INFO:2023-11-27 10:37:42:Contratacion actualizada 2
+DEBUG:2023-11-27 10:37:50:Acceso a endpoint: contrataciones-api/get 2
+INFO:2023-11-27 10:37:50:Acceso a endpoint: contrataciones-api/get 2
+INFO:2023-11-27 10:37:52:Contratacion actualizada 2
+INFO:2023-11-27 10:37:54:Contratacion actualizada 2
+INFO:2023-11-27 10:38:10:Contratacion actualizada 2
+INFO:2023-11-27 10:38:13:Contratacion actualizada 2
+INFO:2023-11-27 10:39:12:Contratacion actualizada 2
+INFO:2023-11-27 10:39:20:Contratacion actualizada 2
+DEBUG:2023-11-27 10:42:03:Acceso a endpoint: contrataciones-api/get 4
+INFO:2023-11-27 10:42:03:Acceso a endpoint: contrataciones-api/get 4
+INFO:2023-11-27 10:42:05:Contratacion actualizada 4
+INFO:2023-11-27 10:42:09:Contratacion actualizada 4
+DEBUG:2023-11-27 10:45:53:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 10:45:53:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 10:45:59:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 10:45:59:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 10:46:25:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 10:46:25:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 10:47:08:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 10:47:08:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 10:47:56:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 10:47:57:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 10:48:45:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 10:48:45:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 10:49:39:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 10:49:39:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 10:49:42:Acceso a endpoint: viajes-api/get_by_codigo 53634
+INFO:2023-11-27 10:49:42:Acceso a endpoint: viajes-api/get_by_codigo 53634
+ERROR:2023-11-27 10:51:03:SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'cliente_id' cannot be null
+ERROR:2023-11-27 10:51:03:Contratacion NO creada: 4 - 
+ERROR:2023-11-27 10:51:12:SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'cliente_id' cannot be null
+ERROR:2023-11-27 10:51:12:Contratacion NO creada: 7 - 
+ERROR:2023-11-27 10:52:17:SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'cliente_id' cannot be null
+ERROR:2023-11-27 10:52:17:Contratacion NO creada: 3 - 
+ERROR:2023-11-27 10:52:40:SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'cliente_id' cannot be null
+ERROR:2023-11-27 10:52:40:Contratacion NO creada: 3 - 
+ERROR:2023-11-27 10:53:59:SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'cliente_id' cannot be null
+ERROR:2023-11-27 10:53:59:Contratacion NO creada: 3 - 
+ERROR:2023-11-27 10:54:41:SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'cliente_id' cannot be null
+ERROR:2023-11-27 10:54:41:Contratacion NO creada: 3 - 
+ERROR:2023-11-27 10:55:12:SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'cliente_id' cannot be null
+ERROR:2023-11-27 10:55:12:Contratacion NO creada: 3 - 
+INFO:2023-11-27 10:55:18:Contratacion creada: 2 - 6
+INFO:2023-11-27 10:55:48:Contratacion borrada: 5
+INFO:2023-11-27 10:55:57:Contratacion creada: 2 - 6
+INFO:2023-11-27 10:56:00:Contratacion borrada: 6
+INFO:2023-11-27 10:56:10:Contratacion creada: 4 - 6
+INFO:2023-11-27 10:56:39:Contratacion creada: 4 - 6
+INFO:2023-11-27 10:56:40:Contratacion borrada: 8
+INFO:2023-11-27 10:56:44:Contratacion borrada: 7
+INFO:2023-11-27 10:56:52:Contratacion creada: 3 - 6
+INFO:2023-11-27 10:56:53:Contratacion actualizada 9
+INFO:2023-11-27 10:58:05:Contratacion actualizada 9
+DEBUG:2023-11-27 11:02:28:Acceso a endpoint: contrataciones-api/get 9
+INFO:2023-11-27 11:02:28:Acceso a endpoint: contrataciones-api/get 9
+INFO:2023-11-27 11:02:29:Contratacion actualizada 9
+INFO:2023-11-27 11:03:14:Contratacion actualizada 9
+INFO:2023-11-27 11:03:49:Contratacion actualizada 9
+DEBUG:2023-11-27 11:04:02:Acceso a endpoint: contrataciones-api/get 9
+INFO:2023-11-27 11:04:02:Acceso a endpoint: contrataciones-api/get 9
+INFO:2023-11-27 11:04:04:Contratacion actualizada 9
+DEBUG:2023-11-27 11:04:36:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:04:36:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 11:05:27:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:05:27:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 11:06:20:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:06:20:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 11:06:21:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:06:21:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 11:06:21:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:06:21:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 11:06:22:Acceso a endpoint: viajes-api/get_by_codigo 321
+INFO:2023-11-27 11:06:22:Acceso a endpoint: viajes-api/get_by_codigo 321
+DEBUG:2023-11-27 11:06:22:Acceso a endpoint: viajes-api/get_by_codigo 321
+INFO:2023-11-27 11:06:22:Acceso a endpoint: viajes-api/get_by_codigo 321
+DEBUG:2023-11-27 11:06:31:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:06:31:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 11:06:58:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:06:58:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 11:07:26:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:07:26:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 11:09:34:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:09:34:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 11:11:03:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:11:03:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 11:12:20:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:12:20:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 11:14:02:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:14:02:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 11:15:10:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:15:10:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:15:54:Viaje creado: 4567
+DEBUG:2023-11-27 11:16:00:Acceso a endpoint: viajes-api/get_by_codigo 4567
+INFO:2023-11-27 11:16:00:Acceso a endpoint: viajes-api/get_by_codigo 4567
+DEBUG:2023-11-27 11:16:30:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:16:30:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 11:16:32:Acceso a endpoint: viajes-api/get_by_codigo 4567
+INFO:2023-11-27 11:16:32:Acceso a endpoint: viajes-api/get_by_codigo 4567
+DEBUG:2023-11-27 11:16:34:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:16:34:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 11:17:04:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:17:04:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 11:19:26:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:19:26:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:19:28:Viaje actializado: 123
+INFO:2023-11-27 11:19:34:Viaje borrado: 10
+DEBUG:2023-11-27 11:37:20:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:37:20:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 11:45:14:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:45:14:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 11:45:17:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:45:17:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 11:45:21:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:45:21:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 11:45:45:Acceso a endpoint: contrataciones-api/get 2
+INFO:2023-11-27 11:45:45:Acceso a endpoint: contrataciones-api/get 2
+DEBUG:2023-11-27 11:45:50:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:45:50:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 11:46:04:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 11:46:04:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 11:46:11:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:46:11:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 11:46:17:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 11:46:17:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 11:46:55:Acceso a endpoint: contrataciones-api/get 9
+INFO:2023-11-27 11:46:55:Acceso a endpoint: contrataciones-api/get 9
+DEBUG:2023-11-27 11:47:04:Acceso a endpoint: contrataciones-api/get 9
+INFO:2023-11-27 11:47:04:Acceso a endpoint: contrataciones-api/get 9
+INFO:2023-11-27 11:47:06:Contratacion actualizada 9
+INFO:2023-11-27 11:57:30:Viaje actializado: 123
+INFO:2023-11-27 11:57:41:Viaje actializado: 123
+INFO:2023-11-27 11:57:45:Viaje actializado: 123
+INFO:2023-11-27 11:58:01:Viaje actializado: 123
+INFO:2023-11-27 11:58:06:Viaje actializado: 123
+ERROR:2023-11-27 12:06:48:SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'viaje_id' cannot be null
+ERROR:2023-11-27 12:06:48:Contratacion NO creada:  - 
+ERROR:2023-11-27 12:07:11:SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'viaje_id' cannot be null
+ERROR:2023-11-27 12:07:11:Contratacion NO creada:  - 
+ERROR:2023-11-27 12:08:19:SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'viaje_id' cannot be null
+ERROR:2023-11-27 12:08:19:Contratacion NO creada:  - 
+ERROR:2023-11-27 12:09:12:SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'viaje_id' cannot be null
+ERROR:2023-11-27 12:09:12:Contratacion NO creada:  - 
+ERROR:2023-11-27 12:09:15:SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'viaje_id' cannot be null
+ERROR:2023-11-27 12:09:15:Contratacion NO creada:  - 
+ERROR:2023-11-27 12:10:17:SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'viaje_id' cannot be null
+ERROR:2023-11-27 12:10:17:Contratacion NO creada:  - 
+ERROR:2023-11-27 12:11:41:SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'viaje_id' cannot be null
+ERROR:2023-11-27 12:11:41:Contratacion NO creada:  - 
+ERROR:2023-11-27 12:12:10:SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'viaje_id' cannot be null
+ERROR:2023-11-27 12:12:10:Contratacion NO creada:  - 
+ERROR:2023-11-27 12:12:12:SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'viaje_id' cannot be null
+ERROR:2023-11-27 12:12:12:Contratacion NO creada:  - 
+INFO:2023-11-27 12:13:42:Contratacion creada: 9 - 6
+INFO:2023-11-27 12:14:09:Contratacion creada: 2 - 6
+INFO:2023-11-27 12:14:25:Contratacion creada: 6 - 6
+DEBUG:2023-11-27 12:18:08:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 12:18:08:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 12:18:26:Contratacion creada: 4 - 6
+DEBUG:2023-11-27 12:18:34:Acceso a endpoint: contrataciones-api/get 9
+INFO:2023-11-27 12:18:34:Acceso a endpoint: contrataciones-api/get 9
+INFO:2023-11-27 12:18:36:Contratacion actualizada 9
+INFO:2023-11-27 12:18:39:Contratacion actualizada 9
+INFO:2023-11-27 12:18:40:Contratacion actualizada 9
+INFO:2023-11-27 12:18:43:Contratacion borrada: 13
+INFO:2023-11-27 12:18:46:Contratacion borrada: 12
+DEBUG:2023-11-27 12:19:03:Acceso a endpoint: contrataciones-api/get 9
+INFO:2023-11-27 12:19:03:Acceso a endpoint: contrataciones-api/get 9
+INFO:2023-11-27 12:19:05:Contratacion actualizada 9
+INFO:2023-11-27 12:19:10:Contratacion actualizada 9
+INFO:2023-11-27 12:19:17:Contratacion borrada: 11
+INFO:2023-11-27 12:21:19:Contratacion actualizada 10
+INFO:2023-11-27 12:22:11:Contratacion actualizada 10
+INFO:2023-11-27 12:22:14:Contratacion actualizada 10
+INFO:2023-11-27 12:22:16:Contratacion actualizada 10
+INFO:2023-11-27 12:23:50:Contratacion actualizada 10
+INFO:2023-11-27 12:23:52:Contratacion actualizada 10
+INFO:2023-11-27 12:23:59:Contratacion actualizada 10
+INFO:2023-11-27 12:24:51:Contratacion actualizada 10
+INFO:2023-11-27 12:26:59:Contratacion actualizada 10
+INFO:2023-11-27 12:27:29:Contratacion actualizada 10
+INFO:2023-11-27 12:27:30:Contratacion actualizada 10
+INFO:2023-11-27 12:27:31:Contratacion actualizada 10
+INFO:2023-11-27 12:27:31:Contratacion actualizada 10
+INFO:2023-11-27 12:27:32:Contratacion actualizada 10
+INFO:2023-11-27 12:28:40:Contratacion actualizada 10
+INFO:2023-11-27 12:28:41:Contratacion actualizada 10
+INFO:2023-11-27 12:29:51:Contratacion actualizada 10
+DEBUG:2023-11-27 12:30:26:Acceso a endpoint: contrataciones-api/get 9
+INFO:2023-11-27 12:30:26:Acceso a endpoint: contrataciones-api/get 9
+DEBUG:2023-11-27 12:30:29:Acceso a endpoint: contrataciones-api/get 9
+INFO:2023-11-27 12:30:29:Acceso a endpoint: contrataciones-api/get 9
+INFO:2023-11-27 12:32:46:Contratacion actualizada 10
+INFO:2023-11-27 12:33:04:Contratacion actualizada 10
+INFO:2023-11-27 12:33:05:Contratacion actualizada 10
+INFO:2023-11-27 12:33:41:Contratacion actualizada 10
+INFO:2023-11-27 12:33:42:Contratacion actualizada 10
+INFO:2023-11-27 12:33:45:Contratacion actualizada 10
+INFO:2023-11-27 12:33:57:Contratacion actualizada 10
+INFO:2023-11-27 12:34:22:Contratacion actualizada 10
+INFO:2023-11-27 12:34:27:Contratacion actualizada 10
+INFO:2023-11-27 12:35:08:Contratacion actualizada 10
+INFO:2023-11-27 12:35:10:Contratacion actualizada 10
+DEBUG:2023-11-27 12:35:36:Acceso a endpoint: contrataciones-api/get 10
+INFO:2023-11-27 12:35:36:Acceso a endpoint: contrataciones-api/get 10
+INFO:2023-11-27 12:35:37:Contratacion borrada: 10
+INFO:2023-11-27 12:35:38:Contratacion actualizada 9
+INFO:2023-11-27 12:35:46:Contratacion actualizada 9
+DEBUG:2023-11-27 12:36:17:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 12:36:17:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 12:36:26:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 12:36:26:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 12:36:29:Viaje actializado: 123
+INFO:2023-11-27 12:36:37:Viaje actializado: 123
+INFO:2023-11-27 12:36:47:Viaje borrado: 9
+DEBUG:2023-11-27 12:37:07:Acceso a endpoint: contrataciones-api/get 4
+INFO:2023-11-27 12:37:07:Acceso a endpoint: contrataciones-api/get 4
+INFO:2023-11-27 12:37:08:Contratacion actualizada 4
+INFO:2023-11-27 12:37:14:Contratacion actualizada 4
+INFO:2023-11-27 12:37:29:Contratacion borrada: 4
+INFO:2023-11-27 12:37:44:Contratacion borrada: 4
+DEBUG:2023-11-27 12:38:01:Acceso a endpoint: usuarios-api/get_by_username usuario
+INFO:2023-11-27 12:38:01:Acceso a endpoint: usuarios-api/get_by_username usuario
+INFO:2023-11-27 12:38:03:Usuario actializado: usuario
+INFO:2023-11-27 12:38:13:Usuario borrado: 3
+DEBUG:2023-11-27 12:39:38:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 12:39:38:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 12:44:26:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 12:44:26:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 12:49:46:Usuario actializado: admin
+INFO:2023-11-27 12:50:39:Usuario creado: admin2
+DEBUG:2023-11-27 12:51:17:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 12:51:17:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 12:52:33:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 12:52:33:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 12:53:17:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 12:53:17:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 12:54:31:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 12:54:55:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 12:55:38:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 12:55:49:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 12:56:09:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 12:57:03:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 12:57:03:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 12:57:28:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 12:57:28:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 12:59:29:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 12:59:29:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:02:01:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:03:26:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:03:51:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:03:57:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:04:11:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:04:37:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:05:26:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:05:54:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:06:08:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:06:32:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 13:07:24:Usuario actializado: admin
+INFO:2023-11-27 13:07:40:Usuario actializado: admin
+INFO:2023-11-27 13:07:48:Usuario actializado: admin
+DEBUG:2023-11-27 13:07:59:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 13:08:04:Usuario actializado: admin
+DEBUG:2023-11-27 13:08:17:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:10:44:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 13:10:44:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:11:12:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 13:11:12:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:11:26:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 13:11:26:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:12:05:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 13:12:05:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:13:06:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 13:13:07:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:13:37:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 13:13:37:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:14:10:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 13:14:10:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:14:25:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 13:14:25:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:16:00:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 13:16:00:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:16:59:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 13:16:59:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:17:18:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 13:17:18:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:18:03:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 13:18:03:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:18:13:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 13:18:13:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:18:40:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 13:18:40:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:19:07:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 13:19:07:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:19:09:Acceso a endpoint: usuarios-api/get_by_username foto
+INFO:2023-11-27 13:19:09:Acceso a endpoint: usuarios-api/get_by_username foto
+DEBUG:2023-11-27 13:19:14:Acceso a endpoint: usuarios-api/get_by_username foto
+INFO:2023-11-27 13:19:14:Acceso a endpoint: usuarios-api/get_by_username foto
+DEBUG:2023-11-27 13:19:20:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 13:19:20:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:19:39:Acceso a endpoint: usuarios-api/get_by_username emple
+INFO:2023-11-27 13:19:39:Acceso a endpoint: usuarios-api/get_by_username emple
+DEBUG:2023-11-27 13:19:43:Acceso a endpoint: usuarios-api/get_by_username foto
+INFO:2023-11-27 13:19:43:Acceso a endpoint: usuarios-api/get_by_username foto
+DEBUG:2023-11-27 13:19:46:Acceso a endpoint: usuarios-api/get_by_username foto
+INFO:2023-11-27 13:19:46:Acceso a endpoint: usuarios-api/get_by_username foto
+DEBUG:2023-11-27 13:19:48:Acceso a endpoint: usuarios-api/get_by_username admin2
+INFO:2023-11-27 13:19:48:Acceso a endpoint: usuarios-api/get_by_username admin2
+DEBUG:2023-11-27 13:20:21:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 13:20:21:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-27 13:20:24:Acceso a endpoint: usuarios-api/get_by_username emple
+INFO:2023-11-27 13:20:24:Acceso a endpoint: usuarios-api/get_by_username emple
+DEBUG:2023-11-27 13:20:26:Acceso a endpoint: usuarios-api/get_by_username foto
+INFO:2023-11-27 13:20:26:Acceso a endpoint: usuarios-api/get_by_username foto
+DEBUG:2023-11-27 13:20:53:Acceso a endpoint: usuarios-api/get_by_username foto
+INFO:2023-11-27 13:20:53:Acceso a endpoint: usuarios-api/get_by_username foto
+DEBUG:2023-11-27 13:20:55:Acceso a endpoint: usuarios-api/get_by_username admin2
+INFO:2023-11-27 13:20:55:Acceso a endpoint: usuarios-api/get_by_username admin2
+DEBUG:2023-11-27 13:20:58:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 13:20:58:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-27 13:21:00:Usuario actializado: admin
+INFO:2023-11-27 13:21:31:Usuario actializado: admin
+INFO:2023-11-27 13:24:35:Usuario actializado: admin
+INFO:2023-11-27 13:25:49:Usuario actializado: admin
+INFO:2023-11-27 13:27:55:Usuario actializado: admin
+INFO:2023-11-27 13:30:04:Usuario actializado: admin
+INFO:2023-11-27 13:31:26:Usuario actializado: admin
+DEBUG:2023-11-27 13:31:31:Acceso a endpoint: usuarios-api/get_by_username foto
+INFO:2023-11-27 13:31:31:Acceso a endpoint: usuarios-api/get_by_username foto
+INFO:2023-11-27 13:31:34:Usuario actializado: foto

@@ -31,20 +31,9 @@
                     <div class="mb-3">
                         <label for="cliente_id" class="form-label">Cliente:</label>
                         <select class="form-select" id="cliente_id" name="cliente_id" <?= $data['disabled'] ?? '' ?>>
-                            <option value="0" <?php if (!isset($data['contratacion']['cliente_id'])) {
-                                echo 'selected';
-                            } ?>>
-                                Seleccione un cliente
-                            </option>
-                            <?php foreach ($data['clientes'] as $cliente) { ?>
-                                <option value="<?= $cliente['id'] ?>"
-                                    <?php if (isset($data['contratacion']['cliente_id']) && $data['contratacion']['cliente_id'] == $cliente['id']) {
-                                        echo 'selected';
-                                    } ?>>
-
-                                    <?= $cliente['nombre'] . " " . $cliente['apellido1'] ?>
+                                <option value="<?= $_SESSION['usuario']['id'] ?>" selected>
+                                    <?= $_SESSION['usuario']['id']. " " .$_SESSION['usuario']['nombre'] . " " . $_SESSION['usuario']['apellido1'] ?>
                                 </option>
-                            <?php } ?>
                         </select>
                     </div>
                     <div class="mb-3">

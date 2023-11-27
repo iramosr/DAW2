@@ -1,4 +1,5 @@
 <?php
+
 namespace dao;
 
 use http\Params;
@@ -54,14 +55,14 @@ class UsuariosDao extends Dao
         $query->bindParam(':ultimo_acceso', $ultimo_acceso);
         $query->bindParam(':createdAt', $createdAt);
         $query->bindParam(':updatedAt', $updatedAt);
-    
+
 
         return $query;
     }
 
     public function update(int $id, $data): bool
     {
-        try{
+        try {
             $updatedAt = date("Y-m-d H:i:s");
             $sql = 'UPDATE ' . $this->tableName() . ' SET 
             username = :username,
@@ -95,25 +96,43 @@ class UsuariosDao extends Dao
 
             $query->execute();
             return true;
-        }catch (PDOException $e) {
+        } catch (PDOException $e) {
             echo $e->getMessage();
             return false;
         }
 
     }
-    public function getByUsername($username):?array
+
+    public function getByUsername($username): ?array
     {
-        $sql = $this->select() . ' WHERE username=:username';
+        $sql = 'SELECT u.*, GROUP_CONCAT(r.rol) as roles 
+            FROM `usuarios` u 
+            INNER JOIN `usuarios_roles` ur ON u.`id` = `ur`.`usuario_id` 
+            INNER JOIN `roles` r ON `ur`.`rol_id` = `r`.`id` 
+            WHERE u.username = :username 
+            GROUP BY u.id';
+
         $query = $this->pdo->prepare($sql);
         $query->bindParam(':username', $username);
         $query->execute();
+
         $row = $query->fetch(\PDO::FETCH_ASSOC);
-        return $row !== false ? $row : null;
+        if ($row !== false) {
+            $row['roles'] = explode(',', $row['roles']); // Convertir la cadena de roles a un array
+            return $row;
+        } else {
+            return null;
+        }
     }
 
-    public function getByRol($rol):?array
+    public function getByRol($rol): ?array
     {
-        $sql = 'SELECT * FROM `usuarios` INNER JOIN `usuarios_roles` ur ON `usuarios`.`id` = `ur`.`usuario_id` INNER JOIN `roles` r on `ur`.`rol_id` = `r`.`id` WHERE `r`.rol = :rol';
+        $sql = 'SELECT * FROM `usuarios` 
+            INNER JOIN `usuarios_roles` ur 
+            ON `usuarios`.`id` = `ur`.`usuario_id` 
+            INNER JOIN `roles` r 
+            on `ur`.`rol_id` = `r`.`id` 
+            WHERE `r`.rol = :rol';
         $query = $this->pdo->prepare($sql);
         $query->bindParam(':rol', $rol);
         $query->execute();

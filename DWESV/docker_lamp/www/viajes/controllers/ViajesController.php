@@ -20,9 +20,12 @@ class ViajesController extends Controller
     {
         $dao = new ViajesDao();
         $viajes = $dao->listAll();
+        $daoUsuarios = new UsuariosDao();
+        $empleados = $daoUsuarios->getByRol('EMPLE');
         $this->data['accion'] = BASE_URL . "/viajes/store";
         $this->data['title-btn-submit'] = 'Guardar';
         $this->data['viajes'] = $viajes;
+        $this->data['empleados'] = $empleados;
         $this->data['page-title'] = "LISTADO DE VIAJES";
         $this->view->render('main/viajes/index', $this->data);
     }
@@ -125,7 +128,6 @@ class ViajesController extends Controller
     {
         $id = $values[0];
         $dao = new ViajesDao();
-        $viajeBD = $dao->get($id);
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $viaje = [];

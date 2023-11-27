@@ -3,6 +3,7 @@
 namespace controllers;
 
 use dao\ContratacionesDao;
+use dao\RolesDao;
 use dao\UsuariosDao;
 use dao\ViajesDao;
 use libs\Controller;
@@ -20,7 +21,8 @@ class ContratacionesController extends Controller
     function index()
     {
         $daoContrataciones = new ContratacionesDao();
-        $contrataciones = $daoContrataciones->listAll();
+        $usuarioSesion = $_SESSION['usuario'] ?? null;
+        $contrataciones = $daoContrataciones->getByUser($usuarioSesion['id']) ?? [];
         $daoViajes = new ViajesDao();
         $viajes = $daoViajes->listAll();
         $daoUsuarios = new UsuariosDao();
@@ -55,13 +57,12 @@ class ContratacionesController extends Controller
 
     public function store()
     {
-        $this->filterAccess('EMPLE');
+        $this->filterAccess('CLIENTE');
         $contratacion = [];
 
         $contratacion['viaje_id'] = $_POST['viaje_id'] ?? null;
         $contratacion['cliente_id'] = $_POST['cliente_id'] ?? null;
         $contratacion['pagado'] = $_POST['pagado'] ?? null;
-
 
         $dao = new ContratacionesDao();
         $contratacionId = $dao->add($contratacion);
@@ -75,7 +76,14 @@ class ContratacionesController extends Controller
             LogService::error("Contratacion NO creada: " . $contratacion['viaje_id'] . " - " . $contratacion['cliente_id']);
         }
         $_SESSION['result'] = $this->data['result'];
-        header("Location: " . BASE_URL . "/contrataciones/emple");
+
+        $rolesDao = new RolesDao();
+        $roles = $rolesDao->roles($_SESSION['usuario']['id']);
+        if (in_array('EMPLE', $roles)) {
+            header("Location: " . BASE_URL . "/contrataciones/emple");
+        } else {
+            header("Location: " . BASE_URL . "/contrataciones");
+        }
     }
 
 
@@ -112,7 +120,13 @@ class ContratacionesController extends Controller
                 $this->data['result']['msg'] = "Contratación no eliminada";
                 LogService::info("Contratacion NO borrada: " . $id);
             }
-            $this->emple();
+            $rolesDao = new RolesDao();
+            $roles = $rolesDao->roles($_SESSION['usuario']['id']);
+            if (in_array('EMPLE', $roles)) {
+                $this->emple();
+            } else {
+                $this->index();
+            }
         }
     }
 
@@ -120,14 +134,12 @@ class ContratacionesController extends Controller
     {
         $id = $values[0];
         $dao = new ContratacionesDao();
-        $contratacionBD = $dao->get($id);
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $contratacion = [];
             $contratacion['viaje_id'] = $_POST['viaje_id'] ?? null;
             $contratacion['cliente_id'] = $_POST['cliente_id'] ?? null;
             $contratacion['pagado'] = $_POST['pagado'] ?? null;
-
 
             if ($dao->update($id, $contratacion)) {
                 $this->data['result']['type'] = 'success';
@@ -153,6 +165,14 @@ class ContratacionesController extends Controller
         $this->data['clientes'] = $clientes;
         $this->data['accion'] = BASE_URL . "/contrataciones/update/" . $id;
         $this->data['title-btn-submit'] = 'Cambiar';
-        $this->view->render('admin/contrataciones/update', $this->data);
+
+
+        $rolesDao = new RolesDao();
+        $roles = $rolesDao->roles($_SESSION['usuario']['id']);
+        if (in_array('EMPLE', $roles)) {
+            $this->view->render('admin/contrataciones/update', $this->data);
+        } else {
+            $this->view->render('main/contrataciones/update', $this->data);
+        }
     }
 }

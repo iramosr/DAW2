@@ -1,7 +1,8 @@
 <form action="<?= $data['accion'] ?? '' ?>" method="post" enctype="multipart/form-data">
     <div class="mb-3">
-        <label for="viaje_id" class="form-label">Viaje:</label>
-        <select class="form-select" id="viaje_id" name="viaje_id" <?= $data['disabled'] ?? '' ?>>
+        <input type="hidden" name="viaje_id" value="<?=$data['contratacion']['viaje_id']?>">
+        <label for="viaje" class="form-label">Viaje:</label>
+        <select class="form-select" id="viaje" name="viaje_id" disabled>
             <option value="0" <?php if (!isset($data['contratacion']['viaje_id'])) {
                 echo 'selected';
             } ?>>
@@ -19,22 +20,12 @@
         </select>
     </div>
     <div class="mb-3">
-        <label for="cliente_id" class="form-label">Cliente:</label>
-        <select class="form-select" id="cliente_id" name="cliente_id" <?= $data['disabled'] ?? '' ?>>
-            <option value="0" <?php if (!isset($data['contratacion']['cliente_id'])) {
-                echo 'selected';
-            } ?>>
-                Seleccione un cliente
+        <label for="cliente" class="form-label">Cliente:</label>
+        <input type="hidden" name="cliente_id" value="<?=$data['contratacion']['cliente_id']?>">
+        <select class="form-select" id="cliente" name="cliente_id" disabled>
+            <option value="<?= $_SESSION['usuario']['id'] ?>" selected>
+                <?= $_SESSION['usuario']['nombre'] . " " . $_SESSION['usuario']['apellido1'] ?>
             </option>
-            <?php foreach ($data['clientes'] as $cliente) { ?>
-                <option value="<?= $cliente['id'] ?>"
-                    <?php if (isset($data['contratacion']['cliente_id']) && $data['contratacion']['cliente_id'] == $cliente['id']) {
-                        echo 'selected';
-                    } ?>>
-
-                    <?= $cliente['nombre'] . " " . $cliente['apellido1'] ?>
-                </option>
-            <?php } ?>
         </select>
     </div>
     <div class="mb-3">

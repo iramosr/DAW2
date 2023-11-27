@@ -27,8 +27,8 @@
                 Seleccione un cliente
             </option>
             <?php foreach ($data['clientes'] as $cliente) { ?>
-                <option value="<?= $cliente['id'] ?>"
-                    <?php if (isset($data['contratacion']['cliente_id']) && $data['contratacion']['cliente_id'] == $cliente['id']) {
+                <option value="<?= $cliente['usuario_id'] ?>"
+                    <?php if (isset($data['contratacion']['cliente_id']) && $data['contratacion']['cliente_id'] == $cliente['usuario_id']) {
                         echo 'selected';
                     } ?>>
 

@@ -2,7 +2,7 @@
 <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="modalFormLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <form action="<?= $data['accion'] ?? '' ?>" method="post" enctype="multipart/form-data"
-        class="w-100">
+              class="w-100">
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title" id="#modalFormLabel">VIAJE</h1>
@@ -25,7 +25,7 @@
 
                                     <?= $viaje['codigo'] . " - " . $viaje['titulo'] ?>
                                 </option>
-                            <?php } ?>
+                            <?php };?>
                         </select>
                     </div>
                     <div class="mb-3">
@@ -36,9 +36,9 @@
                             } ?>>
                                 Seleccione un cliente
                             </option>
-                            <?php foreach ($data['clientes'] as $cliente) { ?>
-                                <option value="<?= $cliente['id'] ?>"
-                                    <?php if (isset($data['contratacion']['cliente_id']) && $data['contratacion']['cliente_id'] == $cliente['id']) {
+                            <?php foreach ($data['clientes'] as $cliente) {?>
+                                <option value="<?= $cliente['usuario_id'] ?>"
+                                    <?php if (isset($data['contratacion']['cliente_id']) && $data['contratacion']['cliente_id'] == $cliente['usuario_id']) {
                                         echo 'selected';
                                     } ?>>
 

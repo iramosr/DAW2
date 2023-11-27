@@ -7,21 +7,21 @@
 }
 
 .btn-save{
-    background-color: #4e59d2;
+    background-color: #4ed26d;
     border-color: #c8c7ce;
 }
 
 .btn-save:hover{
-    background-color: #868dd2;
+    background-color: #86d2a9;
     border-color: #c8c7ce;
 }
 
 .btn-new{
-    background-color: #9a31cc;
+    background-color: #31cc46;
     border-color: #c8c7ce;
 }
 
 .btn-new:hover{
-    background-color: #a24ed2;
+    background-color: #4ed255;
     border-color: #c8c7ce;
 }

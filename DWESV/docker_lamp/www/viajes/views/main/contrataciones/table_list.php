@@ -48,7 +48,7 @@
 
                 <a href="<?= BASE_URL ?>/contrataciones/delete/<?= $contratacion['id'] ?> "
                    class="link-underline link-underline-opacity-0 text-center"
-                   title="Eliminar viaje">
+                   title="Cancelar contratación">
                     <button class="btn btn-danger text-center" style="width: 40px; height: 40px">
                         <i class="fa-solid fa-trash-can fa-sm" style="color: #ffffff;"></i>
                     </button>
@@ -62,7 +62,7 @@
 
 <script>
     function loadContratacion(id) {
-        url = "<?=BASE_URL?>/contratacioness-api/get";
+        url = "<?=BASE_URL?>/contrataciones-api/get";
         var data = new URLSearchParams();
         data.append('id', id);
         fetch(url, {

@@ -59,7 +59,6 @@ class ContratacionesDao extends Dao
             $query->bindParam(':viajeId', $data['viaje_id']);
             $query->bindParam(':clienteId', $data['cliente_id']);
             $query->bindParam(':updatedAt', $updatedAt);
-
             $query->execute();
             return true;
         } catch (PDOException $e) {

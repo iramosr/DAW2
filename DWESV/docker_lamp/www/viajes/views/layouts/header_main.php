@@ -16,10 +16,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="<?= BASE_URL ?>/viajes">Viajes</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?= BASE_URL ?>/contrataciones">Mis viajes</a>
-                </li>
-                <?php if (isset($_SESSION['usuario']) && in_array('ADMIN', $_SESSION['usuario']['roles'])) { ?>
+                <?php if (isset($_SESSION['usuario']) && in_array('CLIENTE', $_SESSION['usuario']['roles'])) { ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= BASE_URL ?>/contrataciones">Mis viajes</a>
+                    </li>
+                <?php } ?>
+                <?php if (isset($_SESSION['usuario']) && in_array('EMPLE', $_SESSION['usuario']['roles'])) { ?>
                     <li class="nav-item">
                         <a class="nav-link" href="<?= BASE_URL ?>/admin">Administración</a>
                     </li>
