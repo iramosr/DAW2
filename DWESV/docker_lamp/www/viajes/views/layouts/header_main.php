@@ -31,6 +31,9 @@
                 <button class="btn btn-outline-succes"
                         data-bs-toggle="modal" data-bs-target="#modalLogin">Entrar
                 </button>
+                <button class="btn btn-outline-succes"
+                        data-bs-toggle="modal" data-bs-target="#modalRegistro">Registrarse
+                </button>
             <?php } else { ?>
                 <div class="fw-bold me-1">
                     <?php if (isset($_SESSION['usuario']['foto'])) { ?>
@@ -50,23 +53,11 @@
 </nav>
 <!-- CARGO MODAL LOGIN -->
 <?php require_once 'views/layouts/modal_login.php'; ?>
+<!-- CARGO MODAL REGISTRO -->
+<?php require_once 'views/layouts/modal_registro.php'; ?>
 
 
 <div id="msg">
-
-    <!--
-                <?php /*if (isset($data['result']) && $data['result']['type'] === "error") {*/ ?>
-                    <div class="bg-danger mb-2 px4 py-1">
-                        <?php /*=$data['result']['msg'] ?? ''*/ ?>
-                        </div>
-                <?php /*} */ ?>
-
-                <?php /*if (isset($data['result']) && $data['result']['type'] === "success") {*/ ?>
-                    <div class="bg-success mb-2 px4 py-1">
-                        <?php /*=$data['result']['msg'] ?? ''*/ ?>
-                    </div>
-                <?php /*} */ ?>
--->
 
     <!-- Muestra el mensaje -->
     <?php

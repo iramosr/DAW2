@@ -1,7 +1,7 @@
 <form action="<?= $data['accion'] ?? '' ?>" method="post" enctype="multipart/form-data">
     <div class="mb-3">
-        <label for="viaje_id" class="form-label">Viaje:</label>
-        <select class="form-select" id="viaje_id" name="viaje_id" <?= $data['disabled'] ?? '' ?>>
+        <label for="viaje_id" class="form-label">Viaje: <sup>*</sup> </label>
+        <select class="form-select" id="viaje_id" name="viaje_id" <?= $data['disabled'] ?? '' ?> required>
             <option value="0" <?php if (!isset($data['contratacion']['viaje_id'])) {
                 echo 'selected';
             } ?>>
@@ -19,8 +19,8 @@
         </select>
     </div>
     <div class="mb-3">
-        <label for="cliente_id" class="form-label">Cliente:</label>
-        <select class="form-select" id="cliente_id" name="cliente_id" <?= $data['disabled'] ?? '' ?>>
+        <label for="cliente_id" class="form-label">Cliente:<sup>*</sup></label>
+        <select class="form-select" id="cliente_id" name="cliente_id" <?= $data['disabled'] ?? '' ?> required>
             <option value="0" <?php if (!isset($data['contratacion']['cliente_id'])) {
                 echo 'selected';
             } ?>>
@@ -44,7 +44,7 @@
             <?= $data['readonly'] ?? '' ?>>
     </div>
     <?php if (isset($data['title-btn-submit'])) { ?>
-        <input type="submit" class="btn-save" value="<?= $data['title-btn-submit'] ?>">
+        <input type="submit" class="btn btn-save" value="<?= $data['title-btn-submit'] ?>">
     <?php } ?>
 
 </form>

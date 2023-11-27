@@ -9,32 +9,32 @@
                 </div>
                 <div class="modal-body">
                     <div class="mb-3">
-                        <label for="codigo" class="form-label">Código:</label>
+                        <label for="codigo" class="form-label">Código:<sup>*</sup></label>
                         <input type="text" class="form-control" id="codigo" name="codigo"
                                value="<?= isset($data['viaje']['codigo']) ? $data['viaje']['codigo'] : '' ?>"
-                            <?= $data['readonly'] ?? '' ?>>
+                            <?= $data['readonly'] ?? '' ?> required>
                     </div>
                     <div class="mb-3">
-                        <label for="titulo" class="form-label">Título:</label>
+                        <label for="titulo" class="form-label">Título:<sup>*</sup></label>
                         <input type="titulo" class="form-control" id="titulo" name="titulo"
                                value="<?= isset($data['viaje']['titulo']) ? $data['viaje']['titulo'] : '' ?>"
-                            <?= $data['readonly'] ?? '' ?>>
+                            <?= $data['readonly'] ?? '' ?> required>
                     </div>
                     <div class="mb-3">
                         <label for="descripcion" class="form-label">Descripción:</label>
                         <textarea class="form-control" id="descripcion" name="descripcion" rows="3" <?= $data['readonly'] ?? '' ?>><?= isset($data['viaje']['descripcion']) ? $data['viaje']['descripcion'] : '' ?></textarea>
                     </div>
                     <div class="mb-3">
-                        <label for="salida" class="form-label">Salida:</label>
+                        <label for="salida" class="form-label">Salida:<sup>*</sup></label>
                         <input type="datetime-local" class="form-control" id="salida" name="salida"
                                value="<?= isset($data['viaje']['salida']) ? $data['viaje']['salida'] : '' ?>"
-                            <?= $data['readonly'] ?? '' ?>>
+                            <?= $data['readonly'] ?? '' ?> required>
                     </div>
                     <div class="mb-3">
-                        <label for="llegada" class="form-label">Llegada:</label>
+                        <label for="llegada" class="form-label">Llegada:<sup>*</sup></label>
                         <input type="datetime-local" class="form-control" id="llegada" name="llegada"
                                value="<?= isset($data['viaje']['llegada']) ? $data['viaje']['llegada'] : '' ?>"
-                            <?= $data['readonly'] ?? '' ?>>
+                            <?= $data['readonly'] ?? '' ?> required>
                     </div>
                     <div class="mb-3">
                         <label for="plazas" class="form-label">Plazas:</label>
@@ -55,8 +55,8 @@
                             <?= $data['disabled'] ?? '' ?>>
                     </div>
                     <div class="mb-3">
-                        <label for="empleado_id" class="form-label">Empleado:</label>
-                        <select class="form-select" id="empleado_id" name="empleado_id" <?= $data['disabled'] ?? '' ?>>
+                        <label for="empleado_id" class="form-label">Empleado:<sup>*</sup></label>
+                        <select class="form-select" id="empleado_id" name="empleado_id" <?= $data['disabled'] ?? '' ?> required>
                             <option value="0" <?php if (!isset($data['viaje']['empleado_id'])) {
                                 echo 'selected';
                             } ?>>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="modal-footer">
                     <?php if (isset($data['title-btn-submit'])) { ?>
-                        <input type="submit" class="btn-save" value="<?= $data['title-btn-submit'] ?>">
+                        <input type="submit" class="btn btn-save" value="<?= $data['title-btn-submit'] ?>">
                     <?php } ?>
                 </div>
             </div>

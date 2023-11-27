@@ -1,32 +1,32 @@
 <form action="<?= $data['accion'] ?? '' ?>" method="post" enctype="multipart/form-data">
     <div class="mb-3">
-        <label for="username" class="form-label">Usuario:</label>
+        <label for="username" class="form-label">Usuario:<sup>*</sup></label>
         <input type="text" class="form-control" id="username" name="username"
                value="<?= isset($data['usuario']['username']) ? $data['usuario']['username'] : '' ?>"
-            <?= $data['readonly'] ?? '' ?>>
+            <?= $data['readonly'] ?? '' ?> required>
     </div>
     <div class="mb-3">
-        <label for="password" class="form-label">Contraseña:</label>
+        <label for="password" class="form-label">Contraseña:<sup>*</sup></label>
         <input type="password" class="form-control" id="password" name="password"
-            <?= $data['readonly'] ?? '' ?>>
+            <?= $data['readonly'] ?? '' ?> required>
     </div>
     <div class="mb-3">
-        <label for="email" class="form-label">Email:</label>
+        <label for="email" class="form-label">Email:<sup>*</sup></label>
         <input type="email" class="form-control" id="email" name="email"
                value="<?= isset($data['usuario']['email']) ? $data['usuario']['email'] : '' ?>"
-            <?= $data['readonly'] ?? '' ?>>
+            <?= $data['readonly'] ?? '' ?> required>
     </div>
     <div class="mb-3">
-        <label for="nombre" class="form-label">Nombre:</label>
+        <label for="nombre" class="form-label">Nombre:<sup>*</sup></label>
         <input type="text" class="form-control" id="nombre" name="nombre"
                value="<?= isset($data['usuario']['nombre']) ? $data['usuario']['nombre'] : '' ?>"
-            <?= $data['readonly'] ?? '' ?>>
+            <?= $data['readonly'] ?? '' ?> required>
     </div>
     <div class="mb-3">
-        <label for="apellido1" class="form-label">Primer apellido:</label>
+        <label for="apellido1" class="form-label">Primer apellido:<sup>*</sup></label>
         <input type="text" class="form-control" id="apellido1" name="apellido1"
                value="<?= isset($data['usuario']['apellido1']) ? $data['usuario']['apellido1'] : '' ?>"
-            <?= $data['readonly'] ?? '' ?>>
+            <?= $data['readonly'] ?? '' ?> required>
     </div>
     <div class="mb-3">
         <label for="apellido2" class="form-label">Segundo apellido:</label>
@@ -78,7 +78,7 @@
             <?= $data['disabled'] ?? '' ?>>
     </div>
     <?php if (isset($data['title-btn-submit'])) { ?>
-        <input type="submit" class="btn-save" value="<?= $data['title-btn-submit'] ?>">
+        <input type="submit" class="btn btn-save" value="<?= $data['title-btn-submit'] ?>">
     <?php } ?>
 
 </form>

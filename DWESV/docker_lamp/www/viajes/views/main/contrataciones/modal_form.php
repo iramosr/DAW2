@@ -2,7 +2,7 @@
 <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="modalFormLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <form action="<?= $data['accion'] ?? '' ?>" method="post" enctype="multipart/form-data"
-        class="w-100">
+              class="w-100">
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title" id="#modalFormLabel">VIAJE</h1>
@@ -10,8 +10,9 @@
                 </div>
                 <div class="modal-body">
                     <div class="mb-3">
-                        <label for="viaje_id" class="form-label">Viaje contratado:</label>
-                        <select class="form-select" id="viaje_id" name="viaje_id" <?= $data['disabled'] ?? '' ?>>
+                        <label for="viaje_id" class="form-label">Viaje contratado:<sup>*</sup></label>
+                        <select class="form-select" id="viaje_id" name="viaje_id" <?= $data['disabled'] ?? '' ?>
+                                required>
                             <option value="0" <?php if (!isset($data['contratacion']['viaje_id'])) {
                                 echo 'selected';
                             } ?>>
@@ -29,11 +30,12 @@
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label for="cliente_id" class="form-label">Cliente:</label>
-                        <select class="form-select" id="cliente_id" name="cliente_id" <?= $data['disabled'] ?? '' ?>>
-                                <option value="<?= $_SESSION['usuario']['id'] ?>" selected>
-                                    <?= $_SESSION['usuario']['id']. " " .$_SESSION['usuario']['nombre'] . " " . $_SESSION['usuario']['apellido1'] ?>
-                                </option>
+                        <label for="cliente_id" class="form-label">Cliente:<sup>*</sup></label>
+                        <select class="form-select" id="cliente_id" name="cliente_id" <?= $data['disabled'] ?? '' ?>
+                                required>
+                            <option value="<?= $_SESSION['usuario']['id'] ?>" selected>
+                                <?= $_SESSION['usuario']['id'] . " " . $_SESSION['usuario']['nombre'] . " " . $_SESSION['usuario']['apellido1'] ?>
+                            </option>
                         </select>
                     </div>
                     <div class="mb-3">
@@ -45,7 +47,7 @@
                 </div>
                 <div class="modal-footer">
                     <?php if (isset($data['title-btn-submit'])) { ?>
-                        <input type="submit" class="btn-save" value="<?= $data['title-btn-submit'] ?>">
+                        <input type="submit" class="btn btn-save" value="<?= $data['title-btn-submit'] ?>">
                     <?php } ?>
                 </div>
             </div>

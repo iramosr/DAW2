@@ -55,6 +55,9 @@
                         <img src="" id="foto" style="max-height: 200px;" alt="">
                     </div>
                 </div>
+                <div class="modal-footer">
+                    <button type="submit" id="btn-submit" class="btn btn-save">Guardar</button>
+                </div>
             </div>
         </form>
     </div>

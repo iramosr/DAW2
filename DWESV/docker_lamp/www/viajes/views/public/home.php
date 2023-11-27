@@ -33,7 +33,7 @@ require_once 'views/layouts/head_main.php'; ?>
                 <div class="card">
                     <?php if ($viaje['foto'] !== null && $viaje['foto'] != '') { ?>
                         <img src="<?= BASE_URL . '/uploads/fotos/viajes/' . $viaje['foto'] ?>"
-                             style="max-height: 200px">
+                             style="height: 200px">
                     <?php } ?>
                     <div class="card-body d-flex justify-content-between align-items-center">
                         <!-- datos del viaje -->

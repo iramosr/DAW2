@@ -1,7 +1,7 @@
 <form action="<?= $data['accion'] ?? '' ?>" method="post" enctype="multipart/form-data">
     <div class="mb-3">
         <input type="hidden" name="viaje_id" value="<?=$data['contratacion']['viaje_id']?>">
-        <label for="viaje" class="form-label">Viaje:</label>
+        <label for="viaje" class="form-label">Viaje:<sup>*</sup></label>
         <select class="form-select" id="viaje" name="viaje_id" disabled>
             <option value="0" <?php if (!isset($data['contratacion']['viaje_id'])) {
                 echo 'selected';
@@ -20,7 +20,7 @@
         </select>
     </div>
     <div class="mb-3">
-        <label for="cliente" class="form-label">Cliente:</label>
+        <label for="cliente" class="form-label">Cliente:<sup>*</sup></label>
         <input type="hidden" name="cliente_id" value="<?=$data['contratacion']['cliente_id']?>">
         <select class="form-select" id="cliente" name="cliente_id" disabled>
             <option value="<?= $_SESSION['usuario']['id'] ?>" selected>
@@ -35,7 +35,7 @@
             <?= $data['readonly'] ?? '' ?>>
     </div>
     <?php if (isset($data['title-btn-submit'])) { ?>
-        <input type="submit" class="btn-save" value="<?= $data['title-btn-submit'] ?>">
+        <input type="submit" class="btn btn-save" value="<?= $data['title-btn-submit'] ?>">
     <?php } ?>
 
 </form>

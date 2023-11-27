@@ -14,7 +14,7 @@
                         <label for="username">Nombre de usuario</label>
                     </div>
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="password-login" name="password"
+                        <input type="password" class="form-control" id="password-login" name="password"
                                placeholder="Password">
                         <label for="password">Contraseña</label>
                     </div>
