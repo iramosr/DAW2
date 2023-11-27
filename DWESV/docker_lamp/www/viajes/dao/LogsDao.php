@@ -58,6 +58,6 @@ class LogsDao extends Dao{
 
     public function update(int $id, $datos): bool
     {
-        // TODO: Implement update() method.
+        return false;
     }
 }

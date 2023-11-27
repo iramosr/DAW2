@@ -1,0 +1,40 @@
+INFO:2023-11-27 00:01:27:Viaje actializado: 123
+INFO:2023-11-27 00:01:39:Viaje actializado: 123
+DEBUG:2023-11-27 00:05:33:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 00:05:33:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 00:06:39:Viaje actializado: 123
+INFO:2023-11-27 00:06:43:Viaje actializado: 123
+INFO:2023-11-27 00:07:33:Viaje actializado: 123
+INFO:2023-11-27 00:07:38:Viaje actializado: 123
+DEBUG:2023-11-27 00:13:15:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 00:13:15:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 00:15:30:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 00:15:30:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 00:15:37:Viaje borrado: 8
+INFO:2023-11-27 00:15:39:Viaje actializado: 123
+INFO:2023-11-27 00:15:48:Viaje borrado: 8
+INFO:2023-11-27 00:15:50:Viaje actializado: 123
+INFO:2023-11-27 00:15:52:Viaje actializado: 123
+INFO:2023-11-27 00:15:54:Viaje actializado: 123
+INFO:2023-11-27 00:15:55:Viaje borrado: 8
+INFO:2023-11-27 00:15:58:Viaje actializado: 123
+INFO:2023-11-27 00:16:01:Viaje actializado: 123
+INFO:2023-11-27 00:16:06:Viaje actializado: 123
+DEBUG:2023-11-27 00:19:56:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 00:19:56:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 00:21:45:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 00:21:45:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 00:22:06:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 00:22:06:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 00:22:12:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 00:22:12:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 00:22:36:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 00:22:36:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 00:23:19:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 00:23:19:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 00:25:26:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 00:25:26:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 00:25:53:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 00:25:53:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-27 00:30:39:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-27 00:30:39:Acceso a endpoint: viajes-api/get_by_codigo 123

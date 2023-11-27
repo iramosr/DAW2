@@ -21,10 +21,6 @@
                             <?= $data['readonly'] ?? '' ?>>
                     </div>
                     <div class="mb-3">
-                        <label for="descripcion" class="form-label">Descripción:</label>
-                        <textarea class="form-control" id="descripcion" name="descripcion" rows="3" <?= $data['readonly'] ?? '' ?>><?= isset($data['viaje']['descripcion']) ? $data['viaje']['descripcion'] : '' ?></textarea>
-                    </div>
-                    <div class="mb-3">
                         <label for="salida" class="form-label">Salida:</label>
                         <input type="datetime-local" class="form-control" id="salida" name="salida"
                                value="<?= isset($data['viaje']['salida']) ? $data['viaje']['salida'] : '' ?>"
@@ -55,29 +51,11 @@
                             <?= $data['disabled'] ?? '' ?>>
                     </div>
                     <div class="mb-3">
-                        <label for="empleado_id" class="form-label">Empleado:</label>
-                        <select class="form-select" id="empleado_id" name="empleado_id" <?= $data['disabled'] ?? '' ?>>
-                            <option value="0" <?php if (!isset($data['viaje']['empleado_id'])) {
-                                echo 'selected';
-                            } ?>>
-                                Seleccione un empleado
-                            </option>
-                            <?php foreach ($data['empleados'] as $empleado) { ?>
-                                <option value="<?= $empleado['usuario_id'] ?>"
-                                    <?php if (isset($data['viaje']['empleado_id']) && $data['viaje']['empleado_id'] == $empleado['usuario_id']) {
-                                        echo 'selected';
-                                    } ?>>
-
-                                    <?=  $empleado['usuario_id'] . "-" . $empleado['nombre'] . " " . $empleado['apellido1'] ?>
-                                </option>
-                            <?php } ?>
-                        </select>
+                        <label for="empleado" class="form-label">Empleado:</label>
+                        <input type="text" class="form-control" id="empleado" name="empleado"
+                               value="<?= isset($data['viaje']['empleado']) ? $data['viaje']['empleado'] : '' ?>"
+                            <?= $data['readonly'] ?? '' ?>>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <?php if (isset($data['title-btn-submit'])) { ?>
-                        <input type="submit" class="btn-save" value="<?= $data['title-btn-submit'] ?>">
-                    <?php } ?>
                 </div>
             </div>
         </form>

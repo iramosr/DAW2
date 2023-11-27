@@ -6,7 +6,7 @@ use dao\RolesDao;
 use dao\UsuariosDao;
 use libs\Controller;
 
-class LoginController extends Controller
+class   LoginController extends Controller
 {
 
     function __construct()
@@ -43,8 +43,8 @@ class LoginController extends Controller
 
         $this->view->render('public/home', $this->data);
         $_SESSION['result'] = $this->data['result'];
-        //borra location del header
-        header("Location: " . BASE_URL);
+
+
     }
 
     function out()

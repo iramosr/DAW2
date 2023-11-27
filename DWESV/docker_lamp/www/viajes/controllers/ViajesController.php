@@ -2,6 +2,7 @@
 
 namespace controllers;
 
+use dao\UsuariosDao;
 use dao\ViajesDao;
 use libs\Controller;
 use services\LogService;
@@ -17,7 +18,6 @@ class ViajesController extends Controller
 
     function index()
     {
-        $this->filterAccess('CLIENTE');
         $dao = new ViajesDao();
         $viajes = $dao->listAll();
         $this->data['accion'] = BASE_URL . "/viajes/store";
@@ -25,12 +25,28 @@ class ViajesController extends Controller
         $this->data['viajes'] = $viajes;
         $this->data['page-title'] = "LISTADO DE VIAJES";
         $this->view->render('main/viajes/index', $this->data);
-
     }
+
+    function emple()
+    {
+        $this->filterAccess('EMPLE');
+        $daoViajes = new ViajesDao();
+        $viajes = $daoViajes->listAll();
+        $daoUsuarios = new UsuariosDao();
+        $empleados = $daoUsuarios->getByRol('EMPLE');
+        $this->data['accion'] = BASE_URL . "/viajes/store";
+        $this->data['title-btn-submit'] = 'Guardar';
+        $this->data['viajes'] = $viajes;
+        $this->data['empleados'] = $empleados;
+        $this->data['page-title'] = "LISTADO DE VIAJES";
+        $this->view->render('admin/viajes/index', $this->data);
+    }
+
+
 
     public function store()
     {
-//        $this->filterAccess('EMPLE');
+        $this->filterAccess('EMPLE');
         $viaje = [];
 
         $viaje['codigo'] = $_POST['codigo'] ?? null;
@@ -50,7 +66,7 @@ class ViajesController extends Controller
             $viaje['foto'] = $nameFoto;
         }
 
-        $empleadoId = $data['empleado_id'] ?? null;
+        $viaje['empleado_id'] = $_POST['empleado_id'] ?? null;
 
 
         $dao = new ViajesDao();
@@ -65,14 +81,14 @@ class ViajesController extends Controller
             LogService::error("Viaje NO creado: " . $viaje['codigo']);
         }
         $_SESSION['result'] = $this->data['result'];
-        header("Location: " . BASE_URL . "/viajes/index");
+        header("Location: " . BASE_URL . "/viajes/emple");
     }
 
 
     //PASANDO CODIGO VIAJE
     public function show($values)
     {
-//        $this->filterAccess('EMPLE');
+        $this->filterAccess('EMPLE');
         $codigo = $values[0];
         $dao = new ViajesDao();
         $viaje = $dao->getByCodigo($codigo);
@@ -101,7 +117,7 @@ class ViajesController extends Controller
                 $this->data['result']['msg'] = "Viaje no eliminado";
                 LogService::info("Viaje NO borrado: " . $id);
             }
-            $this->index();
+            $this->emple();
         }
     }
 
@@ -120,7 +136,14 @@ class ViajesController extends Controller
             $viaje['llegada'] = $_POST['llegada'] ?? null;
             $viaje['plazas'] = $_POST['plazas'] ?? null;
             $viaje['precio'] = $_POST['precio'] ?? null;
-            $viaje['foto'] = $_POST['foto'] ?? null;
+            if ($_FILES['foto'] && $_FILES['foto']['name'] != '') {
+                $foto = $_FILES['foto'];
+                $extension = pathinfo($foto['name'], PATHINFO_EXTENSION);
+                $nameFoto = uniqid() . '-' . $viaje['codigo'] . "." . $extension;
+                $localPathImagen = fullPath(UPLOAD_FOTOS_VIAJES, $nameFoto);
+                move_uploaded_file($foto['tmp_name'], $localPathImagen);
+                $viaje['foto'] = $nameFoto;
+            }
             $viaje['empleado_id'] = $_POST['empleado_id'] ?? null;
 
             if ($dao->update($id, $viaje)) {
@@ -138,6 +161,10 @@ class ViajesController extends Controller
             $this->data['viaje'] = $viaje;
             LogService::info("Viaje actializado: " . $viaje['codigo']);
         }
+
+        $daoUsuarios = new UsuariosDao();
+        $empleados = $daoUsuarios->getByRol('EMPLE');
+        $this->data['empleados'] = $empleados;
         $this->data['accion'] = BASE_URL . "/viajes/update/" . $id;
         $this->data['title-btn-submit'] = 'Cambiar';
         $this->view->render('admin/viajes/update', $this->data);

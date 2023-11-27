@@ -19,22 +19,22 @@ class ContratacionesDao extends Dao
 
     public function itemsTable(): string
     {
-        return "id, pagado, viaje_id, usuario_id, created_at, updated_at";
+        return "id, pagado, viaje_id, cliente_id, created_at, updated_at";
     }
 
     protected function _add($data): object
     {
         $createdAt = $updatedAt = date("Y-m-d H:i:s");
         $sql = 'INSERT INTO ' . $this->tableName() . ' (' . $this->itemsTable() . ') ' .
-            'VALUES (null, :pagado, :viajeId, :usuarioID, :createdAt, :updatedAt)';
+            'VALUES (null, :pagado, :viajeId, :clienteId, :createdAt, :updatedAt)';
         $query = $this->pdo->prepare($sql);
         $pagado = $data['pagado'] ?? null;
         $viajeId = $data['viaje_id'] ?? null;
-        $usuarioId = $data['usuario_id'] ?? null;
+        $clienteId = $data['cliente_id'] ?? null;
 
         $query->bindParam(':pagado', $pagado);
         $query->bindParam(':viajeId', $viajeId);
-        $query->bindParam(':usuarioId', $usuarioId);
+        $query->bindParam(':clienteId', $clienteId);
         $query->bindParam(':createdAt', $createdAt);
         $query->bindParam(':updatedAt', $updatedAt);
 
@@ -45,18 +45,19 @@ class ContratacionesDao extends Dao
     public function update(int $id, $data): bool
     {
         try {
+            $updatedAt = date("Y-m-d H:i:s");
             $sql = 'UPDATE ' . $this->tableName() . ' SET 
-        pagado = :pagado,
-        viaje_id = :viajeId,
-        usuario_id = :usuarioId,
-        updated_at = :updatedAt
-        WHERE id = :id';
+            pagado = :pagado,
+            viaje_id = :viajeId,
+            cliente_id = :clienteId,
+            updated_at = :updatedAt
+            WHERE id = :id';
 
             $query = $this->pdo->prepare($sql);
             $query->bindParam(':id', $id);
             $query->bindParam(':pagado', $data['pagado']);
             $query->bindParam(':viajeId', $data['viaje_id']);
-            $query->bindParam(':usuarioId', $data['usuario_id']);
+            $query->bindParam(':clienteId', $data['cliente_id']);
             $query->bindParam(':updatedAt', $updatedAt);
 
             $query->execute();
@@ -65,5 +66,23 @@ class ContratacionesDao extends Dao
             echo $e->getMessage();
             return false;
         }
+    }
+
+    public function getByUser($id): array
+    {
+        $sql = 'SELECT ' . $this->itemsTable() . ' FROM ' . $this->tableName() . ' WHERE cliente_id = :id';
+        $query = $this->pdo->prepare($sql);
+        $query->bindParam(':id', $id);
+        $query->execute();
+        return $query->fetchAll();
+    }
+
+    public function getByViaje($id): array
+    {
+        $sql = 'SELECT ' . $this->itemsTable() . ' FROM ' . $this->tableName() . ' WHERE viaje_id = :id';
+        $query = $this->pdo->prepare($sql);
+        $query->bindParam(':id', $id);
+        $query->execute();
+        return $query->fetchAll();
     }
 }

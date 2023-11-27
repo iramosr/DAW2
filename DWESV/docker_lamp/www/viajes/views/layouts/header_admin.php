@@ -16,6 +16,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="<?= BASE_URL ?>/usuarios">Usuarios</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?= BASE_URL ?>/viajes/emple">Viajes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?= BASE_URL ?>/contrataciones/emple">Contrataciones</a>
+                </li>
             </ul>
             <?php if (!isset($_SESSION['usuario'])) { ?>
                 <button class="btn btn-outline-succes"

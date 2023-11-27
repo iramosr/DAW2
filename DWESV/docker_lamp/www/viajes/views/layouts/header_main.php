@@ -16,16 +16,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="<?= BASE_URL ?>/viajes">Viajes</a>
                 </li>
-                <?php if (isset($_SESSION['usuario'])) { ?>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">REGISTRADO</a>
-                    </li>
-                <?php } ?>
-                <?php if (isset($_SESSION['usuario']) && in_array('CLIENTE', $_SESSION['usuario']['roles'])) { ?>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">CLIENTE</a>
-                    </li>
-                <?php } ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?= BASE_URL ?>/contrataciones">Mis viajes</a>
+                </li>
                 <?php if (isset($_SESSION['usuario']) && in_array('ADMIN', $_SESSION['usuario']['roles'])) { ?>
                     <li class="nav-item">
                         <a class="nav-link" href="<?= BASE_URL ?>/admin">Administración</a>
@@ -37,6 +30,12 @@
                         data-bs-toggle="modal" data-bs-target="#modalLogin">Entrar
                 </button>
             <?php } else { ?>
+                <div class="fw-bold me-1">
+                    <?php if (isset($_SESSION['usuario']['foto'])) { ?>
+                        <img src="<?= BASE_URL . '/uploads/fotos/usuarios/' . $_SESSION['usuario']['foto'] ?>"
+                             style="height: 50px">
+                    <?php } ?>
+                </div>
                 <div class="fw-bold me-1">
                     <?= $_SESSION['usuario']['nombre'] . ' ' . $_SESSION['usuario']['apellido1'] . ' ' . $_SESSION['usuario']['apellido2'] ?>
                 </div>

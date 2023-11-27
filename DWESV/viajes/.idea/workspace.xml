@@ -10,7 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41e2658b-ad62-4b68-9ef8-10c4fde645b0" name="Changes" comment="fixear fechas">
+      <change afterPath="$PROJECT_DIR$/../docker_lamp/www/viajes/controllers/ViajesApiController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../docker_lamp/www/viajes/views/main/viajes/modal_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker_lamp/www/viajes/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/../docker_lamp/www/viajes/config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker_lamp/www/viajes/controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../docker_lamp/www/viajes/controllers/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker_lamp/www/viajes/controllers/ViajesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../docker_lamp/www/viajes/controllers/ViajesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker_lamp/www/viajes/views/admin/viajes/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/../docker_lamp/www/viajes/views/admin/viajes/form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker_lamp/www/viajes/views/admin/viajes/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../docker_lamp/www/viajes/views/admin/viajes/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker_lamp/www/viajes/views/admin/viajes/modal_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/../docker_lamp/www/viajes/views/admin/viajes/modal_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker_lamp/www/viajes/views/admin/viajes/table_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/../docker_lamp/www/viajes/views/admin/viajes/table_list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker_lamp/www/viajes/views/layouts/header_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/../docker_lamp/www/viajes/views/layouts/header_admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker_lamp/www/viajes/views/layouts/header_main.php" beforeDir="false" afterPath="$PROJECT_DIR$/../docker_lamp/www/viajes/views/layouts/header_main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker_lamp/www/viajes/views/main/viajes/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../docker_lamp/www/viajes/views/main/viajes/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker_lamp/www/viajes/views/main/viajes/show.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker_lamp/www/viajes/views/main/viajes/table_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/../docker_lamp/www/viajes/views/main/viajes/table_list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/viajes/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/viajes/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28bbae39-09b8-4c3c-9fa4-88a6f21dc191.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +78,7 @@
     "WebServerToolWindowFactoryState": "false",
     "database.data.extractors.current.export.id": "SQL Inserts",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/daw2/Desktop/DAW2/DAW2/DWESV/laravel/viajes",
+    "last_opened_file_path": "C:/Users/ismae/OneDrive/Escritorio/trabajos/DAW2/DWESV/viajes",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -244,6 +260,7 @@
       <workItem from="1700492198013" duration="17000" />
       <workItem from="1700497547580" duration="39000" />
       <workItem from="1700836507785" duration="63000" />
+      <workItem from="1701025739653" duration="264000" />
     </task>
     <task id="LOCAL-00001" summary="Fix ejercicio">
       <option name="closed" value="true" />

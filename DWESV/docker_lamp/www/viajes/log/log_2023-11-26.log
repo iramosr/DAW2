@@ -1,0 +1,403 @@
+INFO:2023-11-26 16:45:13:Usuario creado: usuario
+DEBUG:2023-11-26 17:09:53:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-26 17:09:53:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-26 17:10:01:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-26 17:10:01:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-26 17:10:03:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-26 17:10:03:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-26 17:10:04:Usuario actializado: admin
+DEBUG:2023-11-26 17:10:07:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-26 17:10:07:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-26 17:13:07:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:13:07:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:13:36:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:13:36:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:15:29:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:15:29:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:16:44:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:16:44:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:17:58:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:17:58:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:18:54:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-26 17:18:54:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-26 17:18:57:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:18:57:Acceso a endpoint: viajes-api/get_by_codigo 
+INFO:2023-11-26 17:19:00:Viaje actializado: ABC1
+DEBUG:2023-11-26 17:19:06:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:19:06:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:29:39:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:29:39:Acceso a endpoint: viajes-api/get_by_codigo 
+INFO:2023-11-26 17:29:44:Viaje actializado: ABC1
+DEBUG:2023-11-26 17:30:53:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:30:53:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:32:21:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:32:21:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:32:35:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:32:35:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:32:42:Acceso a endpoint: usuarios-api/get_by_username 
+ERROR:2023-11-26 17:32:42:Acceso a endpoint: usuarios-api/get_by_username 
+DEBUG:2023-11-26 17:34:00:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:34:00:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:34:06:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:34:06:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:34:08:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:34:08:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:35:50:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-26 17:35:50:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-26 17:35:58:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-26 17:35:58:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-26 17:36:34:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-26 17:36:34:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-26 17:38:26:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-26 17:38:26:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-26 17:38:29:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:38:29:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:38:47:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:38:47:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:38:52:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:38:52:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:39:14:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:39:14:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:40:04:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:40:04:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:42:06:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:42:06:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:42:38:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:42:38:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:42:40:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:42:40:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:43:59:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:43:59:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:44:33:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:44:33:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:45:13:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:45:13:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:45:59:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:45:59:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:46:08:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:46:08:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:46:25:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:46:25:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:46:42:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:46:42:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:46:56:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:46:56:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:47:19:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:47:19:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:49:09:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:49:09:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:50:43:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:50:43:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:52:38:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:52:38:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:53:06:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:53:06:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:54:06:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:54:06:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:54:36:Acceso a endpoint: viajes-api/get_by_codigo 
+ERROR:2023-11-26 17:54:36:Acceso a endpoint: viajes-api/get_by_codigo 
+DEBUG:2023-11-26 17:55:08:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 17:55:08:Acceso a endpoint: viajes-api/get_by_codigo Array
+DEBUG:2023-11-26 17:56:23:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 17:56:23:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 17:56:26:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 17:56:26:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 17:56:41:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 17:56:41:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 17:56:51:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 17:56:51:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 17:59:11:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 17:59:11:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 17:59:11:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 17:59:11:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 17:59:12:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 17:59:12:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 17:59:12:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 17:59:12:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 17:59:14:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 17:59:14:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 17:59:17:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 17:59:17:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 17:59:18:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 17:59:18:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 17:59:18:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 17:59:18:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 17:59:43:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 17:59:43:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:00:50:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:00:50:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:00:51:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:00:51:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:00:51:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:00:51:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:00:52:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:00:52:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:01:52:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:01:52:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:01:53:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:01:53:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:01:53:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:01:53:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:02:20:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:02:20:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:02:56:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:02:56:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:03:32:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:03:32:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:04:37:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:04:37:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:04:39:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:04:39:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:04:39:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:04:39:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:04:39:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:04:39:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:04:42:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:04:42:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:04:42:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:04:42:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:04:42:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:04:42:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:04:42:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:04:42:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:04:43:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:04:43:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:04:43:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:04:43:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:04:43:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:04:43:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:04:43:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:04:43:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:04:43:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:04:43:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:04:43:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:04:43:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+ERROR:2023-11-26 18:08:04:Viaje NO creado: 
+DEBUG:2023-11-26 18:10:31:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:10:32:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:10:34:Viaje actializado: ABC1
+INFO:2023-11-26 18:10:40:Viaje borrado: 1
+ERROR:2023-11-26 18:10:48:Viaje NO creado: ABC1
+ERROR:2023-11-26 18:11:56:Viaje NO creado: ABC1
+ERROR:2023-11-26 18:12:51:Viaje NO creado: hho
+ERROR:2023-11-26 18:13:20:Viaje NO creado: rdtfy7tfy
+ERROR:2023-11-26 18:14:16:Viaje NO creado: 
+ERROR:2023-11-26 18:14:35:Viaje NO creado: qwr
+DEBUG:2023-11-26 18:19:26:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:19:26:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:19:50:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:19:50:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:20:00:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:20:00:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:20:14:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:20:14:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:20:22:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:20:22:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:20:30:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:20:30:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:21:07:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:21:07:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:22:38:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:22:38:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:22:48:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:22:48:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:22:54:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:22:54:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:23:14:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:23:14:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:23:51:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:23:51:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:23:57:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:23:57:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:24:15:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:24:15:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:24:18:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 18:24:18:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 18:28:41:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-26 18:28:41:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-26 18:28:44:Usuario actializado: admin
+INFO:2023-11-26 18:28:49:Usuario actializado: admin
+INFO:2023-11-26 18:29:37:Usuario creado: emple
+INFO:2023-11-26 18:30:24:Viaje borrado: 1
+INFO:2023-11-26 18:32:10:Viaje borrado: 1
+INFO:2023-11-26 18:32:11:Viaje borrado: 1
+ERROR:2023-11-26 19:10:42:Viaje NO creado: ABC1
+DEBUG:2023-11-26 19:35:52:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 19:35:52:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 19:39:39:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 19:39:39:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 19:40:05:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 19:40:05:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+ERROR:2023-11-26 19:53:31:Viaje NO creado: 123
+ERROR:2023-11-26 19:54:02:Viaje NO creado: 123
+ERROR:2023-11-26 19:55:53:Viaje NO creado: 123
+ERROR:2023-11-26 19:56:10:Viaje NO creado: 123
+ERROR:2023-11-26 19:56:29:Viaje NO creado: 123
+ERROR:2023-11-26 19:57:09:Viaje NO creado: 123
+ERROR:2023-11-26 19:58:50:Viaje NO creado: 123
+ERROR:2023-11-26 19:59:28:Viaje NO creado: 123
+ERROR:2023-11-26 19:59:37:Viaje NO creado: 123
+ERROR:2023-11-26 20:00:27:Viaje NO creado: 
+ERROR:2023-11-26 20:00:57:Viaje NO creado: 123
+ERROR:2023-11-26 20:01:49:Viaje NO creado: 123
+ERROR:2023-11-26 20:02:32:Viaje NO creado: 123
+ERROR:2023-11-26 20:02:36:Viaje NO creado: 123
+ERROR:2023-11-26 20:03:41:Viaje NO creado: 123
+ERROR:2023-11-26 20:03:45:Viaje NO creado: 123
+ERROR:2023-11-26 20:03:53:Viaje NO creado: 123
+ERROR:2023-11-26 20:04:09:Viaje NO creado: 
+ERROR:2023-11-26 20:06:43:Viaje NO creado: 
+ERROR:2023-11-26 20:07:42:SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'descripcion' cannot be null
+ERROR:2023-11-26 20:07:42:Viaje NO creado: jqwigqo
+INFO:2023-11-26 20:09:12:Viaje creado: jqwigqo
+INFO:2023-11-26 20:10:02:Viaje borrado: 2
+ERROR:2023-11-26 20:10:16:Viaje NO creado: 123
+INFO:2023-11-26 20:10:30:Viaje borrado: 2
+ERROR:2023-11-26 20:10:36:Viaje NO creado: 123
+ERROR:2023-11-26 20:11:16:Viaje NO creado: 1234
+ERROR:2023-11-26 20:12:15:Viaje NO creado: 2345
+DEBUG:2023-11-26 20:13:32:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 20:13:32:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 20:13:47:Viaje actializado: ABC1
+INFO:2023-11-26 20:14:24:Viaje actializado: ABC1
+DEBUG:2023-11-26 20:14:56:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 20:14:56:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 20:15:02:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 20:15:02:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 20:15:58:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 20:15:58:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 20:16:00:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 20:16:00:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 20:16:09:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 20:16:09:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 20:16:53:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 20:16:53:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 20:18:16:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 20:18:16:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 20:18:20:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 20:18:20:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 20:20:22:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 20:20:22:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 20:21:13:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 20:21:13:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+ERROR:2023-11-26 20:21:42:Viaje NO creado: 1234
+DEBUG:2023-11-26 20:21:59:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 20:21:59:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 20:22:08:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 20:22:08:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+ERROR:2023-11-26 20:23:21:Viaje NO creado: ABC1
+ERROR:2023-11-26 20:24:21:Viaje NO creado: 1234
+INFO:2023-11-26 20:25:36:Viaje creado: 1234
+INFO:2023-11-26 20:28:15:Viaje creado: 1234
+INFO:2023-11-26 20:31:17:Viaje creado: 1234
+INFO:2023-11-26 20:32:03:Viaje creado: 12345
+INFO:2023-11-26 20:32:20:Viaje creado: 12342
+INFO:2023-11-26 20:32:40:Viaje creado: 123423
+INFO:2023-11-26 20:32:42:Viaje borrado: 7
+INFO:2023-11-26 20:32:42:Viaje borrado: 6
+INFO:2023-11-26 20:32:43:Viaje borrado: 5
+INFO:2023-11-26 20:32:44:Viaje borrado: 3
+INFO:2023-11-26 20:33:07:Viaje borrado: 3
+INFO:2023-11-26 20:37:18:Viaje borrado: 3
+INFO:2023-11-26 20:37:49:Viaje borrado: 3
+INFO:2023-11-26 20:40:05:Viaje actializado: 1234
+INFO:2023-11-26 20:42:56:Viaje actializado: 1234
+INFO:2023-11-26 20:44:03:Viaje actializado: ABC1
+INFO:2023-11-26 20:45:22:Viaje actializado: ABC1
+INFO:2023-11-26 20:46:39:Viaje actializado: ABC1
+DEBUG:2023-11-26 20:46:56:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 20:46:56:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 20:48:04:Viaje actializado: ABC1
+INFO:2023-11-26 20:50:56:Viaje actializado: ABC1
+DEBUG:2023-11-26 20:51:08:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 20:51:08:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+DEBUG:2023-11-26 20:51:12:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 20:51:12:Acceso a endpoint: viajes-api/get_by_codigo ABC1
+INFO:2023-11-26 20:51:25:Viaje actializado: ABC1
+DEBUG:2023-11-26 20:51:28:Acceso a endpoint: viajes-api/get_by_codigo 1234
+INFO:2023-11-26 20:51:28:Acceso a endpoint: viajes-api/get_by_codigo 1234
+DEBUG:2023-11-26 20:52:35:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-26 20:52:35:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-26 20:52:38:Usuario actializado: admin
+INFO:2023-11-26 20:53:01:Usuario borrado: 3
+INFO:2023-11-26 20:53:03:Usuario borrado: 3
+INFO:2023-11-26 20:53:05:Usuario borrado: 3
+INFO:2023-11-26 20:57:32:Usuario borrado: 3
+INFO:2023-11-26 20:57:48:Usuario creado: emple
+INFO:2023-11-26 20:58:11:Usuario creado: usuario
+DEBUG:2023-11-26 20:58:17:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-11-26 20:58:17:Acceso a endpoint: usuarios-api/get_by_username admin
+DEBUG:2023-11-26 20:58:20:Acceso a endpoint: usuarios-api/get_by_username emple
+INFO:2023-11-26 20:58:20:Acceso a endpoint: usuarios-api/get_by_username emple
+INFO:2023-11-26 20:59:10:Usuario borrado: 2
+INFO:2023-11-26 20:59:24:Usuario creado: emple
+INFO:2023-11-26 20:59:47:Viaje creado: 1234
+DEBUG:2023-11-26 20:59:54:Acceso a endpoint: usuarios-api/get_by_username emple
+INFO:2023-11-26 20:59:54:Acceso a endpoint: usuarios-api/get_by_username emple
+INFO:2023-11-26 21:00:39:Usuario borrado: 4
+INFO:2023-11-26 21:01:02:Usuario creado: emple
+INFO:2023-11-26 21:01:23:Viaje creado: 123
+INFO:2023-11-26 21:04:43:Usuario actializado: emple
+INFO:2023-11-26 21:04:49:Usuario actializado: emple
+INFO:2023-11-26 21:05:29:Usuario creado: foto
+INFO:2023-11-26 21:29:38:Viaje borrado: 1
+INFO:2023-11-26 22:07:15:Contratacion borrada: 1
+DEBUG:2023-11-26 22:18:29:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-26 22:18:29:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-26 22:18:53:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-26 22:18:53:Acceso a endpoint: viajes-api/get_by_codigo 123
+ERROR:2023-11-26 22:19:33:SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+ERROR:2023-11-26 22:19:33:Contratacion NO creada: 
+ERROR:2023-11-26 22:20:15:SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+ERROR:2023-11-26 22:20:15:Contratacion NO creada: 
+ERROR:2023-11-26 22:22:08:SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+ERROR:2023-11-26 22:22:08:Contratacion NO creada: 2 - 
+INFO:2023-11-26 22:24:56:Contratacion creada: 2 - 
+INFO:2023-11-26 22:25:15:Contratacion creada: 2 - 3
+INFO:2023-11-26 22:25:56:Contratacion borrada: 3
+DEBUG:2023-11-26 22:26:07:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-26 22:26:07:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-26 22:26:13:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-26 22:26:13:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-26 22:26:16:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-26 22:26:16:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-26 22:26:39:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-26 22:26:39:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-26 22:27:14:Viaje actializado: 123
+INFO:2023-11-26 22:28:14:Viaje actializado: 123
+INFO:2023-11-26 22:28:44:Viaje actializado: 123
+DEBUG:2023-11-26 22:28:47:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-26 22:28:47:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-26 22:29:54:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-26 22:29:54:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-26 22:31:09:Viaje actializado: 123
+DEBUG:2023-11-26 22:31:11:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-26 22:31:11:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-26 22:32:59:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-26 22:32:59:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-26 22:34:18:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-26 22:34:18:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-26 22:35:33:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-26 22:35:33:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-26 22:36:26:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-26 22:36:26:Acceso a endpoint: viajes-api/get_by_codigo 123
+DEBUG:2023-11-26 22:37:06:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-26 22:37:06:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-26 22:39:06:Contratacion actualizada 2
+INFO:2023-11-26 22:40:23:Contratacion actualizada 2
+INFO:2023-11-26 22:40:24:Contratacion actualizada 2
+INFO:2023-11-26 22:40:27:Contratacion actualizada 2
+INFO:2023-11-26 22:41:29:Contratacion actualizada 2
+INFO:2023-11-26 22:41:47:Contratacion actualizada 2
+INFO:2023-11-26 22:41:57:Contratacion actualizada 2
+INFO:2023-11-26 22:51:09:Viaje creado: 321
+INFO:2023-11-26 22:52:11:Viaje creado: 53214
+INFO:2023-11-26 22:58:46:Viaje creado: 53634
+INFO:2023-11-26 23:02:39:Viaje creado: 52463153
+INFO:2023-11-26 23:03:20:Viaje creado: ghf
+INFO:2023-11-26 23:05:24:Viaje creado: 132t12
+INFO:2023-11-26 23:05:49:Viaje creado: 32r
+INFO:2023-11-26 23:58:15:Viaje actializado: 123
+INFO:2023-11-26 23:58:42:Viaje actializado: 123
+DEBUG:2023-11-26 23:58:55:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-11-26 23:58:55:Acceso a endpoint: viajes-api/get_by_codigo 123

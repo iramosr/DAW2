@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="es">
-<?php require_once 'views/layouts/head_main.php'; ?>
+<?php require_once 'views/layouts/head_admin.php'; ?>
 <body class="bg-light">
-<?php require_once 'views/layouts/header_main.php'; ?>
+<?php require_once 'views/layouts/header_admin.php'; ?>
 
 <div class="container bg-white">
 
-    <h2>Editar Usuario</h2>
+    <h2>Editar Viaje</h2>
 
     <?php require_once 'views/admin/viajes/form.php'; ?>
 
 </div>
 
-<?php require_once 'views/layouts/footer_main.php'; ?>
+<?php require_once 'views/layouts/footer_admin.php'; ?>
 </body>
 </html>

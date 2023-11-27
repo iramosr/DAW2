@@ -14,11 +14,11 @@
         </button>
         <h3><?= $data['page-title'] ?></h3>
     </div>
-    <?php require 'views/admin/viajes/table_list.php'; ?>
+    <?php require 'views/admin/contrataciones/table_list.php'; ?>
 
 </div>
 
 <?php require_once 'modal_form.php'; ?>
-<?php require_once 'views/layouts/footer_admin.php'; ?>
+<?php require_once 'views/layouts/footer_main.php'; ?>
 </body>
 </html>

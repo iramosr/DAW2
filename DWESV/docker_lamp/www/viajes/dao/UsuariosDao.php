@@ -62,20 +62,21 @@ class UsuariosDao extends Dao
     public function update(int $id, $data): bool
     {
         try{
+            $updatedAt = date("Y-m-d H:i:s");
             $sql = 'UPDATE ' . $this->tableName() . ' SET 
-        username = :username,
-        password = :password,
-        email = :email,
-        nombre = :nombre,
-        apellido1 = :apellido1,
-        apellido2 = :apellido2,
-        foto = :foto,
-        activo = :activo,
-        bloqueado = :bloqueado,
-        num_intentos = :num_intentos,
-        ultimo_acceso = :ultimo_acceso,
-        updated_at = :updatedAt
-        WHERE id = :id';
+            username = :username,
+            password = :password,
+            email = :email,
+            nombre = :nombre,
+            apellido1 = :apellido1,
+            apellido2 = :apellido2,
+            foto = :foto,
+            activo = :activo,
+            bloqueado = :bloqueado,
+            num_intentos = :num_intentos,
+            ultimo_acceso = :ultimo_acceso,
+            updated_at = :updatedAt
+            WHERE id = :id';
 
             $query = $this->pdo->prepare($sql);
             $query->bindParam(':id', $id);
@@ -108,5 +109,15 @@ class UsuariosDao extends Dao
         $query->execute();
         $row = $query->fetch(\PDO::FETCH_ASSOC);
         return $row !== false ? $row : null;
+    }
+
+    public function getByRol($rol):?array
+    {
+        $sql = 'SELECT * FROM `usuarios` INNER JOIN `usuarios_roles` ur ON `usuarios`.`id` = `ur`.`usuario_id` INNER JOIN `roles` r on `ur`.`rol_id` = `r`.`id` WHERE `r`.rol = :rol';
+        $query = $this->pdo->prepare($sql);
+        $query->bindParam(':rol', $rol);
+        $query->execute();
+        $rows = $query->fetchAll(\PDO::FETCH_ASSOC);
+        return $rows !== false ? $rows : null;
     }
 }

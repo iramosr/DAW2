@@ -61,19 +61,19 @@ CREATE TABLE IF NOT EXISTS contrataciones(
                         id INTEGER AUTO_INCREMENT PRIMARY KEY,
                         pagado DOUBLE,
                         viaje_id INT NOT NULL,
-                        usuario_id INT NOT NULL,
+                        cliente_id INT NOT NULL,
                         created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
                         updated_at DATETIME,
-                        KEY (viaje_id, usuario_id)
+                        KEY (viaje_id, cliente_id)
 );
 
 
 
-ALTER TABLE viajes ADD CONSTRAINT fk_viajes_empleado FOREIGN KEY (empleado_id) REFERENCES usuarios(id);
-ALTER TABLE contrataciones ADD CONSTRAINT fk_contrataciones_viajes FOREIGN KEY (viaje_id) REFERENCES viajes(id);
-ALTER TABLE contrataciones ADD CONSTRAINT fk_contrataciones_usuarios FOREIGN KEY (usuario_id) REFERENCES usuarios(id);
-ALTER TABLE usuarios_roles ADD CONSTRAINT fk_ur_roles FOREIGN KEY (rol_id) REFERENCES roles(id);
-ALTER TABLE usuarios_roles ADD CONSTRAINT fk_ur_usuarios FOREIGN KEY (usuario_id) REFERENCES usuarios(id);
+ALTER TABLE viajes ADD CONSTRAINT fk_viajes_empleado FOREIGN KEY (empleado_id) REFERENCES usuarios(id) ON DELETE CASCADE;
+ALTER TABLE contrataciones ADD CONSTRAINT fk_contrataciones_viajes FOREIGN KEY (viaje_id) REFERENCES viajes(id) ON DELETE CASCADE;
+ALTER TABLE contrataciones ADD CONSTRAINT fk_contrataciones_usuarios FOREIGN KEY (cliente_id) REFERENCES usuarios(id) ON DELETE CASCADE;
+ALTER TABLE usuarios_roles ADD CONSTRAINT fk_ur_roles FOREIGN KEY (rol_id) REFERENCES roles(id) ON DELETE CASCADE;
+ALTER TABLE usuarios_roles ADD CONSTRAINT fk_ur_usuarios FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE CASCADE;
 
 
 
@@ -87,3 +87,5 @@ INSERT INTO `usuarios` (`username`, `password`, `email`, `nombre`, `apellido1`, 
 
 INSERT INTO usuarios_roles (usuario_id, rol_id) VALUES ((SELECT id from usuarios where usuarios.username like "admin"),
                                                         (SELECT id from roles where roles.rol like "ADMIN"));
+INSERT INTO usuarios_roles (usuario_id, rol_id) VALUES ((SELECT id from usuarios where usuarios.username like "admin"),
+                                                        (SELECT id from roles where roles.rol like "EMPLE"));

@@ -14,6 +14,8 @@
     <?php require 'views/main/viajes/table_list.php'; ?>
 
 </div>
+
+<?php require_once 'modal_form.php'; ?>
 <?php require_once 'views/layouts/footer_main.php'; ?>
 </body>
 </html>

@@ -3,6 +3,7 @@ namespace libs;
 
 use PDO;
 use PDOException;
+use services\LogService;
 
 abstract class Dao
 {
@@ -36,6 +37,7 @@ abstract class Dao
             $id = $this->pdo->lastInsertId();
             $this->pdo->commit();
         } catch (PDOException $e) {
+            LogService::error($e->getMessage());
             $id = null;
             $this->pdo->rollback();
         }

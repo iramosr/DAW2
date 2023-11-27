@@ -50,7 +50,7 @@ class ViajesDao extends Dao
         $query->bindParam(':empleadoId', $empleadoId);
         $query->bindParam(':createdAt', $createdAt);
         $query->bindParam(':updatedAt', $updatedAt);
-    
+
 
         return $query;
     }
@@ -58,18 +58,19 @@ class ViajesDao extends Dao
     public function update(int $id, $data): bool
     {
         try{
+            $updatedAt = date("Y-m-d H:i:s");
             $sql = 'UPDATE ' . $this->tableName() . ' SET 
-        codigo = :codigo,
-        titulo = :titulo,
-        descripcion = :descripcion,
-        salida = :salida,
-        llegada = :llegada,
-        plazas = :plazas,
-        precio = :precio,
-        foto = :foto,
-        empleado_id = :empleadoId,
-        updated_at = :updatedAt
-        WHERE id = :id';
+            codigo = :codigo,
+            titulo = :titulo,
+            descripcion = :descripcion,
+            salida = :salida,
+            llegada = :llegada,
+            plazas = :plazas,
+            precio = :precio,
+            foto = :foto,
+            empleado_id = :empleadoId,
+            updated_at = :updatedAt
+            WHERE id = :id';
 
             $query = $this->pdo->prepare($sql);
             $query->bindParam(':id', $id);
