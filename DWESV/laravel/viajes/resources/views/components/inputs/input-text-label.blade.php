@@ -12,5 +12,10 @@
         border-emerald-300 focus:border-teal-500 focus:ring
         focus:ring-orange-200 rounded']) }}>
 
-ERRORES
+    @error("$name")
+    <div class="block px-2 italic text-xs text-red-500 font-s text-left">
+        {!! $message !!}
+    </div>
+    @enderror
+
 </div>

@@ -10,6 +10,6 @@
     <form id="mainForm"
         action="{{route('admin.clientes.create')}}"
         method="post">
-        FORMULARIO
+        <x-admin-clientes.form/>
     </form>
 @endsection

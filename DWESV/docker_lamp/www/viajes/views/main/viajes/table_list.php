@@ -8,10 +8,11 @@
     <th class="bg-dark text-white">Precio</th>
     <th class="bg-dark text-white">Foto</th>
     <th class="bg-dark text-white">Empleado</th>
-    <th class="bg-dark text-white" style="width: 150px">Opciones</th>
+    <th class="bg-dark text-white" style="width: 170px">Opciones</th>
     </thead>
     <tbody>
-    <?php use dao\UsuariosDao;
+    <?php use dao\RolesDao;
+    use dao\UsuariosDao;
 
     $fila = 0;
     foreach ($data['viajes'] as $viaje) { ?>
@@ -39,19 +40,34 @@
             </td>
             <td class="align-middle text-center">
 
-                <button class="btn px-1 btn-info rounded link-underline link-underline-opacity-0 text-center"
+                <button class="btn px-1 btn-info rounded link-underline link-underline-opacity-0 text-center d-inline"
                         style="width: 40px; height: 40px"
                         data-bs-toggle="modal" data-bs-target="#modalForm"
                         onclick="loadViaje('<?= $viaje['codigo'] ?>')"
                         title="Ver detalles del viaje <?= $viaje['codigo'] ?>">
                     <i class="fa-solid fa-eye fa-sm" style="color: #ffffff;"></i>
                 </button>
-                <button class="btn px-1 btn-success rounded link-underline link-underline-opacity-0 text-center"
+                <button class="btn px-1 btn-success rounded link-underline link-underline-opacity-0 text-center d-inline"
                         style="width: 40px; height: 40px"
                         onclick="mostrarDescripcion('<?= $fila ?>')"
                         title="Ver descripción del viaje <?= $viaje['codigo'] ?>">
                     <i class="fa-solid fa-comment fa-sm" style="color: #ffffff;"></i>
                 </button>
+                <?php if (isset($_SESSION['usuario'])) {
+                $rolesDao = new RolesDao();
+                $roles = $rolesDao->roles($_SESSION['usuario']['id']);
+                if (in_array('CLIENTE', $roles)) {
+                ?>
+                <form class="d-inline" action="<?= BASE_URL ?>/contrataciones/store/" method="post">
+                    <input name="viaje_id" type="hidden" value="<?= $viaje['id'] ?>">
+                    <input name="cliente_id" type="hidden"
+                           value="<?= $_SESSION['usuario']['id'] ?>">
+                    <button class="btn btn-outline-success" type="submit"
+                            style="width: 40px; height: 40px">
+                        <i class="fa-solid fa-cart-plus fa-sm"></i>
+                    </button>
+                </form>
+                <?php }} ?>
             </td>
         </tr>
         <tr class="desc" style="display: none">
