@@ -8,7 +8,7 @@
     <input id="{{$id}}" type="{{$type}}"
            @isset($name) name="{{$name}}" @endisset
            @if($readonly) readonly @endif
-        value="{{old($name, $item)}}"
+           value="{{old($name, $item)}}"
         {{--Ej. value={{old("nif",$cliente->nif)}}--}}
         {{ $attributes->merge(['class' => 'w-full px-2 py-1 border
         border-emerald-300 focus:border-teal-500 focus:ring

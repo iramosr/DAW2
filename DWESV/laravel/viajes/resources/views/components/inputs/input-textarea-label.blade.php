@@ -10,7 +10,7 @@
            @if($readonly) readonly @endif
         {{ $attributes->merge(['class' => 'w-full px-2 py-1 border
         border-emerald-300 focus:border-teal-500 focus:ring
-        focus:ring-orange-200 rounded']) }}></textarea>
+        focus:ring-orange-200 rounded'])}}>{{old("$name",$item)}}</textarea>
 
     @error("$name")
     <div class="block px-2 italic text-xs text-red-500 font-s text-left">

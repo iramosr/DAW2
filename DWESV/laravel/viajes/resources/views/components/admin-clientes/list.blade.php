@@ -34,9 +34,13 @@
                     @endif
                 </td>
                 <td class="py-1 px-2 text-center">
-                    <x-buttons.button-table action="show"/>
-                    <x-buttons.button-table action="update"/>
-                    <x-buttons.button-table action="delete"/>
+                    <a href="{{route('admin.clientes.show', $cliente->id)}}">
+                        <x-buttons.button-table action="show"/>
+                    </a>
+                    <a href="{{route('admin.clientes.edit', $cliente->id)}}">
+                        <x-buttons.button-table action="update"/>
+                    </a>
+                    <x-share.confirm-delete :id="$cliente->id" :url="route('admin.clientes.destroy',$cliente->id)"/>
                 </td>
             </tr>
         @endforeach
