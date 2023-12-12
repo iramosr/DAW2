@@ -76,7 +76,7 @@ class SociosController extends Controller
             'nombre' => 'required|min:3|max:20',
             'apellido1' => 'required|min:3|max:20',
             'apellido2' => 'nullable|max:20',
-            'email' => 'required|email|unique:socios|max:50',
+            'email' => 'required|email|max:50',
             'fecha_nacimiento' => 'nullable|date',
         ]);
 
