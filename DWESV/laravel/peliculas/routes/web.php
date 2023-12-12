@@ -31,13 +31,14 @@ Route::middleware('auth')->group(function () {
 
 Route::resource('socios', SociosController::class)->names('socios');
 Route::post('socios/filtro',[SociosController::class,"filtro"])->name('socios.filtro');
-Route::resource('directores', DirectoresController::class)->names('directores')->parameters(['directores' => 'director']);
+Route::resource('directores', DirectoresController::class)->names('directores')
+    ->parameters(['directores' => 'director']);
 Route::post('directores/filtro',[DirectoresController::class,"filtro"])->name('directores.filtro');
 Route::resource('categorias', CategoriasController::class)->names('categorias');
 Route::post('categorias/filtro',[CategoriasController::class,"filtro"])->name('categorias.filtro');
 Route::resource('peliculas', PeliculasController::class)->names('peliculas');
 Route::post('peliculas/filtro',[PeliculasController::class,"filtro"])->name('peliculas.filtro');
-Route::resource('alquileres', AlquileresController::class)->names('alquileres')->parameters(['alquileres' => 'alquiler']);
+Route::resource('alquileres', AlquileresController::class)->names('alquileres');
 Route::post('alquileres/filtro',[AlquileresController::class,"filtro"])->name('alquileres.filtro');
 
 require __DIR__.'/auth.php';
