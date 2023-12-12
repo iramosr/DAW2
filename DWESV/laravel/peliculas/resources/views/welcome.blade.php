@@ -1,8 +1,8 @@
 @extends("layouts.app-main")
 
 @section("content")
-    <x-share.page-main-header/>
-    <x-share.page-main-title
+    <x-share.page-header/>
+    <x-share.page-title
         titleOption="PRÓXIMAS PELÍCULAS"
         subtitileOption="Estas son algunas películas que se estrenarán en el futuro."
     />

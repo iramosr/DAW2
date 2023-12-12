@@ -21,7 +21,10 @@ class CategoriasController extends Controller
      */
     public function create()
     {
-        return view('categorias.create')->with('categoria', new Categoria());
+        $categorias = Categoria::orderBy('nombre')->paginate(10);
+        return view('categorias.create')
+            ->with('categorias', $categorias)
+            ->with('categoria', new Categoria());
     }
 
     /**
@@ -87,5 +90,20 @@ class CategoriasController extends Controller
         } catch (\Exception $e) {
             return redirect()->route('categorias.index')->with('error', 'Error al eliminar la categoría');
         }
+    }
+
+    //----------------------------------------
+    public function filtro(Request $request)
+    {
+        $requestData = $request->all();
+        $categorias = Categoria::orderBy('nombre');
+        if (isset($requestData['filtroNombre'])) {
+            $categorias = $categorias
+                ->where('nombre', 'like', '%' . $requestData['filtroNombre'] . '%');
+        }
+
+        $categorias = $categorias->paginate(10);
+        return view('categorias.index')
+            ->with('categorias', $categorias);
     }
 }

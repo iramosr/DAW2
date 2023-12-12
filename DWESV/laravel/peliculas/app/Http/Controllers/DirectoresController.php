@@ -21,7 +21,10 @@ class DirectoresController extends Controller
      */
     public function create()
     {
-        return view('directores.create')->with('director', new Director());
+        $directores = Director::orderBy('nombre')->paginate(10);
+        return view('directores.create')
+            ->with('directores', $directores)
+            ->with('director', new Director());
     }
 
     /**
@@ -49,7 +52,9 @@ class DirectoresController extends Controller
     public function show(Director $director)
     {
         $directores = Director::orderBy('nombre')->paginate(10);
-        return view('directores.show')->with('directores', $directores)->with('director', $director);
+        return view('directores.show')
+            ->with('directores', $directores)
+            ->with('director', $director);
     }
 
     /**
@@ -58,7 +63,9 @@ class DirectoresController extends Controller
     public function edit(Director $director)
     {
         $directores = Director::orderBy('updated_at', 'desc')->paginate(10);
-        return view('directores.edit')->with('directores', $directores)->with('director', $director);
+        return view('directores.edit')
+            ->with('directores', $directores)
+            ->with('director', $director);
     }
 
     /**
@@ -91,5 +98,23 @@ class DirectoresController extends Controller
         } catch (\Exception $e) {
             return redirect()->route('directores.index')->with('error', 'Error al eliminar el director');
         }
+    }
+
+    //----------------------------------------
+    public function filtro(Request $request)
+    {
+        $requestData = $request->all();
+        $directores = Director::orderBy('nombre');
+        if (isset($requestData['filtroNombre'])) {
+            $directores = $directores
+                ->where('nombre', 'like', '%' . $requestData['filtroNombre'] . '%');
+        }
+        if (isset($requestData['filtroApellidos'])) {
+            $directores = $directores
+                ->where('apellidos', 'like', '%' . $requestData['filtroApellidos'] . '%');
+        }
+        $directores = $directores->paginate(10);
+        return view('directores.index')
+            ->with('directores', $directores);
     }
 }
