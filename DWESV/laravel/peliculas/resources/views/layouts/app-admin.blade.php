@@ -14,22 +14,22 @@
 </head>
 <body class="font-sans antialiased">
 
-    <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+<div class="min-h-screen bg-gray-100 dark:bg-gray-900">
 
     {{--    @include('components.share.menu-admin')--}}
-        <x-share.menu-admin/>
+    <x-share.menu/>
 
-        <x-alerts.alert-header/>
+    <x-alerts.alert-header/>
 
-        <!-- Page Content -->
-        <main class="container mx-auto">
-            @yield('content')
-        </main>
+    <!-- Page Content -->
+    <main class="container mx-auto">
+        @yield('content')
+    </main>
 
-        <x-share.footer-admin/>
+    <x-share.footer/>
 
-    </div>
+</div>
 
-    @stack('scripts')
+@stack('scripts')
 </body>
 </html>

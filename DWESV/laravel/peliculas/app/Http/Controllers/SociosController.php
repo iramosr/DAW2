@@ -22,7 +22,10 @@ class SociosController extends Controller
      */
     public function create()
     {
-        return view('socios.create')->with('socio', new Socio());
+        $socios = Socio::latest()->paginate(10);
+        return view('socios.create')
+            ->with('socios', $socios)
+            ->with('socio', new Socio());
     }
 
     /**
@@ -96,5 +99,27 @@ class SociosController extends Controller
         } catch (\Exception $e) {
             return redirect()->route('socios.index')->with('error', 'Error al eliminar el socio');
         }
+    }
+
+    //----------------------------------------
+    public function filtro(Request $request)
+    {
+        $requestData = $request->all();
+        $socios = Socio::orderBy('nombre');
+        if (isset($requestData['filtroNombre'])) {
+            $socios = $socios
+                ->where('nombre', 'like', '%' . $requestData['filtroNombre'] . '%');
+        }
+        if (isset($requestData['filtroApellido1'])) {
+            $socios = $socios
+                ->where('apellido1', 'like', '%' . $requestData['filtroApellido1'] . '%');
+        }
+        if (isset($requestData['filtroApellido2'])) {
+            $socios = $socios
+                ->where('apellido2', 'like', '%' . $requestData['filtroApellido2'] . '%');
+        }
+        $socios = $socios->paginate(10);
+        return view('socios.index')
+            ->with('socios', $socios);
     }
 }

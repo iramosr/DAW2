@@ -18,12 +18,12 @@
     <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
     {{--    @include('components.share.menu-main')--}}
 
-        <x-share.menu-main/>
+        <x-share.menu/>
 
         <!-- Page Content -->
         @yield('content')
 
-        <x-share.footer-main/>
+        <x-share.footer/>
 
         @stack('scripts')
     </div>

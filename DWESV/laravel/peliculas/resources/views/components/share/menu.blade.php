@@ -17,18 +17,28 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('socios.index')" :active="request()->routeIs('socios.index')">
+                        {{ __('Socios') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('peliculas')" :active="request()->routeIs('peliculas')">
                         {{ __('Peliculas') }}
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('mis-viajes')" :active="request()->routeIs('mis-viajes')">
-                        {{ __('Mis Viajes') }}
+                    <x-nav-link :href="route('alquileres')" :active="request()->routeIs('alquileres')">
+                        {{ __('Alquileres') }}
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('admin.index')" :active="request()->routeIs('admin.index')">
-                        {{ __('Administración') }}
+                    <x-nav-link :href="route('categorias')" :active="request()->routeIs('categorias')">
+                        {{ __('Categorias') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('directores')" :active="request()->routeIs('directores')">
+                        {{ __('Directores') }}
                     </x-nav-link>
                 </div>
             </div>
@@ -92,18 +102,28 @@
             </x-responsive-nav-link>
         </div>
         <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link :href="route('viajes')" :active="request()->routeIs('viajes')">
-                {{ __('Viajes') }}
+            <x-responsive-nav-link :href="route('socios.index')" :active="request()->routeIs('socios.index')">
+                {{ __('Socios') }}
             </x-responsive-nav-link>
         </div>
         <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link :href="route('mis-viajes')" :active="request()->routeIs('mis-viajes')">
-                {{ __('Mis admin-viajes') }}
+            <x-responsive-nav-link :href="route('peliculas')" :active="request()->routeIs('peliculas')">
+                {{ __('Peliculas') }}
             </x-responsive-nav-link>
         </div>
         <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link :href="route('admin.index')" :active="request()->routeIs('admin.index')">
-                {{ __('Administración') }}
+            <x-responsive-nav-link :href="route('alquileres')" :active="request()->routeIs('alquileres')">
+                {{ __('Alquileres') }}
+            </x-responsive-nav-link>
+        </div>
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('categorias')" :active="request()->routeIs('categorias')">
+                {{ __('Categorias') }}
+            </x-responsive-nav-link>
+        </div>
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('directores')" :active="request()->routeIs('directores')">
+                {{ __('Directores') }}
             </x-responsive-nav-link>
         </div>
 

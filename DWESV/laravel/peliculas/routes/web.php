@@ -29,7 +29,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('socios', [SociosController::class,"index"])->name('socios');
+Route::resource('socios', SociosController::class)->names('socios');
+Route::post('socios/filtro',[SociosController::class,"filtro"])->name('socios.filtro');
 Route::get('directores', [DirectoresController::class,"index"])->name('directores');
 Route::get('categorias', [CategoriasController::class,"index"])->name('categorias');
 Route::get('peliculas', [PeliculasController::class,"index"])->name('peliculas');
