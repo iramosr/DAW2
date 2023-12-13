@@ -17,4 +17,13 @@ class Alquiler extends Model
         'socio_id',
         'pelicula_id'
     ];
+
+    protected function socio()
+    {
+        return $this->belongsTo(Socio::class, 'socio_id');
+    }
+    protected function pelicula()
+    {
+        return $this->belongsTo(Pelicula::class, 'pelicula_id');
+    }
 }

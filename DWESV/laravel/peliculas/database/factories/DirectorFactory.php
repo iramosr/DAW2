@@ -19,7 +19,7 @@ class DirectorFactory extends Factory
         return [
             'nombre' => $this->faker->firstName(),
             'apellidos' => $this->faker->lastName(),
-            'fecha_nacimiento' => $this->faker->date('Y-m-d', 'now')
+            'fecha_nacimiento' => $this->faker->optional(0.8)->date('Y-m-d', 'now')
         ];
     }
 }

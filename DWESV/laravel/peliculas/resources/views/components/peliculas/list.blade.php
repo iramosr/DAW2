@@ -20,10 +20,10 @@
                     {{ date('d/m/Y',strtotime($pelicula->fecha_estreno))}}
                 </td>
                 <td class="py-1 px-2">
-                {{$pelicula->director_id}}
+                    {{$pelicula->director->nombre}}
                 </td>
                 <td class="py-1 px-2">
-                {{$pelicula->categoria_id}}
+                    {{$pelicula->categoria->nombre}}
                 </td>
                 <td class="py-1 px-2 text-center">
                     {{ date('d/m/Y',strtotime($pelicula->created_at))}}
@@ -41,7 +41,13 @@
                             src="{{asset('images/imagen_no_disponible.png')}}">
                     @endif
                 </td>
-                <td class="py-1 px-2 text-center">
+                <td class="py-1 px-2 text-right">
+                    @if($pelicula->sinopsis)
+                        <x-buttons.button-row
+                            icono="fa-comment"
+                            :registro="$pelicula"
+                            campo="id"/>
+                    @endif
                     <a href="{{route('peliculas.show', $pelicula->id)}}">
                         <x-buttons.button-table action="show"/>
                     </a>
@@ -49,6 +55,11 @@
                         <x-buttons.button-table action="update"/>
                     </a>
                     <x-share.confirm-delete :id="$pelicula->id" :url="route('peliculas.destroy',$pelicula->id)"/>
+                </td>
+            </tr>
+            <tr id="row_{{ $pelicula->id }}" class="hidden">
+                <td colspan="7" class="p-2">
+                    <p>{{ $pelicula->sinopsis }}</p>
                 </td>
             </tr>
         @endforeach

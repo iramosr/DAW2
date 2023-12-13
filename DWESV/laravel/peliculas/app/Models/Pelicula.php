@@ -19,4 +19,13 @@ class Pelicula extends Model
         'director_id',
         'categoria_id'
     ];
+    protected function director()
+    {
+        return $this->belongsTo(Director::class, 'director_id');
+    }
+
+    protected function categoria()
+    {
+        return $this->belongsTo(Categoria::class, 'categoria_id');
+    }
 }

@@ -20,9 +20,10 @@ class AlquilerFactory extends Factory
     {
         $socios = Socio::pluck('id')->toArray();
         $peliculas = Pelicula::pluck('id')->toArray();
+        $fechaAlquiler = $this->faker->dateTimeBetween('now', '+1 month');
         return [
-            'fecha_alquiler' => $this->faker->date('Y-m-d', 'now'),
-            'fecha_devolucion' => $this->faker->date('Y-m-d', 'now'),
+            'fecha_alquiler' => $fechaAlquiler,
+            'fecha_devolucion' => $this->faker->optional(0.8)->dateTimeBetween($fechaAlquiler, '+1 year'),
             'socio_id' => $this->faker->randomElement($socios),
             'pelicula_id' => $this->faker->randomElement($peliculas),
         ];

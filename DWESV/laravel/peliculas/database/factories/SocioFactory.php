@@ -21,7 +21,7 @@ class SocioFactory extends Factory
             'apellido1' => $this->faker->lastName(),
             'apellido2' => $this->faker->optional(0.8)->lastName(),
             'email' => $this->faker->unique()->safeEmail(),
-            'fecha_nacimiento' => $this->faker->date('Y-m-d', 'now'),
+            'fecha_nacimiento' => $this->faker->optional(0.8)->date('Y-m-d', 'now'),
         ];
     }
 }

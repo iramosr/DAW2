@@ -17,7 +17,7 @@
 
     <div class="py-12">
         <div class="w-full mx-auto bg-white dark:bg-gray-800 shadow-lg p4">
-            <div class="tracking-wide font-semibold text-lg">ÚLTIMAS CATEGORÍAS AÑADIDOS</div>
+            <div class="tracking-wide font-semibold text-lg">ÚLTIMAS CATEGORÍAS AÑADIDAS</div>
             <x-categorias.list :categorias="$categorias"/>
         </div>
     </div>

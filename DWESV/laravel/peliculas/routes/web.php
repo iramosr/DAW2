@@ -3,10 +3,10 @@
 use App\Http\Controllers\AlquileresController;
 use App\Http\Controllers\CategoriasController;
 use App\Http\Controllers\DirectoresController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PeliculasController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SociosController;
-use App\Http\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*

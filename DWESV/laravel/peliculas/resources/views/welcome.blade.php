@@ -11,6 +11,7 @@
         <div class="w-full mx-auto bg-white shadow-lg p-4">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
                 @foreach($peliculas as $pelicula)
+
                     <div class="bg-cyan-400">
                         <div class="relative">
                             <img src="{{$pelicula->portada}}">

@@ -21,7 +21,7 @@
 
     <div class="py-12">
         <div class="w-full mx-auto bg-white dark:bg-gray-800 shadow-lg p4">
-            <div class="tracking-wide font-semibold text-lg">ÚLTIMAS PELICULAS MODIFICADOS</div>
+            <div class="tracking-wide font-semibold text-lg">ÚLTIMAS PELICULAS MODIFICADAS</div>
             <x-peliculas.list :peliculas="$peliculas"/>
         </div>
     </div>

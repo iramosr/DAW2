@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Alquiler;
+use App\Models\Pelicula;
+use App\Models\Socio;
 use Illuminate\Http\Request;
 
 class AlquileresController extends Controller
@@ -22,7 +24,11 @@ class AlquileresController extends Controller
     public function create()
     {
         $alquileres = Alquiler::latest()->paginate(10);
+        $peliculas = Pelicula::all();
+        $socios = Socio::all();
         return view('alquileres.create')
+            ->with('peliculas', $peliculas)
+            ->with('socios', $socios)
             ->with('alquileres', $alquileres)
             ->with('alquiler', new Alquiler());
     }
@@ -33,8 +39,8 @@ class AlquileresController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'fecha_alquiler' => 'required|date',
-            'fecha_devolucion' => 'nullable|date',
+            'fecha_alquiler' => 'required|date|after:today',
+            'fecha_devolucion' => 'nullable|date|after:fecha_alquiler',
             'socio_id' => 'required|exists:socios,id',
             'pelicula_id' => 'required|exists:peliculas,id',
         ]);
@@ -53,7 +59,12 @@ class AlquileresController extends Controller
     public function show(Alquiler $alquiler)
     {
         $alquileres = Alquiler::orderBy('fecha_alquiler')->paginate(10);
-        return view('alquileres.show')->with('alquileres', $alquileres)->with('alquiler', $alquiler);
+        $peliculas = Pelicula::all();
+        $socios = Socio::all();
+        return view('alquileres.show')->with('alquileres', $alquileres)
+            ->with('peliculas', $peliculas)
+            ->with('socios', $socios)
+            ->with('alquiler', $alquiler);
     }
 
     /**
@@ -62,7 +73,12 @@ class AlquileresController extends Controller
     public function edit(Alquiler $alquiler)
     {
         $alquileres = Alquiler::orderBy('updated_at', 'desc')->paginate(10);
-        return view('alquileres.edit')->with('alquileres', $alquileres)->with('alquiler', $alquiler);
+        $peliculas = Pelicula::all();
+        $socios = Socio::all();
+        return view('alquileres.edit')->with('alquileres', $alquileres)
+            ->with('peliculas', $peliculas)
+            ->with('socios', $socios)
+            ->with('alquiler', $alquiler);
     }
 
     /**
@@ -71,8 +87,8 @@ class AlquileresController extends Controller
     public function update(Request $request, Alquiler $alquiler)
     {
         $request->validate([
-            'fecha_alquiler' => 'required|date',
-            'fecha_devolucion' => 'nullable|date',
+            'fecha_alquiler' => 'required|date|after:today',
+            'fecha_devolucion' => 'nullable|date|after:fecha_alquiler',
             'socio_id' => 'required|exists:socios,id',
             'pelicula_id' => 'required|exists:peliculas,id',
         ]);
