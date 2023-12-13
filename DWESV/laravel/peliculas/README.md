@@ -4,7 +4,17 @@
 ### 1. Base de datos
 ![](bbdd.png)
 
-### 2. Ejecutar servidor
+
+### 2. Instalar dependencias
+```
+npm install
+```
+```
+composer install
+```
+
+
+### 3. Ejecutar servidor
 ```
 wsl
 ```
@@ -12,18 +22,13 @@ wsl
 sail up -d
 ```
 
-### 3. Instalar dependencias
-```
-sail npm install
-```
-
 ### 4. Ejecutar migraciones
 ```
 sail artisan migrate:fresh --seed
 ```
-### 5. Ejecutar servidor
+### 5. Ejecutar estilos y scripts
 ```
-sail npm run dev
+npm run dev
 ```
 
 ### 6. Credenciales de acceso
