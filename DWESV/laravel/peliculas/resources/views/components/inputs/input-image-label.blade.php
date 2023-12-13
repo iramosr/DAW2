@@ -2,7 +2,7 @@
 
 <div class="w-full">
     @isset($label)
-        <label for="{{$id}}" class="text-xs block font-bold text-blue-900 mr-2 p-1">{{$label}}</label>
+        <label for="{{$id}}" class="text-xs block font-bold text-rose-900 mr-2 p-1">{{$label}}</label>
     @endisset
 
     @if($readonly)

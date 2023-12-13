@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-emerald-100 dark:bg-emerald-800 border-b border-emerald-100 dark:border-emerald-700">
+<nav x-data="{ open: false }" class="bg-pink-900 border-b border-pink-950">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('home') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-emerald-800 dark:text-emerald-200" />
+                        <x-application-logo class="block h-9 w-auto fill-current text-white" />
                     </a>
                 </div>
 
@@ -48,7 +48,7 @@
                 @auth
                     <x-dropdown align="right" width="48">
                         <x-slot name="trigger">
-                            <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-teal-500 dark:text-teal-400 bg-teal-100 dark:bg-teal-800 hover:text-teal-700 dark:hover:text-teal-300 focus:outline-none transition ease-in-out duration-150">
+                            <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-rose-200 bg-rose-950 hover:text-rose-400 focus:outline-none transition ease-in-out duration-150">
                                 <div>{{ Auth::user()->name }}</div>
 
                                 <div class="ms-1">
