@@ -6,16 +6,16 @@
     @endisset
 
     @if($readonly)
-        @if(empty($item))
-            <img src="{{asset($item)}}">
+        @if(!empty($item))
+            <img class="object-scale-down h-40 mx-auto" src="{{asset($item)}}">
         @else
-            <img src="{{asset('images/imagen_no_disponible.png')}}">
+            <img class="object-scale-down h-40 mx-auto" src="{{asset('images/imagen_no_disponible.png')}}">
         @endif
     @else
         <div class="text-center">
             <input @change="showPreview(event)"
                    id="{{$id}}" @isset($name) name="{{$name}}" @endisset type="file">
-            <img id="preview"
+            <img id="preview" class="object-scale-down h-40 mx-auto"
                  @if (!empty($item))
                      src="{{asset($item)}}"
                 @endif

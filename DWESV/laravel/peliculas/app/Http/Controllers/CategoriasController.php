@@ -21,7 +21,7 @@ class CategoriasController extends Controller
      */
     public function create()
     {
-        $categorias = Categoria::orderBy('nombre')->paginate(10);
+        $categorias = Categoria::latest()->paginate(10);
         return view('categorias.create')
             ->with('categorias', $categorias)
             ->with('categoria', new Categoria());

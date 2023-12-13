@@ -21,7 +21,10 @@ class AlquileresController extends Controller
      */
     public function create()
     {
-        return view('alquileres.create')->with('alquiler', new Alquiler());
+        $alquileres = Alquiler::latest()->paginate(10);
+        return view('alquileres.create')
+            ->with('alquileres', $alquileres)
+            ->with('alquiler', new Alquiler());
     }
 
     /**

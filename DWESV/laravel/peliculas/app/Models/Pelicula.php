@@ -17,6 +17,6 @@ class Pelicula extends Model
         'fecha_estreno',
         'sinopsis',
         'director_id',
-        'genero_id'
+        'categoria_id'
     ];
 }

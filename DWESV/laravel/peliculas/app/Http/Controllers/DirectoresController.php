@@ -21,7 +21,7 @@ class DirectoresController extends Controller
      */
     public function create()
     {
-        $directores = Director::orderBy('nombre')->paginate(10);
+        $directores = Director::latest()->paginate(10);
         return view('directores.create')
             ->with('directores', $directores)
             ->with('director', new Director());

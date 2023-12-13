@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Categoria;
+use App\Models\Director;
 use App\Models\Pelicula;
 use Illuminate\Http\Request;
 
@@ -21,7 +23,14 @@ class PeliculasController extends Controller
      */
     public function create()
     {
-        return view('peliculas.create')->with('pelicula', new Pelicula());
+        $peliculas = Pelicula::latest()->paginate(10);
+        $directores = Director::all();
+        $categorias = Categoria::all();
+        return view('peliculas.create')
+            ->with('directores', $directores)
+            ->with('categorias', $categorias)
+            ->with('peliculas', $peliculas)
+            ->with('pelicula', new Pelicula());
     }
 
     /**
@@ -32,14 +41,15 @@ class PeliculasController extends Controller
         $request->validate(
             [
             'titulo' => 'required|max:200',
-            'portada' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'fecha_estreno' => 'required|date',
-            'sinopsis' => 'nullable',
             'director_id' => 'required|exists:directores,id',
             'categoria_id' => 'required|exists:categorias,id',
+            'portada' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'sinopsis' => 'nullable',
         ]);
 
         $requestData = $request->all();
+
 
         if ($request->hasFile('portada')) {
             $file = $request->file('portada');
@@ -49,6 +59,7 @@ class PeliculasController extends Controller
             $uploaded = $request->file('portada')->move($destino, $fileName);
             $requestData['portada'] = $destino . $fileName;
         }
+
 
         Pelicula::create($requestData);
 
@@ -61,7 +72,11 @@ class PeliculasController extends Controller
     public function show(Pelicula $pelicula)
     {
         $peliculas = Pelicula::orderBy('titulo')->paginate(10);
+        $directores = Director::all();
+        $categorias = Categoria::all();
         return view('peliculas.show')
+            ->with('directores', $directores)
+            ->with('categorias', $categorias)
             ->with('peliculas', $peliculas)
             ->with('pelicula', $pelicula);
     }
@@ -72,7 +87,11 @@ class PeliculasController extends Controller
     public function edit(Pelicula $pelicula)
     {
         $peliculas = Pelicula::orderBy('updated_at', 'desc')->paginate(10);
+        $directores = Director::all();
+        $categorias = Categoria::all();
         return view('peliculas.edit')
+            ->with('directores', $directores)
+            ->with('categorias', $categorias)
             ->with('peliculas', $peliculas)
             ->with('pelicula', $pelicula);
     }
