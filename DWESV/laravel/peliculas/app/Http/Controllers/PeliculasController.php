@@ -63,7 +63,8 @@ class PeliculasController extends Controller
 
         Pelicula::create($requestData);
 
-        return redirect()->route('peliculas.index')->with('success', 'La película ha sido creada correctamente');
+        return redirect()->route('peliculas.index')
+            ->with(['alert-success' => "Pelicula creada"]);
     }
 
     /**
@@ -124,9 +125,10 @@ class PeliculasController extends Controller
 
         try {
             $pelicula->update($requestData);
-            return redirect()->route('peliculas.index')->with('success', 'La película ha sido modificada correctamente');
+            return redirect()->route('peliculas.index')
+                ->with('alert-success', 'La película ha sido modificada correctamente');
         } catch (\Exception $e) {
-            return redirect()->back()->withInput()->with(['error' => 'Error al modificar la película']);
+            return redirect()->back()->withInput()->with(['alert-error' => 'Error al modificar la película']);
         }
     }
 
@@ -137,9 +139,9 @@ class PeliculasController extends Controller
     {
         try {
             $pelicula->delete();
-            return redirect()->route('peliculas.index')->with('success', 'La película ha sido eliminada correctamente');
+            return redirect()->route('peliculas.index')->with('alert-success', 'La película ha sido eliminada correctamente');
         } catch (\Exception $e) {
-            return redirect()->back()->with(['error' => 'Error al eliminar la película']);
+            return redirect()->back()->with(['alert-error' => 'Error al eliminar la película']);
         }
     }
 

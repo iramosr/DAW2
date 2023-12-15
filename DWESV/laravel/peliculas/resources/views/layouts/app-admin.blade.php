@@ -18,7 +18,6 @@
 
     {{--    @include('components.share.menu-admin')--}}
     <x-share.menu/>
-
     <x-alerts.alert-header/>
 
     <!-- Page Content -->

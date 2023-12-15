@@ -19,6 +19,7 @@
     {{--    @include('components.share.menu-main')--}}
 
         <x-share.menu/>
+        <x-alerts.alert-header/>
 
         <!-- Page Content -->
         @yield('content')
