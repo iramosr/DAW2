@@ -1,0 +1,11 @@
+INFO:2023-12-11 15:19:40:Viaje creado: 43453E
+INFO:2023-12-11 15:21:31:Viaje creado: 122
+INFO:2023-12-11 17:00:15:Contratacion actualizada 1
+INFO:2023-12-11 17:00:31:Contratacion actualizada 2
+INFO:2023-12-11 17:00:35:Contratacion actualizada 2
+INFO:2023-12-11 17:01:31:Usuario borrado: 4
+DEBUG:2023-12-11 17:04:23:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-12-11 17:04:23:Acceso a endpoint: usuarios-api/get_by_username admin
+INFO:2023-12-11 17:11:38:Contratacion creada: 2 - 3
+DEBUG:2023-12-11 17:11:51:Acceso a endpoint: viajes-api/get_by_codigo 123
+INFO:2023-12-11 17:11:51:Acceso a endpoint: viajes-api/get_by_codigo 123
